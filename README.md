@@ -20,3 +20,4 @@ References
 - [CoVe](https://medium.com/@james.li/a-langchain-implementation-of-chain-of-verification-cove-to-reduce-hallucination-0a8fa2929b2a)
 - [Metamorphic Testing](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/180511524/QAQA.pdf)
   
+N.B. CIMBUR is the old name of CHIME
