@@ -14,3 +14,9 @@ Survey
 
 Code
 - Pipeline
+
+References
+- [Query Transformation](https://github.com/langchain-ai/langchain/blob/master/cookbook/stepback-qa.ipynb?ref=blog.langchain.dev)
+- [CoVe](https://medium.com/@james.li/a-langchain-implementation-of-chain-of-verification-cove-to-reduce-hallucination-0a8fa2929b2a)
+- [Metamorphic Testing](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/180511524/QAQA.pdf)
+  
