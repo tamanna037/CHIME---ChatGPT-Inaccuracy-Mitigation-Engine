@@ -1,30 +1,183 @@
-T1S-FQ,T1S-FA,T1-YNQ,T1-YNA,T1-SQ,T1-SA,,T1M-FQ,T1M-FA,T1M-YNQ,T1M-YNA,T1M-SQ,T1M-SA,,T2-FQ,T2-FA,T2-YNQ,T2-YNA,T2-SQ,T2-SA,,T3-FQ,T3-FA,T3-SQ,T3-SA,,T4-FQ,T4-FA,T4-YNQ,T4-YNA,T4-SQ,T4-SA,,T5-FQ,T5-FA,T5-YNQ,T5-YNA,T5-SQ,T5-SA
-Where in the code exception of issue 18151 occur?,JvmErgonomics.java class at line 98,Does Elasticsearch require the UseG1GC option to be present during its startup stage in issue 18151?,Yes,Summarize the differences observed in the execution of the test case across different versions of OpenJ9 on Linux in issue 18608,"In jdk_linux_11_openj9, there are WARNING messages reported, while in jdk_linux_17_openj9, an uncaught exception occurs. However, in jdk_linux_8_openj9, there are no reported issues or warnings.",.,Which issues are duplicate of issue 18102?,18669 and 17995,Is issue 18102 and 18669 similar?,Yes,"Provide a summary of all issues similar to issue 18102, including their current status","Two issues similar to issue 18102 are issue 17995 and issue 18669. In issue 17995, there is a failure in an internal build related to java.lang.ArrayIndexOutOfBoundsException at java.lang.CharacterDataLatin1.getProperties. The failure occurred during the execution of sun/nio/cs/TestIBMBugs.java. Similarly, issue 18669 involves an ArrayIndexOutOfBoundsException during the execution of java/lang/Character/CharPropTest.java. The stack trace in both issues points to java.lang.CharacterDataLatin1.getProperties, indicating a similar exception pattern. Both issues remain open and unresolved.",.,What is the most frequently encountered error type?,ArrayIndexOutOfBoundsException,Have errors related to component vm become more frequent?,Yes,Provide a summary of the most frequently encountered error,"The most frequently encountered error appears to be related to test failures, particularly in the virtual machine (VM) component. These failures include issues such as illegal monitor state exceptions, array index out of bounds exceptions, and incorrect optimizations.",.,Can you provide a count of open issues by components?,"comp:vm: 3 issues 
+T1S-FQ,T1S-FA,T#,Type
+Where in the code exception of issue 18151 occur?,JvmErgonomics.java class at line 98,T1 (S),Fact
+Find the vmstate from the diagnostic file attached in issue 17458,vmState=0x00000000,T1 (S),Fact
+which component is affected by issue 18400?,comp:jit,T1 (S),Fact
+Under what condition does the error in issue 17265 occur?,When a call is made to a REST endpoint after class retransformation by a Java agent.,T1 (S),Fact
+What is the name of the test case that failed in issue 18845?,jdk_tools_openj9_DynamicLoadWarningTest_0,T1 (S),Fact
+What exception occured in the issue 17120,java.lang.IllegalMonitorStateException,T1 (S),Fact
+How many times grinder reproduced the the issue 18102?,2,T1 (S),Fact
+Which version of OpenJ9 exhibits the exception in issue 19014?,11 and 17,T1 (S),Fact
+what systems have been used for testing in 17019?,latest Debian unstable and latest Debian testing,T1 (S),Fact
+What triggered the exception in issue 18082?,java.lang.ArrayIndexOutOfBoundsException,T1 (S),Fact
+Which error occurs in SpinedBufferTest of issue 17774?,NullPointerExceptions,T1 (S),Fact
+What is the specific failure reported in the test testGetAttributes in 18081?,java.lang.AssertionError,T1 (S),Fact
+What specific exception is raised in issue 18043?,java.lang.Exception: ERROR: Ciphertext does not match,T1 (S),Fact
+What component is affected by issue 18718?,comp:vm,T1 (S),Fact
+What is the version of OMR reported in issue 17843?,e80bff83b,T1 (S),Fact
+Which file was not found during the test execution in issue #17540?,testng_210.xml,T1 (S),Fact
+Which line of code in the CharacterDataLatin1 class triggered the ArrayIndexOutOfBoundsException in issue 17063?,line 72 of the getProperties method,T1 (S),Fact
+What were the configurations of the last passing build in issue 17359?,"Java version: ""21-internal"" dated 2023-09-19
+OpenJDK Runtime Environment: 21-internal-adhoc.jenkins.BuildJDKnextx86-64linuxvalhallaNightly
+Eclipse OpenJ9 VM: Build master-0609eb43a77, JRE 21 Linux amd64-64-Bit Compressed References 20230503_1032 (JIT enabled, AOT enabled)
+OpenJ9 version: 0609eb43a77
+OMR version: 5dcc2f28955
+JCL version: 004eb7f92c8 based on jdk-21+19",T1 (S),Fact
+What actions were taken to address the failure in the StackWalkerTest?,reverting the changes introduced in pull request #18926.,T1 (S),Fact
+What JVM option was seen in the test failure of issue 18447?,The JVM options used for the test in issue 18447 were -XX:+UseCompressedOops.,T1 (S),Fact
+What was the failure reported in issue 18277?,"java.security.ProviderException: Secmod directory /etc/pki/nssdb invalid, NSS already initialized ",T1 (S),Fact
+On which machine did the failure occur for issue 17137?,rhel9lert,T1 (S),Fact
+what is the nature of the failure in issue 17995?,java.lang.ArrayIndexOutOfBoundsException,T1 (S),Fact
+in which method the exception occurs in issue 18487,testElapsedTime,T1 (S),Fact
+Which test failed in issue 18694?,test_asInterfaceInstance_InnerClass,T1 (S),Fact
+Which class and method in the codebase does the stack trace point to?,"BasicTest class, testPrimitiveConversion method.",T1 (S),Fact
+List some of the heap options Elasticsearch uses with the UseG1GC option in issue 18151,"-XX:G1HeapRegionSize
+-XX:InitiatingHeapOccupancyPercent
+-XX:G1ReservePercent",T1 (S),Fact
+List all exceptions encountered during the testing process of issue 18336?,"1. NullPointerException during sun.security.util.KnownOIDs.register
+2. NullPointerException during jdk.internal.org.objectweb.asm.Type.getInternalName
+3. NullPointerException in sun.security.util.ManifestEntryVerifier.setEntry
+4. ArrayIndexOutOfBoundsException in sun.security.util.SignatureFileVerifier.processImpl",T1 (S),Fact
+What is the error message in issue 17005?,java.lang.IllegalArgumentException: init argument cannot be less than -1,T1 (S),Fact
+Which exception is seen in issue17063?,java.lang.ArrayIndexOutOfBoundsException,T1 (S),Fact
+What was the type of error encountered in issue 18337?,was a java.lang.StackOverflowError.,T1 (S),Fact
+How many times did the internal grinder tests fail in issue 17852?,10/50,T1 (S),Fact
+What specific types of exceptions were reported in issue 18763?,"org.opentest4j.AssertionFailedError and 
+java.lang.Exception",T1 (S),Fact
+Which project components were involved in the reported failure in issue 18089?,"comp:jvmti , comp:vm",T1 (S),Fact
+Which Java version and JVM are associated with the reported failures in issue 18487?,"Java version: ""1.8.0_391""
+JVM: IBM J9 VM (build 2.9)",T1 (S),Fact
+What exception occured in the issue 18151?,java.lang.IllegalStateException:,T1 (S),Fact
+In which jdk version issue 17458 occur,JDK11,T1 (S),Fact
+"in which jdk version, did tester find the issue 18400?",64bit/openj9/jdk-17.0.5,T1 (S),Fact
+which component is affected by issue 17265?,comp:vm,T1 (S),Fact
+Which warning is shown in issue 18845?,A JVM TI agent has been loaded dynamically,T1 (S),Fact
+which component is affected by issue 17120?,comp:jit,T1 (S),Fact
+which exception occured in issue 18102?,java.lang.ArrayIndexOutOfBoundsException,T1 (S),Fact
+Where the exception in issue 19014 occur?,TestArrayCopy,T1 (S),Fact
+What triggered the exception in issue 17019?,java.lang.UnsatisfiedLinkError,T1 (S),Fact
+Which task failed in issue 18082?,The task that failed in issue 18082 was the aarch64_linux build test,T1 (S),Fact
+Which test failed in issue 17774?,SpinedBufferTest,T1 (S),Fact
+Which component in affected in issue 18081?,comp:test,T1 (S),Fact
+how many test have been failed in issue 18043?,8,T1 (S),Fact
+Which jdk version is affected by issue 18718?,jdk22,T1 (S),Fact
+Find the vmstate from the diagnostic file attached in ssue 17843?,0x00200001,T1 (S),Fact
+In which jdk version issue 17540 can be found?,jdk21,T1 (S),Fact
+which architecture is affcted by issue 17063?,z,T1 (S),Fact
+which test failed in issue 17359?,testGetSizeOfArray,T1 (S),Fact
+write the exception message in issue 18961,caller class wrong expected [class org.openj9.test.stackWalker.StackWalkerTest] but found [class java.lang.StackWalker],T1 (S),Fact
+Which exceotion is seen at issue 18447?,java.lang.NullPointerException:,T1 (S),Fact
+Which component in affected in issue 18277?,comp:fips,T1 (S),Fact
+Show the exception message in issue 17137?,The summary of the exception message in issue 17137 is NSS initialization failed.,T1 (S),Fact
+Where the exception occurs in issue 17995?,CharacterDataLatin1.java at line 72,T1 (S),Fact
+which component is afftected in issue 18694?,comp:vm,T1 (S),Fact
+Which exception occured in issue 18694?,java.lang.NoClassDefFoundError:,T1 (S),Fact
+which omr version is affected in issue 18337?,c23dd83f7,T1 (S),Fact
+show the exception in issue 18151,java.lang.IllegalStateException: JVM option [UseG1GC] was unexpectedly missing. Elasticsearch requires this option to be present.,T1 (S),Fact
+where the exception occur in issue 17063?,ToLowerCase.java,T1 (S),Fact
+using which vm:args issue 17005 seems to throw no error?,gencon policy,T1 (S),Fact
+Which os faces the exception in issue 17063?,linux,T1 (S),Fact
+which openj9 version is affected in issue 18337?,3cad35878,T1 (S),Fact
+"in issue 17852, in which file the exception occurs?",java/nio/channels/FileChannel/ExpandingMap.java,T1 (S),Fact
+how many timeouts are there with no-vmcontinuations in issue 18763?,5,T1 (S),Fact
+Which project  issue 18089 is part of?,loom,T1 (S),Fact
+write the summary of failed test in issue 18487?,Verify the elapsed time,T1 (S),Fact
+Does Elasticsearch require the UseG1GC option to be present during its startup stage in issue 18151?,Yes,T1 (S),Y/N
+does issue 17288 report a regression test?,No,T1 (S),Y/N
+Does the issue 18336 happen with Adoptium builds?,No,T1 (S),Y/N
+is issue 17444 a blocker?,yes,T1 (S),Y/N
+Did the failing build in issue 18337 generate a StackOverflowError during execution?,Yes,T1 (S),Y/N
+is 17852 a machine issue?,Yes,T1 (S),Y/N
+"Was the GetThreadStateTest::testRunnable"" failure of issue 18763 "" reproduced?",No,T1 (S),Y/N
+Was the reported failure in issue 18089 successfully reproduced in subsequent test runs?,No,T1 (S),Y/N
+Did the failure reported in issue 18669 occur in a test environment running on a Linux system?,Yes,T1 (S),Y/N
+Did this issue 17458 occur in JDK8?,No,T1 (S),Y/N
+Did setting the parameter -Xint prevent the exception from being thrown?,Yes,T1 (S),Y/N
+Does jdk_linux_11_openj9 encounter any errors in issue 18608?,No,T1 (S),Y/N
+Does issue 18400 affect jit component ?,Yes,T1 (S),Y/N
+is issue 19014 an user raiser issue?,Yes,T1 (S),Y/N
+Is the issue 18082 found in windows machine?,No,T1 (S),Y/N
+does issue 17774 require triage?,yes,T1 (S),Y/N
+is component jit affected in issue 18043?,No,T1 (S),Y/N
+is issue 17540 can be found in jdk 17?,No,T1 (S),Y/N
+is issue 17063 a linux issue?,yes,T1 (S),Y/N
+is regression introduced in issue 17359?,yes,T1 (S),Y/N
+does issue 18336 work fine on windows?,Yes,T1 (S),Y/N
+is there ExceptionInInitializerError in issue 18082?,Yes,T1 (S),Y/N
+did the failure of issue 17063 repeat in automatic 3x grinder?,No,T1 (S),Y/N
+is issue 17852 a machine issue?,Yes,T1 (S),Y/N
+Summarize the differences observed in the execution of the test case across different versions of OpenJ9 on Linux in issue 18608,"In jdk_linux_11_openj9, there are WARNING messages reported, while in jdk_linux_17_openj9, an uncaught exception occurs. However, in jdk_linux_8_openj9, there are no reported issues or warnings.",T1 (S),Summary
+Summarize the reproduction steps of issue 17005,Run using openj9 and with vm args '-Xgcpolicy:balanced',T1 (S),Summary
+Summarize the issue 18001,"Involved a test failure in the jdk_security3_1 suite, specifically in the sun/security/ssl/SSLSocketImpl/ClientModeClientAuth.java test case. The failure occurred due to a java.lang.IllegalAccessError caused by an attempt to invoke a non-public method contains on a HashSet. This issue was encountered during a test run on Java version 17.0.9-beta with Eclipse OpenJ9 VM on macOS aarch64 platform. The failure was not successfully reproduced in subsequent test runs.",T1 (S),Summary
+Summarize the steps taken to reproduce issue 17307,"To reproduce the issue, enable GetStackTraceNotSuspendedStress ",T1 (S),Summary
+Summarize the error message for issue 17638,"testMillis failed due to an assertion error: ""Duration 999ms, expected >= 1000ms"".",T1 (S),Summary
+Summarize the failures of issue 17137,"The jdk_security3_0 test case failed due to NSS initialization issues resulting in ""java.security.ProviderException"" with causes including ""sun.security.pkcs11.wrapper.PKCS11Exception"" and ""java.io.IOException"".",T1 (S),Summary
+Summarize issue 18336,"In issue 18336, Recent builds of packaged Eclipse fail to launch with Semeru but succeed with Adoptium on macOS ARM (works fine on Windows). The cause of the java.lang.ExceptionInInitializerError in issue 18336 is a java.lang.NullPointerException at sun.security.util.KnownOIDs",T1 (S),Summary
+Summarize the failure of issue 17005,"The failure of issue 17005 is related to an exception being thrown when aarch64_linux build test ant task failed, with an IllegalArgumentException. This is caused by java.lang.ArrayIndexOutOfBoundsException",T1 (S),Summary
+Summarize the issue 17265,AnnotationFormatError: java.lang.IllegalArgumentException: Wrong type at constant pool index post class retransformation by agent,T1 (S),Summary
+List the tests failed in issue 17638,"The tests failed in issue 17638 are related to the are Jep425Tests_testVirtualThread_*, Jep442Tests_testLinkerFfi_*",T1 (S),Summary
+List the component affected by issue 17638,The component affected by issue 17638 is  comp:jvmti  and comp:vm,T1 (S),Summary
+Summarize the failures of issue 17137,"The jdk_security3_0 test case failed due to NSS initialization issues resulting in ""java.security.ProviderException"" with causes including ""sun.security.pkcs11.wrapper.PKCS11Exception"" and ""java.io.IOException"".",T1 (S),Summary
+Which issues are duplicate of issue 18102?,18669 and 17995,T1 (M),Fact
+Find issues similar to 18487,17638,T1 (M),Fact
+Find duplicate reports of the 18694?,18698,T1 (M),Fact
+Find all issues related to segmentation error,17458,T1 (M),Fact
+How many duplicate reports have been found for issue 18669?,2,T1 (M),Fact
+Which issues are duplicate of issue  18669?,18102 and 17995 are duplicate of issue 18669,T1 (M),Fact
+Find issues similar to 17638,18487,T1 (M),Fact
+Find duplicate reports of the 18698?,18694,T1 (M),Fact
+Find all issues related to nullpointerexception,"all issues related to nullpointerexception are 17307, 17774, 18336, 18447",T1 (M),Fact
+How many duplicate reports have been found for issue 17638?,1,T1 (M),Fact
+Is issue 18102 and 18669 similar?,Yes,T1 (M),Y/N
+Is issue 18487 and 18102 similar?,No,T1 (M),Y/N
+Has there been a report of a crash on vm component?,Yes,T1 (M),Y/N
+Is issue 18102 and 17995 similar?,Yes,T1 (M),Y/N
+Is issue 17995 and 18487 similar?,No,T1 (M),Y/N
+Has there been a report of a crash on jit component?,Yes,T1 (M),Y/N
+"Provide a summary of all issues similar to issue 18102, including their current status","Two issues similar to issue 18102 are issue 17995 and issue 18669. In issue 17995, there is a failure in an internal build related to java.lang.ArrayIndexOutOfBoundsException at java.lang.CharacterDataLatin1.getProperties. The failure occurred during the execution of sun/nio/cs/TestIBMBugs.java. Similarly, issue 18669 involves an ArrayIndexOutOfBoundsException during the execution of java/lang/Character/CharPropTest.java. The stack trace in both issues points to java.lang.CharacterDataLatin1.getProperties, indicating a similar exception pattern. Both issues remain open and unresolved.",T1 (M),Summary
+Provide a summary of all issues similar to issue 18487,"Issue 17638 is similar to issue 18487 as both involve inaccuracies in measuring time durations, specifically related to sleep intervals. In issue 17638, the SleepSanity test from the OpenJDK test suite fails because the sleep duration of 999ms is less than the expected 1000ms",T1 (M),Summary
+"Provide a summary of all issues similar to issue 18669, including their current status","Two issues similar to issue 18669 are issue 18102 and issue 18669. In issue 18102, there is a failure in an internal build related to java.lang.ArrayIndexOutOfBoundsException at java.lang.CharacterDataLatin1.getProperties. The failure occurred during the execution of sun/nio/cs/TestIBMBugs.java. Similarly, issue 18669 involves an ArrayIndexOutOfBoundsException during the execution of java/lang/Character/CharPropTest.java. The stack trace in both issues points to java.lang.CharacterDataLatin1.getProperties, indicating a similar exception pattern. Both issues remain open and unresolved.",T1 (M),Summary
+Provide a summary of all issues similar to issue 17638,"Issue 18487 is similar to issue 17638 as both involve inaccuracies in measuring time durations, specifically related to sleep intervals. In issue 17638, the SleepSanity test from the OpenJDK test suite fails because the sleep duration of 999ms is less than the expected 1000ms",T1 (M),Summary
+What is the most frequently encountered error type?,ArrayIndexOutOfBoundsException,T2,Fact
+Identify the common component or module where most of the bugs have been found,comp:vm,T2,Fact
+What type of issues has shown the highest increase in frequency over the last three months?,test failures in the comp:vm component,T2,Fact
+Are there any particular component that seem to be more prone to issues compared to others?,"comp:vm, comp:jit",T2,Fact
+Find the most found exception,ArrayIndexOutOfBoundsException,T2,Fact
+Which component is more error prone?,comp:vm,T2,Fact
+What type of issues is more frequent?,test failure,T2,Fact
+Which component is second most error prone?,comp:jit,T2,Fact
+Have errors related to component vm become more frequent?,Yes,T2,Y/N
+Has there been an increase in reports of crashes in last 3 months?,no,T2,Y/N
+does component vm has the highest number of error in the last three months?,Yes,T2,Y/N
+Has the JIT component experienced the highest number of errors in the last three months compared to other components?,No,T2,Y/N
+Have errors related to component jclextensions become more frequent?,no,T2,Y/N
+Has there been an increase in reports of crashes in project MH?,no,T2,Y/N
+is component jit one of the most error prone component?,Yes,T2,Y/N
+Has the VM component experienced the highest number of errors in the last three months compared to other components?,Yes,T2,Y/N
+Provide a summary of the most frequently encountered error,"The most frequently encountered error appears to be related to test failures, particularly in the virtual machine (VM) component. These failures include issues such as illegal monitor state exceptions, array index out of bounds exceptions, and incorrect optimizations.",T2,Summary
+Summarize the recurring themes in bug reports of jit component,"The recurring themes in JIT component bug reports include test failures and runtime errors related to array optimizations, illegal monitor states, and assertion errors during compilation. ",T2,Summary
+Provide a summary of the most frequently affected components,The most frequently encountered component is comp:vm and comp:jit,T2,Summary
+Summarize the recurring themes in bug reports of vm component,"The recurring themes in JIT component bug reports include test failures, user-raised issues, and specific JDK versions such as JDK 21 and JDK 22.",T2,Summary
+Can you provide a count of open issues by components?,"comp:vm: 3 issues 
 comp:jit: 4 issues 
 comp:fips: 2 issues
 comp:infra: 1 issue 
-comp:jvmti: 1 issue ",Summarize the issues of project MH,"Issue 18400 focuses on Apache Lucene's CI builds, which sometimes fail due to OpenJ9-specific issues. The reported  test failure involved an AssertionError during thread synchronization. Issue 17458 deals with an unhandled exception (Segmentation error) during recursive function calls leading to a JVM crash. The problem appears to be unique to JDK11 and does not occur with other JDK versions tested (JDK8, JDK17).",.,Suggest existing labels to tag issue 18608,"bug, jdk17",Is there an existing label specifically for user raised issues?,Yes,Summarize the guidelines for assigning labels to issues in this project,"Assign labels based on issue type, component, architecture, and whether it's user-raised.",.,Find the long-standing issues that have been consistently postponed?,"17458 , 18043 ,17843, 18001, 17063, 17137",Are there any long-standing issues that have been consistently postponed?,Yes,Give an overview of the distribution of backlog issues by component,"There is one test failure issue in each of following components:  infra, JIT, VM, and FIPS; that have been open for a long period"
-Find the vmstate from the diagnostic file attached in issue 17458,vmState=0x00000000,does issue 17288 report a regression test?,No,Summarize the reproduction steps of issue 17005,Run using openj9 and with vm args '-Xgcpolicy:balanced',.,Find issues similar to 18487,17638,Is issue 18487 and 18102 similar?,No,Provide a summary of all issues similar to issue 18487,"Issue 17638 is similar to issue 18487 as both involve inaccuracies in measuring time durations, specifically related to sleep intervals. In issue 17638, the SleepSanity test from the OpenJDK test suite fails because the sleep duration of 999ms is less than the expected 1000ms",.,Identify the common component or module where most of the bugs have been found,comp:vm,Has there been an increase in reports of crashes in last 3 months?,no,Summarize the recurring themes in bug reports of jit component,"The recurring themes in JIT component bug reports include test failures and runtime errors related to array optimizations, illegal monitor states, and assertion errors during compilation. ",.,How many issues tagged as 'test failure' have been reported in the last 60 days?,2,Summarize the issue 17265,Issue 17265 in the Eclipse OpenJ9 project reports an AnnotationFormatError triggered by a java.lang.IllegalArgumentException: Wrong type at constant pool index. This error surfaces in a Spring Boot application deployed on WebSphere Liberty when a REST endpoint is hit after a class has undergone retransformation by a Java agent. The JDK used for this is version 1.8.0_361.,.,What existing label is recommended for issues that needs immediate triaging?,triageRequired,Can a single issue be tagged with both comp:vm and comp:test if it affects both components?,Yes,"Explain for an issue affecting multiple components, how should it be labeled?",Issues affecting multiple components should carry labels for each affected componen,.,Find issues that have been assigned to any milestone but are older than 3 months,None,Are there issues with no activity over 6 months?,Yes,summarize the most long pending issue of os:linux,"The most long pending issue  of os:linux is 17063. An ArrayIndexOutOfBoundsException in java/lang/String/ToLowerCase.java was reported by pshipton, occurring at CharacterDataLatin1.getProperties"
-which component is affected by issue 18400?,comp:jit,Does the issue 18336 happen with Adoptium builds?,No,Summarize the issue 18001,"Involved a test failure in the jdk_security3_1 suite, specifically in the sun/security/ssl/SSLSocketImpl/ClientModeClientAuth.java test case. The failure occurred due to a java.lang.IllegalAccessError caused by an attempt to invoke a non-public method contains on a HashSet. This issue was encountered during a test run on Java version 17.0.9-beta with Eclipse OpenJ9 VM on macOS aarch64 platform. The failure was not successfully reproduced in subsequent test runs.",.,Find duplicate reports of the 18694?,18698,Has there been a report of a crash on vm component?,Yes,"Provide a summary of all issues similar to issue 18669, including their current status","Two issues similar to issue 18669 are issue 18102 and issue 18669. In issue 18102, there is a failure in an internal build related to java.lang.ArrayIndexOutOfBoundsException at java.lang.CharacterDataLatin1.getProperties. The failure occurred during the execution of sun/nio/cs/TestIBMBugs.java. Similarly, issue 18669 involves an ArrayIndexOutOfBoundsException during the execution of java/lang/Character/CharPropTest.java. The stack trace in both issues points to java.lang.CharacterDataLatin1.getProperties, indicating a similar exception pattern. Both issues remain open and unresolved.",,What type of issues has shown the highest increase in frequency over the last three months?,test failures in the comp:vm component,does component vm has the highest number of error in the last three months?,Yes,Provide a summary of the most frequently affected components,The most frequently encountered component is comp:vm and comp:jit,,List all test failure issues and their current status,"1. 18845, closed
-2. 18718, closed
-3. 18961, closed
-4. 18763, open
-5. 18669, open
-6. 18694, closed
-7. 18698, closed",Summarize the issue 18336,"The issue (18336) involves recent builds of packaged Eclipse failing to launch with Semeru but succeeding with Adoptium on macOS ARM. Various symptoms have been observed, including NullPointerExceptions during different stages of execution",.,An issue is reported causing test failures only in the jdk22 version but works fine in other versions. What labels should be applied?,"test failure , jdk22",Is there an existing label for memory issue?,No,Summarize the guidelines for assigning labels to indicate a component,"The guidelines for assigning labels to indicate a component is to write in following format comp:component name. For example, comp:gc, comp:vm, comp:jit, comp:test, comp:infra, comp:fips, comp:jvmti, comp:jclextensions",,Identify issues with no activity in the last 6 months.,18001,Are there any test failure issues that have been open for more than 9 months?,No,,
-Under what condition does the error in issue 17265 occur?,When a call is made to a REST endpoint after class retransformation by a Java agent.,is issue 17444 a blocker?,yes,Summarize the steps taken to reproduce issue 17307,"To reproduce the issue, enable GetStackTraceNotSuspendedStress ",.,Find all issues related to segmentation error,17458,Is issue 18102 and 17995 similar?,Yes,Provide a summary of all issues similar to issue 17638,"Issue 18487 is similar to issue 17638 as both involve inaccuracies in measuring time durations, specifically related to sleep intervals. In issue 17638, the SleepSanity test from the OpenJDK test suite fails because the sleep duration of 999ms is less than the expected 1000ms",,Are there any particular component that seem to be more prone to issues compared to others?,"comp:vm, comp:jit",Has the JIT component experienced the highest number of errors in the last three months compared to other components?,No,Summarize the recurring themes in bug reports of vm component,"The recurring themes in JIT component bug reports include test failures, user-raised issues, and specific JDK versions such as JDK 21 and JDK 22.",,Can you provide a count of open issues by project tag?,"The count of open issues by project tag is as follows: - project:loom : 1 , - project:MH : 1",Generate a report detailing the distribution of issues across different components,"comp:vm: 3 issues (17458, 18763, 17638)
+comp:jvmti: 1 issue ",T3,Fact
+How many issues tagged as 'test failure' have been reported in the last 60 days?,2,T3,Fact
+Can you provide a count of open issues by project tag?,"The count of open issues by project tag is as follows: - project:loom : 1 , - project:MH : 1",T3,Fact
+find out the component where most issues are open,comp:jit,T3,Fact
+Summarize the issues of project MH,"Issue 18400 focuses on Apache Lucene's CI builds, which sometimes fail due to OpenJ9-specific issues. The reported  test failure involved an AssertionError during thread synchronization. Issue 17458 deals with an unhandled exception (Segmentation error) during recursive function calls leading to a JVM crash. The problem appears to be unique to JDK11 and does not occur with other JDK versions tested (JDK8, JDK17).",T3,Summary
+Summarize the issue 17265,Issue 17265 in the Eclipse OpenJ9 project reports an AnnotationFormatError triggered by a java.lang.IllegalArgumentException: Wrong type at constant pool index. This error surfaces in a Spring Boot application deployed on WebSphere Liberty when a REST endpoint is hit after a class has undergone retransformation by a Java agent. The JDK used for this is version 1.8.0_361.,T3,Summary
+Summarize the issue 18336,"The issue (18336) involves recent builds of packaged Eclipse failing to launch with Semeru but succeeding with Adoptium on macOS ARM. Various symptoms have been observed, including NullPointerExceptions during different stages of execution",T3,Summary
+Generate a report detailing the distribution of issues across different components,"comp:vm: 3 issues (17458, 18763, 17638)
 comp:jit: 4 issues (18400, 17843, 18102, 18669)
 comp:fips: 2 issues (18043, 18277)
 comp:infra: 1 issue (17137)
-comp:jvmti: 1 issue (18763)",.,I have identified an issue that blocks the release process. Label it,blocker,Is there an existing label specifically to tell that there is a need for triage?,Yes,Summarize the guidelines for assigning labels to indicate a architecture,"The guidelines for assigning labels to indicate a component is to write in following format arch:architecture name. For example, arch:z, arch:aarch64",,Is there any user raised issue that have been open for more than  6 months?,17458,Are there any long-standing issues that have been opened more than 10 months?,Yes,,
-What is the name of the test case that failed in issue 18845?,jdk_tools_openj9_DynamicLoadWarningTest_0,Did the failing build in issue 18337 generate a StackOverflowError during execution?,Yes,Summarize the error message for issue 17638,"testMillis failed due to an assertion error: ""Duration 999ms, expected >= 1000ms"".",.,How many duplicate reports have been found for issue 18669?,2,Is issue 17995 and 18487 similar?,No,,,,Find the most found exception,ArrayIndexOutOfBoundsException,Have errors related to component jclextensions become more frequent?,no,,,,find out the component where most issues are open,comp:jit,Compile a summary of unresolved issues not older than 1 month,"Issue 19014 highlights incorrect array optimizations in OpenJ9-11, leading to an ArrayIndexOutOfBoundsException during execution of a specific test case. OpenJ9-11 and OpenJ9-17 throw this exception, even when setting the -Xint parameter.",.,Suggest existing labels to tag issue 18337,"comp:jit , jdk21",Is there an existing label to tag os?,Yes,,,,What is the oldest issue in the backlog in terms of days open?,17063,Are there issues of comp:jit with no activity over 6 months?,Yes,,
-What exception occured in the issue 17120,java.lang.IllegalMonitorStateException,is 17852 a machine issue?,Yes,Summarize the failures of issue 17137,"The jdk_security3_0 test case failed due to NSS initialization issues resulting in ""java.security.ProviderException"" with causes including ""sun.security.pkcs11.wrapper.PKCS11Exception"" and ""java.io.IOException"".",.,Which issues are duplicate of issue  18669?,18102 and 17995 are duplicate of issue 18669,Has there been a report of a crash on jit component?,Yes,,,,Which component is more error prone?,comp:vm,Has there been an increase in reports of crashes in project MH?,no,,,,List all closed test failure issues,"1. 18845  2. 18718
-3. 18961
-6. 18694
-7. 18698",Can you generate a summary of all issues tagged as 'comp:fips'?,"Issue 18043: Test failure observed in FIPS mode of IBM Semeru Runtime Certified Edition 17.0.8.1 with Eclipse OpenJ9 VM during CipherByteBufferOverwriteTest.java test. Failure due to ciphertext mismatch, indicating potential correctness issue with cryptographic operation in FIPS mode.
+comp:jvmti: 1 issue (18763)",T3,Summary
+Compile a summary of unresolved issues not older than 1 month,"Issue 19014 highlights incorrect array optimizations in OpenJ9-11, leading to an ArrayIndexOutOfBoundsException during execution of a specific test case. OpenJ9-11 and OpenJ9-17 throw this exception, even when setting the -Xint parameter.",T3,Summary
+Can you generate a summary of all issues tagged as 'comp:fips'?,"Issue 18043: Test failure observed in FIPS mode of IBM Semeru Runtime Certified Edition 17.0.8.1 with Eclipse OpenJ9 VM during CipherByteBufferOverwriteTest.java test. Failure due to ciphertext mismatch, indicating potential correctness issue with cryptographic operation in FIPS mode.
 
-Issue 18277: Test failure in IBM Semeru Runtime Open Edition 11.0.21.0-m2 with Eclipse OpenJ9 VM during TrustAnchors.java test in FIPS 140-2 mode. Failure due to java.security.ProviderException indicating invalid Secmod directory or NSS initialization issues",.,What existing label is recommended for issues raised in linux machine ?,os:linux,Is there an existing label for storage issue?,No,,,,Find out test failure issues that have been open for more than 8 months?,"17063, 17137",Are there any long pending test failure issues of comp:vm ?,Yes,,
-How many times grinder reproduced the the issue 18102?,2,"Was the GetThreadStateTest::testRunnable"" failure of issue 18763 "" reproduced?",No,Summarize issue 18336,"In issue 18336, Recent builds of packaged Eclipse fail to launch with Semeru but succeed with Adoptium on macOS ARM (works fine on Windows). The cause of the java.lang.ExceptionInInitializerError in issue 18336 is a java.lang.NullPointerException at sun.security.util.KnownOIDs",.,Find issues similar to 17638,18487,,,,,,What type of issues is more frequent?,test failure,is component jit one of the most error prone component?,Yes,,,,,,Can you generate a summary of all issues tagged as 'comp:jit' ?,"Issue 18400: Apache Lucene CI builds intermittently fail with OpenJ9 JVMs
+Issue 18277: Test failure in IBM Semeru Runtime Open Edition 11.0.21.0-m2 with Eclipse OpenJ9 VM during TrustAnchors.java test in FIPS 140-2 mode. Failure due to java.security.ProviderException indicating invalid Secmod directory or NSS initialization issues",T3,Summary
+Can you generate a summary of all issues tagged as 'comp:jit' ?,"Issue 18400: Apache Lucene CI builds intermittently fail with OpenJ9 JVMs
 
 Issue 17120: JDK20 with OpenJ9 on Windows encounters IllegalMonitorStateException during stress testing with PinALot.java, affecting thread handling and lock release mechanisms.
 
@@ -34,79 +187,53 @@ Issue 19014: OpenJ9-11 exhibits incorrect array optimizations on Linux, causing 
 
 Issue 17843: CRIU testing encounters an assertion failure in OpenJ9's JIT compiler
 
-Issue 18102 & Issue 18669: OpenJDK tests encounter ArrayIndexOutOfBoundsException during character property tests",.,What existing label is recommended for user raised issues?,userRaised,,,,,,Find the most long pending issue of project:MH,17458,,,,
-Which version of OpenJ9 exhibits the exception in issue 19014?,11 and 17,Was the reported failure in issue 18089 successfully reproduced in subsequent test runs?,No,Summarize the failure of issue 17005,"The failure of issue 17005 is related to an exception being thrown when aarch64_linux build test ant task failed, with an IllegalArgumentException. This is caused by java.lang.ArrayIndexOutOfBoundsException",.,Find duplicate reports of the 18698?,18694,,,,,,Which component is second most error prone?,comp:jit,Has the VM component experienced the highest number of errors in the last three months compared to other components?,Yes,,,,,,,,.,Suggest Label for a issue causing in architecture y,arch:y,,,,,,Find out a long pending test failure issue at arch:z that has been open more than 1 year,17063,,,,
-what systems have been used for testing in 17019?,latest Debian unstable and latest Debian testing,Did the failure reported in issue 18669 occur in a test environment running on a Linux system?,Yes,Summarize the issue 17265,AnnotationFormatError: java.lang.IllegalArgumentException: Wrong type at constant pool index post class retransformation by agent,.,Find all issues related to nullpointerexception,"all issues related to nullpointerexception are 17307, 17774, 18336, 18447",,,,,,,,,,,,,,,,,.,Suggest Label for a issue causing in jdk 21 version onlt,jdk21,,,,,,Find the most long pending user raised issue,17458,,,,
-What triggered the exception in issue 18082?,java.lang.ArrayIndexOutOfBoundsException,Did this issue 17458 occur in JDK8?,No,List the tests failed in issue 17638,"The tests failed in issue 17638 are related to the are Jep425Tests_testVirtualThread_*, Jep442Tests_testLinkerFfi_*",.,How many duplicate reports have been found for issue 17638?,1,,,,,,,,,,,,,,,,,,Suggest Label for issue that reports a failure in nightly test,test failure,,,,,,Find out a long pending test failure issue related to infra component,17137,,,,
-Which error occurs in SpinedBufferTest of issue 17774?,NullPointerExceptions,Did setting the parameter -Xint prevent the exception from being thrown?,Yes,List the component affected by issue 17638,The component affected by issue 17638 is  comp:jvmti  and comp:vm,.,,,,,,,,,,,,,,,,,,,,,,,,,,,Find out a long pending test failure issue related to jit component,17843,,,,
-What is the specific failure reported in the test testGetAttributes in 18081?,java.lang.AssertionError,Does jdk_linux_11_openj9 encounter any errors in issue 18608?,No,Summarize the failures of issue 17137,"The jdk_security3_0 test case failed due to NSS initialization issues resulting in ""java.security.ProviderException"" with causes including ""sun.security.pkcs11.wrapper.PKCS11Exception"" and ""java.io.IOException"".",.,,,,,,,,,,,,,,,,,,,,,,,,,,,Find the most long pending issue,17458,,,,
-What specific exception is raised in issue 18043?,java.lang.Exception: ERROR: Ciphertext does not match,Does issue 18400 affect jit component ?,Yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What component is affected by issue 18718?,comp:vm,is issue 19014 an user raiser issue?,Yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What is the version of OMR reported in issue 17843?,e80bff83b,Is the issue 18082 found in windows machine?,No,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which file was not found during the test execution in issue #17540?,testng_210.xml,does issue 17774 require triage?,yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which line of code in the CharacterDataLatin1 class triggered the ArrayIndexOutOfBoundsException in issue 17063?,line 72 of the getProperties method,is component jit affected in issue 18043?,No,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What were the configurations of the last passing build in issue 17359?,"Java version: ""21-internal"" dated 2023-09-19
-OpenJDK Runtime Environment: 21-internal-adhoc.jenkins.BuildJDKnextx86-64linuxvalhallaNightly
-Eclipse OpenJ9 VM: Build master-0609eb43a77, JRE 21 Linux amd64-64-Bit Compressed References 20230503_1032 (JIT enabled, AOT enabled)
-OpenJ9 version: 0609eb43a77
-OMR version: 5dcc2f28955
-JCL version: 004eb7f92c8 based on jdk-21+19",is issue 17540 can be found in jdk 17?,No,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What actions were taken to address the failure in the StackWalkerTest?,reverting the changes introduced in pull request #18926.,is issue 17063 a linux issue?,yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What JVM option was seen in the test failure of issue 18447?,The JVM options used for the test in issue 18447 were -XX:+UseCompressedOops.,is regression introduced in issue 17359?,yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What was the failure reported in issue 18277?,"java.security.ProviderException: Secmod directory /etc/pki/nssdb invalid, NSS already initialized ",does issue 18336 work fine on windows?,Yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-On which machine did the failure occur for issue 17137?,rhel9lert,is there ExceptionInInitializerError in issue 18082?,Yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-what is the nature of the failure in issue 17995?,java.lang.ArrayIndexOutOfBoundsException,did the failure of issue 17063 repeat in automatic 3x grinder?,No,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-in which method the exception occurs in issue 18487,testElapsedTime,is issue 17852 a machine issue?,Yes,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which test failed in issue 18694?,test_asInterfaceInstance_InnerClass,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which class and method in the codebase does the stack trace point to?,"BasicTest class, testPrimitiveConversion method.",,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-List some of the heap options Elasticsearch uses with the UseG1GC option in issue 18151,"-XX:G1HeapRegionSize
--XX:InitiatingHeapOccupancyPercent
--XX:G1ReservePercent",,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-List all exceptions encountered during the testing process of issue 18336?,"1. NullPointerException during sun.security.util.KnownOIDs.register
-2. NullPointerException during jdk.internal.org.objectweb.asm.Type.getInternalName
-3. NullPointerException in sun.security.util.ManifestEntryVerifier.setEntry
-4. ArrayIndexOutOfBoundsException in sun.security.util.SignatureFileVerifier.processImpl",,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What is the error message in issue 17005?,java.lang.IllegalArgumentException: init argument cannot be less than -1,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which exception is seen in issue17063?,java.lang.ArrayIndexOutOfBoundsException,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What was the type of error encountered in issue 18337?,was a java.lang.StackOverflowError.,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-How many times did the internal grinder tests fail in issue 17852?,10/50,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What specific types of exceptions were reported in issue 18763?,"org.opentest4j.AssertionFailedError and 
-java.lang.Exception",,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which project components were involved in the reported failure in issue 18089?,"comp:jvmti , comp:vm",,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which Java version and JVM are associated with the reported failures in issue 18487?,"Java version: ""1.8.0_391""
-JVM: IBM J9 VM (build 2.9)",,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What exception occured in the issue 18151?,java.lang.IllegalStateException:,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-In which jdk version issue 17458 occur,JDK11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"in which jdk version, did tester find the issue 18400?",64bit/openj9/jdk-17.0.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which component is affected by issue 17265?,comp:vm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which warning is shown in issue 18845?,A JVM TI agent has been loaded dynamically,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which component is affected by issue 17120?,comp:jit,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which exception occured in issue 18102?,java.lang.ArrayIndexOutOfBoundsException,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Where the exception in issue 19014 occur?,TestArrayCopy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What triggered the exception in issue 17019?,java.lang.UnsatisfiedLinkError,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which task failed in issue 18082?,The task that failed in issue 18082 was the aarch64_linux build test,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which test failed in issue 17774?,SpinedBufferTest,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which component in affected in issue 18081?,comp:test,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-how many test have been failed in issue 18043?,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which jdk version is affected by issue 18718?,jdk22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Find the vmstate from the diagnostic file attached in ssue 17843?,0x00200001,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-In which jdk version issue 17540 can be found?,jdk21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which architecture is affcted by issue 17063?,z,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which test failed in issue 17359?,testGetSizeOfArray,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-write the exception message in issue 18961,caller class wrong expected [class org.openj9.test.stackWalker.StackWalkerTest] but found [class java.lang.StackWalker],,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which exceotion is seen at issue 18447?,java.lang.NullPointerException:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which component in affected in issue 18277?,comp:fips,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Show the exception message in issue 17137?,The summary of the exception message in issue 17137 is NSS initialization failed.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Where the exception occurs in issue 17995?,CharacterDataLatin1.java at line 72,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which component is afftected in issue 18694?,comp:vm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which exception occured in issue 18694?,java.lang.NoClassDefFoundError:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which omr version is affected in issue 18337?,c23dd83f7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-show the exception in issue 18151,java.lang.IllegalStateException: JVM option [UseG1GC] was unexpectedly missing. Elasticsearch requires this option to be present.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-where the exception occur in issue 17063?,ToLowerCase.java,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-using which vm:args issue 17005 seems to throw no error?,gencon policy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which os faces the exception in issue 17063?,linux,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-which openj9 version is affected in issue 18337?,3cad35878,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"in issue 17852, in which file the exception occurs?",java/nio/channels/FileChannel/ExpandingMap.java,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-how many timeouts are there with no-vmcontinuations in issue 18763?,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Which project  issue 18089 is part of?,loom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-write the summary of failed test in issue 18487?,Verify the elapsed time,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Issue 18102 & Issue 18669: OpenJDK tests encounter ArrayIndexOutOfBoundsException during character property tests",T3,Summary
+Summarize the open issues of comp:infra,"There is only one open issue related to comp:infra, Issue 17137. This issue involves a failure on running the test of jdk_security3_0. The exception reported is a java.security.ProviderException:Initialization failed",T3,Summary
+Summarize the issues of project loom,"Issue #18089 was reported by JasonFengJ9 on September 7, 2023, where the ThreadListStackTracesTest in JDK21 failed with a RuntimeException: JVMTI multi-thread state is wrong. The error occurred in an internal OSX build and could not be reproduced in subsequent test runs.",T3,Summary
+Summarize the issue 18400,"Issue 18400 focuses on Apache Lucene's CI builds, which sometimes fail due to OpenJ9-specific issues. The reported  test failure involved an AssertionError during thread synchronization. Issue 17458 deals with an unhandled exception (Segmentation error) during recursive function calls leading to a JVM crash. The problem appears to be unique to JDK11 and does not occur with other JDK versions tested (JDK8, JDK17).",T3,Summary
+Summarize the issue 18089,"Issue #18089 was reported by JasonFengJ9 on September 7, 2023, where the ThreadListStackTracesTest in JDK21 failed with a RuntimeException: JVMTI multi-thread state is wrong. The error occurred in an internal OSX build and could not be reproduced in subsequent test runs.",T3,Summary
+Generate a report detailing the distribution of issues across different architecture,"The distribution of issues across different architectures is as follows: arch:aarch64 - 1 issue , arch:z - 1 issue",T3,Summary
+Compile a summary of closed user raised issues which is least pending,"Issue 19014 highlights incorrect array optimizations in OpenJ9-11, leading to an ArrayIndexOutOfBoundsException during execution of a specific test case. OpenJ9-11 and OpenJ9-17 throw this exception, even when setting the -Xint parameter.",T3,Summary
+Can you generate a summary of all issues tagged as 'arch:z'?,"There is one issue of 'arch:z' ,issue 17063. Here, an ArrayIndexOutOfBoundsException occurs in java/lang/String/ToLowerCase.java,occurring at CharacterDataLatin1.getProperties",T3,Summary
+Can you generate a summary of all issues tagged as 'arch:aarch64' ?,"Issue #18082, opened by JasonFengJ9 on September 6, 2023, reported an ArrayIndexOutOfBoundsException during an Ant task on aarch64_linux builds, failing consistently on specific machines (cent7-aarch64-4). The issue appears to be machine-specific rather than intermittent, as re-running the job on the same machines led to repeated failures.",T3,Summary
+Can you generate a summary of all issues tagged as 'arch:aarch64' ?,"Issue #18082, opened by JasonFengJ9 on September 6, 2023, reported an ArrayIndexOutOfBoundsException during an Ant task on aarch64_linux builds, failing consistently on specific machines (cent7-aarch64-4). The issue appears to be machine-specific rather than intermittent, as re-running the job on the same machines led to repeated failures.",T3,Summary
+Suggest existing labels to tag issue 18608,"bug, jdk17",T4,Fact
+What existing label is recommended for issues that needs immediate triaging?,triageRequired,T4,Fact
+An issue is reported causing test failures only in the jdk22 version but works fine in other versions. What labels should be applied?,"test failure , jdk22",T4,Fact
+I have identified an issue that blocks the release process. Label it,blocker,T4,Fact
+Suggest existing labels to tag issue 18337,"comp:jit , jdk21",T4,Fact
+What existing label is recommended for issues raised in linux machine ?,os:linux,T4,Fact
+What existing label is recommended for user raised issues?,userRaised,T4,Fact
+Suggest Label for a issue causing in architecture y,arch:y,T4,Fact
+Suggest Label for a issue causing in jdk 21 version onlt,jdk21,T4,Fact
+Suggest Label for issue that reports a failure in nightly test,test failure,T4,Fact
+Is there an existing label specifically for user raised issues?,Yes,T4,Y/N
+Can a single issue be tagged with both comp:vm and comp:test if it affects both components?,Yes,T4,Y/N
+Is there an existing label for memory issue?,No,T4,Y/N
+Is there an existing label specifically to tell that there is a need for triage?,Yes,T4,Y/N
+Is there an existing label to tag os?,Yes,T4,Y/N
+Is there an existing label for storage issue?,No,T4,Y/N
+Summarize the guidelines for assigning labels to issues in this project,"Assign labels based on issue type, component, architecture, and whether it's user-raised.",T4,Summary
+"Explain for an issue affecting multiple components, how should it be labeled?",Issues affecting multiple components should carry labels for each affected componen,T4,Summary
+Summarize the guidelines for assigning labels to indicate a component,"The guidelines for assigning labels to indicate a component is to write in following format comp:component name. For example, comp:gc, comp:vm, comp:jit, comp:test, comp:infra, comp:fips, comp:jvmti, comp:jclextensions",T4,Summary
+Summarize the guidelines for assigning labels to indicate a architecture,"The guidelines for assigning labels to indicate a component is to write in following format arch:architecture name. For example, arch:z, arch:aarch64",T4,Summary
+Find the long-standing issues that have been consistently postponed?,"17458 , 18043 ,17843, 18001, 17063, 17137",T5,Fact
+Find issues that have been assigned to any milestone but are older than 3 months,None,T5,Fact
+Identify issues with no activity in the last 6 months.,18001,T5,Fact
+Is there any user raised issue that have been open for more than  6 months?,17458,T5,Fact
+What is the oldest issue in the backlog in terms of days open?,17063,T5,Fact
+Find out test failure issues that have been open for more than 8 months?,"17063, 17137",T5,Fact
+Find the most long pending issue of project:MH,17458,T5,Fact
+Find out a long pending test failure issue at arch:z that has been open more than 1 year,17063,T5,Fact
+Find the most long pending user raised issue,17458,T5,Fact
+Find out a long pending test failure issue related to infra component,17137,T5,Fact
+Find out a long pending test failure issue related to jit component,17843,T5,Fact
+Find the most long pending issue,17458,T5,Fact
+Are there any long-standing issues that have been consistently postponed?,Yes,T5,Y/N
+Are there issues with no activity over 6 months?,Yes,T5,Y/N
+Are there any test failure issues that have been open for more than 9 months?,No,T5,Y/N
+Are there any long-standing issues that have been opened more than 10 months?,Yes,T5,Y/N
+Are there issues of comp:jit with no activity over 6 months?,Yes,T5,Y/N
+Are there any long pending test failure issues of comp:vm ?,Yes,T5,Y/N
+Give an overview of the distribution of backlog issues by component,"There is one test failure issue in each of following components:  infra, JIT, VM, and FIPS; that have been open for a long period",T5,Summary
+summarize the most long pending issue of os:linux,"The most long pending issue  of os:linux is 17063. An ArrayIndexOutOfBoundsException in java/lang/String/ToLowerCase.java was reported by pshipton, occurring at CharacterDataLatin1.getProperties",T5,Summary
