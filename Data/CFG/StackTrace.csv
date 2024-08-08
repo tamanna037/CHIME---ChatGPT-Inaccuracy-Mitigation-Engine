@@ -1,0 +1,1585 @@
+Stacktrace,Expected Elements
+"Exception in thread ""main"" java.lang.IllegalArgumentException: init argument cannot be less than -1
+ at java.lang.management.MemoryUsage.<init>(MemoryUsage.java:94)
+ at org.example.openj9.Test.main(Test.java:12)","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'init argument cannot be less than -1'),
+    ('ClassElem', 'java.lang.management.MemoryUsage'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'MemoryUsage.java'),
+    ('LineElem', '94'),
+    ('ClassElem', 'org.example.openj9.Test'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'Test.java'),
+    ('LineElem', '12')
+]"
+"java.lang.UnsatisfiedLinkError: Failed to load library ""/tmp/sqlite-3.40.0.0-de037963-60f3-4ab5-886b-cbe43d6a1a5f-libsqlitejdbc.so"" 
+at java.base/jdk.internal.loader.NativeLibraries.load(Native Method) 
+at com.reposilite.ReposiliteLauncherKt.main(ReposiliteLauncher.kt:22)","[
+    ('ExceptionType', 'java.lang.UnsatisfiedLinkError'),
+    ('ExceptionMessage', 'Failed to load library ""/tmp/sqlite-3.40.0.0-de037963-60f3-4ab5-886b-cbe43d6a1a5f-libsqlitejdbc.so""'),
+    ('ClassElem', 'java.base/jdk.internal.loader.NativeLibraries'),
+    ('MethodElem', 'load'),
+    ('FileElem', 'Native Method'),
+    ('LineElem', ''),
+    ('ClassElem', 'com.reposilite.ReposiliteLauncherKt'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'ReposiliteLauncher.kt'),
+    ('LineElem', '22')
+]"
+".326 ERROR | HikariPool-1 - Exception during pool initialization.: java.sql.SQLException: Error opening connection
+ at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:281)
+ Caused by: java.lang.Exception: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/home/user/bin/openj9/lib/default:/home/user/bin/openj9/lib:/usr/lib64:/usr/lib]
+ at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:278)","[
+    ('ExceptionType', 'java.sql.SQLException'),
+    ('ExceptionMessage', 'Error opening connection'),
+    ('ClassElem', 'org.sqlite.SQLiteConnection'),
+    ('MethodElem', 'open'),
+    ('FileElem', 'SQLiteConnection.java'),
+    ('LineElem', '281'),
+    ('ExceptionType', 'java.lang.Exception'),
+    ('ExceptionMessage', 'No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/home/user/bin/openj9/lib/default:/home/user/bin/openj9/lib:/usr/lib64:/usr/lib]'),
+    ('ClassElem', 'org.sqlite.SQLiteConnection'),
+    ('MethodElem', 'open'),
+    ('FileElem', 'SQLiteConnection.java'),
+    ('LineElem', '278')
+]"
+"Exception in thread ""main"" com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Error opening connection
+ at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:596)
+ Caused by: java.sql.SQLException: Error opening connection
+ Caused by: java.lang.Exception: No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/home/user/bin/openj9/lib/default:/home/user/bin/openj9/lib:/usr/lib64:/usr/lib]
+ at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:278)","[
+    ('ExceptionType', 'com.zaxxer.hikari.pool.HikariPool$PoolInitializationException'),
+    ('ExceptionMessage', 'Failed to initialize pool: Error opening connection'),
+    ('ClassElem', 'com.zaxxer.hikari.pool.HikariPool'),
+    ('MethodElem', 'throwPoolInitializationException'),
+    ('FileElem', 'HikariPool.java'),
+    ('LineElem', '596'),
+    ('ExceptionType', 'java.sql.SQLException'),
+    ('ExceptionMessage', 'Error opening connection'),
+    ('ExceptionType', 'java.lang.Exception'),
+    ('ExceptionMessage', 'No native library found for os.name=Linux, os.arch=x86_64, paths=[/org/sqlite/native/Linux/x86_64:/home/user/bin/openj9/lib/default:/home/user/bin/openj9/lib:/usr/lib64:/usr/lib]'),
+    ('ClassElem', 'org.sqlite.SQLiteConnection'),
+    ('MethodElem', 'open'),
+    ('FileElem', 'SQLiteConnection.java'),
+    ('LineElem', '278')
+]"
+"java.lang.ArrayIndexOutOfBoundsException
+ at java.lang.CharacterDataLatin1.getProperties(CharacterDataLatin1.java:72)
+ at ToLowerCase.main(ToLowerCase.java:44)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'java.lang.CharacterDataLatin1'),
+    ('MethodElem', 'getProperties'),
+    ('FileElem', 'CharacterDataLatin1.java'),
+    ('LineElem', '72'),
+    ('ClassElem', 'ToLowerCase'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'ToLowerCase.java'),
+    ('LineElem', '44')
+]"
+"Exception in thread """" java.lang.IllegalMonitorStateException
+ at java.base/java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:175)
+ at java.base/jdk.internal.vm.Continuation.enter(Continuation.java:171)","[
+    ('ExceptionType', 'java.lang.IllegalMonitorStateException'),
+    ('ClassElem', 'java.base/java.util.concurrent.locks.ReentrantLock$Sync'),
+    ('MethodElem', 'tryRelease'),
+    ('FileElem', 'ReentrantLock.java'),
+    ('LineElem', '175'),
+    ('ClassElem', 'java.base/jdk.internal.vm.Continuation'),
+    ('MethodElem', 'enter'),
+    ('FileElem', 'Continuation.java'),
+    ('LineElem', '171')
+]"
+"java.lang.RuntimeException: count = 29106
+ at PinALot.main(PinALot.java:73)
+ at java.base/java.lang.Thread.run(Thread.java:1639)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', 'count = 29106'),
+    ('ClassElem', 'PinALot'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'PinALot.java'),
+    ('LineElem', '73'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1639')
+]"
+"Exception in thread """" java.lang.IllegalMonitorStateException
+ at java.base/java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:175)
+ at java.base/jdk.internal.vm.Continuation.enter(Continuation.java:171)","[
+    ('ExceptionType', 'java.lang.IllegalMonitorStateException'),
+    ('ClassElem', 'java.base/java.util.concurrent.locks.ReentrantLock$Sync'),
+    ('MethodElem', 'tryRelease'),
+    ('FileElem', 'ReentrantLock.java'),
+    ('LineElem', '175'),
+    ('ClassElem', 'java.base/jdk.internal.vm.Continuation'),
+    ('MethodElem', 'enter'),
+    ('FileElem', 'Continuation.java'),
+    ('LineElem', '171')
+]"
+"java.lang.RuntimeException: count = 240021
+ at PinALot.main(PinALot.java:73)
+ at java.base/java.lang.Thread.run(Thread.java:1639)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', 'count = 240021'),
+    ('ClassElem', 'PinALot'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'PinALot.java'),
+    ('LineElem', '73'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1639')
+]"
+"java.security.ProviderException: Initialization failed
+ at jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:465)
+ Caused by: sun.security.pkcs11.wrapper.PKCS11Exception: 0xCE534351(CKR_NSS_CERTDB_FAILED)
+ at jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:368)","[
+    ('ExceptionType', 'java.security.ProviderException'),
+    ('ExceptionMessage', 'Initialization failed'),
+    ('ClassElem', 'jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'SunPKCS11.java'),
+    ('LineElem', '465'),
+    ('ExceptionType', 'sun.security.pkcs11.wrapper.PKCS11Exception'),
+    ('ExceptionMessage', '0xCE534351(CKR_NSS_CERTDB_FAILED)'),
+    ('ClassElem', 'jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'SunPKCS11.java'),
+    ('LineElem', '368')
+]"
+"java.security.ProviderException: Could not initialize NSS
+ at jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:250)
+ Caused by: java.io.IOException: NSS initialization failed
+ at jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:245)","[
+    ('ExceptionType', 'java.security.ProviderException'),
+    ('ExceptionMessage', 'Could not initialize NSS'),
+    ('ClassElem', 'jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'SunPKCS11.java'),
+    ('LineElem', '250'),
+    ('ExceptionType', 'java.io.IOException'),
+    ('ExceptionMessage', 'NSS initialization failed'),
+    ('ClassElem', 'jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'SunPKCS11.java'),
+    ('LineElem', '245')
+]"
+"Caused by: java.lang.IllegalArgumentException: Wrong type at constant pool index
+ at sun.reflect.ConstantPool.getClassAt0(Native Method)
+ Caused by: java.lang.annotation.AnnotationFormatError: java.lang.IllegalArgumentException: Wrong type at constant pool index
+ at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'Wrong type at constant pool index'),
+    ('ClassElem', 'sun.reflect.ConstantPool'),
+    ('MethodElem', 'getClassAt0'),
+    ('FileElem', 'Native Method'),
+    ('LineElem', ''),
+    ('ExceptionType', 'java.lang.annotation.AnnotationFormatError'),
+    ('ExceptionMessage', 'java.lang.IllegalArgumentException: Wrong type at constant pool index'),
+    ('ClassElem', 'org.springframework.web.servlet.DispatcherServlet'),
+    ('MethodElem', 'doDispatch'),
+    ('FileElem', 'DispatcherServlet.java'),
+    ('LineElem', '1067')
+]"
+"An error occurred while instantiating class org.openj9.test.jep442.downcall.InvalidDownCallTests: no clinkerffitests in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+ at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:435)
+ Caused by: java.lang.UnsatisfiedLinkError: no clinkerffitests in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+ at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:423)","[
+    ('ExceptionType', 'java.lang.UnsatisfiedLinkError'),
+    ('ExceptionMessage', 'no clinkerffitests in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib'),
+    ('ClassElem', 'org.testng.internal.ClassHelper'),
+    ('MethodElem', 'createInstance1'),
+    ('FileElem', 'ClassHelper.java'),
+    ('LineElem', '435'),
+    ('ExceptionType', 'java.lang.UnsatisfiedLinkError'),
+    ('ExceptionMessage', 'no clinkerffitests in java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib'),
+    ('ClassElem', 'org.testng.internal.ClassHelper'),
+    ('MethodElem', 'createInstance1'),
+    ('FileElem', 'ClassHelper.java'),
+    ('LineElem', '423')
+]"
+"java.lang.NullPointerException: Cannot read field ""scheduler"" because ""this"" is null
+ at java.base/java.lang.VirtualThread.submitRunContinuation(VirtualThread.java:241)
+ at java.base/java.lang.Thread.run(Thread.java:1639)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ExceptionMessage', 'Cannot read field ""scheduler"" because ""this"" is null'),
+    ('ClassElem', 'java.base/java.lang.VirtualThread'),
+    ('MethodElem', 'submitRunContinuation'),
+    ('FileElem', 'VirtualThread.java'),
+    ('LineElem', '241'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1639')
+]"
+"java.lang.AssertionError: expected [40] but found [32]
+ at org.testng.Assert.fail(Assert.java:96)
+ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ExceptionMessage', 'expected [40] but found [32]'),
+    ('ClassElem', 'org.testng.Assert'),
+    ('MethodElem', 'fail'),
+    ('FileElem', 'Assert.java'),
+    ('LineElem', '96'),
+    ('ClassElem', 'org.testng.internal.MethodInvocationHelper'),
+    ('MethodElem', 'invokeMethod'),
+    ('FileElem', 'MethodInvocationHelper.java'),
+    ('LineElem', '124')
+]"
+"java.lang.AssertionError: expected [24] but found [16]
+ at org.testng.Assert.fail(Assert.java:96)
+ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ExceptionMessage', 'expected [24] but found [16]'),
+    ('ClassElem', 'org.testng.Assert'),
+    ('MethodElem', 'fail'),
+    ('FileElem', 'Assert.java'),
+    ('LineElem', '96'),
+    ('ClassElem', 'org.testng.internal.MethodInvocationHelper'),
+    ('MethodElem', 'invokeMethod'),
+    ('FileElem', 'MethodInvocationHelper.java'),
+    ('LineElem', '124')
+]"
+"java.util.zip.ZipException: invalid entry crc-32 (expected 0x0 but got 0xa0058808)
+ at java.base/java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:308)
+ at java.base/java.lang.Thread.run(Thread.java:1639)
+ Suppressed: java.util.zip.ZipException: invalid entry crc-32 (expected 0x0 but got 0xa0058808)
+ at java.base/java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:308)
+ at ManyEntries.test(ManyEntries.java:58)","[
+    ('ExceptionType', 'java.util.zip.ZipException'),
+    ('ExceptionMessage', 'invalid entry crc-32 (expected 0x0 but got 0xa0058808)'),
+    ('ClassElem', 'java.base/java.util.zip.ZipOutputStream'),
+    ('MethodElem', 'closeEntry'),
+    ('FileElem', 'ZipOutputStream.java'),
+    ('LineElem', '308'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1639'),
+    ('ExceptionType', 'java.util.zip.ZipException'),
+    ('ExceptionMessage', 'invalid entry crc-32 (expected 0x0 but got 0xa0058808)'),
+    ('ClassElem', 'java.base/java.util.zip.ZipOutputStream'),
+    ('MethodElem', 'closeEntry'),
+    ('FileElem', 'ZipOutputStream.java'),
+    ('LineElem', '308'),
+    ('ClassElem', 'ManyEntries'),
+    ('MethodElem', 'test'),
+    ('FileElem', 'ManyEntries.java'),
+    ('LineElem', '58')
+]"
+"java.lang.RuntimeException: Calculated checksum result was invalid. Expected cbf43926, but got 0.
+ at ChecksumBase.checkChecksum(ChecksumBase.java:92)
+ at java.base/java.lang.Thread.run(Thread.java:1639)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', 'Calculated checksum result was invalid. Expected cbf43926, but got 0.'),
+    ('ClassElem', 'ChecksumBase'),
+    ('MethodElem', 'checkChecksum'),
+    ('FileElem', 'ChecksumBase.java'),
+    ('LineElem', '92'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1639')
+]"
+"Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest$SomeClass]
+ at app//org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.prettifyFailure(InlineDelegateByteBuddyMockMaker.java:441)
+ Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest$SomeClass]
+ Caused by: java.lang.instrument.UnmodifiableClassException
+ at app//org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)","[
+    ('ExceptionType', 'org.mockito.exceptions.base.MockitoException'),
+    ('ExceptionMessage', 'Could not modify all classes [class java.lang.Object, class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest$SomeClass]'),
+    ('ClassElem', 'app//org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker'),
+    ('MethodElem', 'prettifyFailure'),
+    ('FileElem', 'InlineDelegateByteBuddyMockMaker.java'),
+    ('LineElem', '441'),
+    ('ExceptionType', 'org.mockito.exceptions.base.MockitoException'),
+    ('ExceptionMessage', 'Could not modify all classes [class java.lang.Object, class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest$SomeClass]'),
+    ('ExceptionType', 'java.lang.instrument.UnmodifiableClassException'),
+    ('ClassElem', 'app//org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator'),
+    ('MethodElem', 'triggerRetransformation'),
+    ('FileElem', 'InlineBytecodeGenerator.java'),
+    ('LineElem', '281')
+]"
+"java.lang.StackOverflowError
+ at java.base/sun.nio.ch.EPollSelectorImpl.<init>(EPollSelectorImpl.java:80)
+ at Case.main(Case.java:9)
+ at Case.main(Case.java:9)","[
+    ('ExceptionType', 'java.lang.StackOverflowError'),
+    ('ClassElem', 'java.base/sun.nio.ch.EPollSelectorImpl'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'EPollSelectorImpl.java'),
+    ('LineElem', '80'),
+    ('ClassElem', 'Case'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'Case.java'),
+    ('LineElem', '9'),
+    ('ClassElem', 'Case'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'Case.java'),
+    ('LineElem', '9')
+]"
+"java.io.FileNotFoundException: /home/jenkins/workspace/Test_openjdkNext_j9_sanity.functional_x86-64_linux_Personal_testList_1/jvmtest/functional/Java21andUp/testng_210.xml (No such file or directory)
+ at java.base/java.io.FileInputStream.open0(Native Method)
+ at org.testng.TestNG.main(TestNG.java:1323)","[
+    ('ExceptionType', 'java.io.FileNotFoundException'),
+    ('ExceptionMessage', '/home/jenkins/workspace/Test_openjdkNext_j9_sanity.functional_x86-64_linux_Personal_testList_1/jvmtest/functional/Java21andUp/testng_210.xml (No such file or directory)'),
+    ('ClassElem', 'java.base/java.io.FileInputStream'),
+    ('MethodElem', 'open0'),
+    ('FileElem', 'Native Method'),
+    ('LineElem', ''),
+    ('ClassElem', 'org.testng.TestNG'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'TestNG.java'),
+    ('LineElem', '1323')
+]"
+"org.opentest4j.AssertionFailedError: Duration 999ms, expected >= 1000ms ==> expected: <true> but was: <false>
+ at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+ at SleepSanity.testMillis(SleepSanity.java:48)","[
+    ('ExceptionType', 'org.opentest4j.AssertionFailedError'),
+    ('ExceptionMessage', 'Duration 999ms, expected >= 1000ms ==> expected: <true> but was: <false>'),
+    ('ClassElem', 'org.junit.jupiter.api.AssertionFailureBuilder'),
+    ('MethodElem', 'build'),
+    ('FileElem', 'AssertionFailureBuilder.java'),
+    ('LineElem', '151'),
+    ('ClassElem', 'SleepSanity'),
+    ('MethodElem', 'testMillis'),
+    ('FileElem', 'SleepSanity.java'),
+    ('LineElem', '48')
+]"
+"at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)  
+at java.base/java.lang.Thread.run(Thread.java:839)
+","[
+    ('ClassElem', 'org.testng.internal.TestInvoker$MethodInvocationAgent'),
+    ('MethodElem', 'invoke'),
+    ('FileElem', 'TestInvoker.java'),
+    ('LineElem', '822'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '839')
+]"
+"java.lang.NullPointerException
+ at java.base/java.lang.String.charAt(String.java:1319)
+ at java.base/java.lang.Thread.run(Thread.java:839)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'charAt'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '1319'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '839')
+]"
+"java.lang.NullPointerException
+ at java.base/java.lang.String.charAt(String.java:1319)
+ at java.base/java.lang.String.format(String.java:3728)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'charAt'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '1319'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'format'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '3728')
+]"
+"java.lang.NullPointerException
+ at java.base/java.lang.String.charAt(String.java:1319)
+ at java.base/java.lang.String.format(String.java:3728)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'charAt'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '1319'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'format'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '3728')
+]"
+"java.lang.NullPointerException
+ at java.base/java.lang.String.charAt(String.java:1319)
+ at java.base/java.lang.String.format(String.java:3728)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'charAt'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '1319'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'format'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '3728')
+]"
+"java.lang.NullPointerException
+ at java.base/java.lang.String.charAt(String.java:1319)
+ at java.base/java.lang.String.format(String.java:3728)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'charAt'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '1319'),
+    ('ClassElem', 'java.base/java.lang.String'),
+    ('MethodElem', 'format'),
+    ('FileElem', 'String.java'),
+    ('LineElem', '3728')
+]"
+"Exception in thread ""Thread-0"" org.eclipse.openj9.criu.SystemCheckpointException: Could not dump the JVM processes, err=-52
+ at openj9.criu/org.eclipse.openj9.criu.CRIUSupport.checkpointJVMImpl(Native Method)
+ at java.base/java.lang.Thread.run(Thread.java:857)","[
+    ('ExceptionType', 'org.eclipse.openj9.criu.SystemCheckpointException'),
+    ('ExceptionMessage', 'Could not dump the JVM processes, err=-52'),
+    ('ClassElem', 'openj9.criu/org.eclipse.openj9.criu.CRIUSupport'),
+    ('MethodElem', 'checkpointJVMImpl'),
+    ('FileElem', 'Native Method'),
+    ('LineElem', ''),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '857')
+]"
+"java.lang.InternalError: SIGBUS
+ at java.base/java.nio.Buffer.session(Buffer.java:766)
+ at java.base/java.lang.Thread.run(Thread.java:1639)","[
+    ('ExceptionType', 'java.lang.InternalError'),
+    ('ExceptionMessage', 'SIGBUS'),
+    ('ClassElem', 'java.base/java.nio.Buffer'),
+    ('MethodElem', 'session'),
+    ('FileElem', 'Buffer.java'),
+    ('LineElem', '766'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1639')
+]"
+"java.lang.ArrayIndexOutOfBoundsException
+ at java.lang.CharacterDataLatin1.getProperties(CharacterDataLatin1.java:72)
+ at java.lang.Thread.run(Thread.java:826)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'java.lang.CharacterDataLatin1'),
+    ('MethodElem', 'getProperties'),
+    ('FileElem', 'CharacterDataLatin1.java'),
+    ('LineElem', '72'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '826')
+]"
+"java.lang.IllegalAccessError: invokeinterface of non-public method 'contains(Ljava/lang/Object;)Z' in java/util/HashSet
+ at java.base/sun.security.util.AlgorithmDecomposer.decompose(AlgorithmDecomposer.java:132)
+ at ClientModeClientAuth$2.run(ClientModeClientAuth.java:257)","[
+    ('ExceptionType', 'java.lang.IllegalAccessError'),
+    ('ExceptionMessage', 'invokeinterface of non-public method \'contains(Ljava/lang/Object;)Z\' in java/util/HashSet'),
+    ('ClassElem', 'java.base/sun.security.util.AlgorithmDecomposer'),
+    ('MethodElem', 'decompose'),
+    ('FileElem', 'AlgorithmDecomposer.java'),
+    ('LineElem', '132'),
+    ('ClassElem', 'ClientModeClientAuth$2'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'ClientModeClientAuth.java'),
+    ('LineElem', '257')
+]"
+"java.lang.Exception: ERROR: Ciphertext does not match
+ at CipherByteBufferOverwriteTest.runTest(CipherByteBufferOverwriteTest.java:187)
+ at java.base/java.lang.Thread.run(Thread.java:857)","[
+    ('ExceptionType', 'java.lang.Exception'),
+    ('ExceptionMessage', 'ERROR: Ciphertext does not match'),
+    ('ClassElem', 'CipherByteBufferOverwriteTest'),
+    ('MethodElem', 'runTest'),
+    ('FileElem', 'CipherByteBufferOverwriteTest.java'),
+    ('LineElem', '187'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '857')
+]"
+"java.lang.AssertionError:
+ at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+ at org.openj9.test.java.lang.management.TestOperatingSystemMXBean.testGetAttributes(TestOperatingSystemMXBean.java:464)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ClassElem', 'org.testng.AssertJUnit'),
+    ('MethodElem', 'fail'),
+    ('FileElem', 'AssertJUnit.java'),
+    ('LineElem', '59'),
+    ('ClassElem', 'org.openj9.test.java.lang.management.TestOperatingSystemMXBean'),
+    ('MethodElem', 'testGetAttributes'),
+    ('FileElem', 'TestOperatingSystemMXBean.java'),
+    ('LineElem', '464')
+]"
+"java.lang.ExceptionInInitializerError
+ at java.base/java.lang.J9VMInternals.recordInitializationFailure(J9VMInternals.java:175)
+ Caused by: java.lang.ArrayIndexOutOfBoundsException
+ at org.apache.tools.ant.util.DateUtils.<clinit>(DateUtils.java:72)","[
+    ('ExceptionType', 'java.lang.ExceptionInInitializerError'),
+    ('ClassElem', 'java.base/java.lang.J9VMInternals'),
+    ('MethodElem', 'recordInitializationFailure'),
+    ('FileElem', 'J9VMInternals.java'),
+    ('LineElem', '175'),
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'org.apache.tools.ant.util.DateUtils'),
+    ('MethodElem', '<clinit>'),
+    ('FileElem', 'DateUtils.java'),
+    ('LineElem', '72')
+]"
+"java.lang.RuntimeException: JVMTI multi thread state is wrong
+ at ThreadListStackTracesTest.failed(ThreadListStackTracesTest.java:87)
+ at java.base/java.lang.Thread.run(Thread.java:1595)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', 'JVMTI multi thread state is wrong'),
+    ('ClassElem', 'ThreadListStackTracesTest'),
+    ('MethodElem', 'failed'),
+    ('FileElem', 'ThreadListStackTracesTest.java'),
+    ('LineElem', '87'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1595')
+]"
+"java.lang.ArrayIndexOutOfBoundsException
+ at java.base/java.lang.CharacterDataLatin1.getProperties(CharacterDataLatin1.java:74)
+ at java.base/java.lang.Thread.run(Thread.java:839)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'java.base/java.lang.CharacterDataLatin1'),
+    ('MethodElem', 'getProperties'),
+    ('FileElem', 'CharacterDataLatin1.java'),
+    ('LineElem', '74'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '839')
+]"
+"Exception in thread ""main"" java.lang.IllegalStateException: JVM option [UseG1GC] was unexpectedly missing. Elasticsearch requires this option to be present.
+ at org.elasticsearch.server.cli.JvmErgonomics.getRequiredOption(JvmErgonomics.java:98)
+ at org.elasticsearch.launcher.CliToolLauncher.main(CliToolLauncher.java:64)","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'JVM option [UseG1GC] was unexpectedly missing. Elasticsearch requires this option to be present.'),
+    ('ClassElem', 'org.elasticsearch.server.cli.JvmErgonomics'),
+    ('MethodElem', 'getRequiredOption'),
+    ('FileElem', 'JvmErgonomics.java'),
+    ('LineElem', '98'),
+    ('ClassElem', 'org.elasticsearch.launcher.CliToolLauncher'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'CliToolLauncher.java'),
+    ('LineElem', '64')
+]"
+"java.security.ProviderException: Secmod directory /etc/pki/nssdb invalid, NSS already initialized with /home/jenkins/workspace/Test_openjdk11_j9_extended.openjdk_x86-64_linux_fips140_2_testList_2/aqa-tests/TKG/output_16971189576966/jdk_security3_1/work/classes/0/sun/security/pkcs11/Secmod/TrustAnchors.d/tmpdb
+ at jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:220)
+ at java.base/java.lang.Thread.run(Thread.java:839)","[
+    ('ExceptionType', 'java.security.ProviderException'),
+    ('ExceptionMessage', 'Secmod directory /etc/pki/nssdb invalid, NSS already initialized with /home/jenkins/workspace/Test_openjdk11_j9_extended.openjdk_x86-64_linux_fips140_2_testList_2/aqa-tests/TKG/output_16971189576966/jdk_security3_1/work/classes/0/sun/security/pkcs11/Secmod/TrustAnchors.d/tmpdb'),
+    ('ClassElem', 'jdk.crypto.cryptoki/sun.security.pkcs11.SunPKCS11'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'SunPKCS11.java'),
+    ('LineElem', '220'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '839')
+]"
+"Exception in thread ""main"" java.lang.ExceptionInInitializerError
+ at java.base/java.lang.J9VMInternals.ensureError(J9VMInternals.java:206)
+ Caused by: java.lang.NullPointerException
+ at java.base/sun.security.util.KnownOIDs.<clinit>(KnownOIDs.java:457)","[
+    ('ExceptionType', 'java.lang.ExceptionInInitializerError'),
+    ('ClassElem', 'java.base/java.lang.J9VMInternals'),
+    ('MethodElem', 'ensureError'),
+    ('FileElem', 'J9VMInternals.java'),
+    ('LineElem', '206'),
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/sun.security.util.KnownOIDs'),
+    ('MethodElem', '<clinit>'),
+    ('FileElem', 'KnownOIDs.java'),
+    ('LineElem', '457')
+]"
+"at java.base/java.lang.invoke.LambdaForm.compileToBytecode(LambdaForm.java:871)
+ Caused by: java.lang.NullPointerException
+ at java.base/java.lang.invoke.LambdaForm.compileToBytecode(LambdaForm.java:854)","[
+    ('ClassElem', 'java.base/java.lang.invoke.LambdaForm'),
+    ('MethodElem', 'compileToBytecode'),
+    ('FileElem', 'LambdaForm.java'),
+    ('LineElem', '871'),
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.lang.invoke.LambdaForm'),
+    ('MethodElem', 'compileToBytecode'),
+    ('FileElem', 'LambdaForm.java'),
+    ('LineElem', '854')
+]"
+"java.lang.NullPointerException
+ at java.base/java.util.Arrays.copyOfRange(Arrays.java:3854)
+ at org.eclipse.equinox.launcher.Main.run(Main.java:1459)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ClassElem', 'java.base/java.util.Arrays'),
+    ('MethodElem', 'copyOfRange'),
+    ('FileElem', 'Arrays.java'),
+    ('LineElem', '3854'),
+    ('ClassElem', 'org.eclipse.equinox.launcher.Main'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Main.java'),
+    ('LineElem', '1459')
+]"
+"java.lang.ExceptionInInitializerError
+ at java.base/java.lang.J9VMInternals.ensureError(J9VMInternals.java:206)
+ Caused by: java.lang.ArrayIndexOutOfBoundsException
+ at org.eclipse.osgi.internal.framework.AliasMapper.<clinit>(AliasMapper.java:32)","[
+    ('ExceptionType', 'java.lang.ExceptionInInitializerError'),
+    ('ClassElem', 'java.base/java.lang.J9VMInternals'),
+    ('MethodElem', 'ensureError'),
+    ('FileElem', 'J9VMInternals.java'),
+    ('LineElem', '206'),
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'org.eclipse.osgi.internal.framework.AliasMapper'),
+    ('MethodElem', '<clinit>'),
+    ('FileElem', 'AliasMapper.java'),
+    ('LineElem', '32')
+]"
+"Exception in thread ""main"" java.lang.StackOverflowError
+ at java.base/jdk.internal.util.ArraysSupport.mismatch(ArraysSupport.java:393)
+ at java.base/sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:692)","[
+    ('ExceptionType', 'java.lang.StackOverflowError'),
+    ('ClassElem', 'java.base/jdk.internal.util.ArraysSupport'),
+    ('MethodElem', 'mismatch'),
+    ('FileElem', 'ArraysSupport.java'),
+    ('LineElem', '393'),
+    ('ClassElem', 'java.base/sun.launcher.LauncherHelper'),
+    ('MethodElem', 'checkAndLoadMain'),
+    ('FileElem', 'LauncherHelper.java'),
+    ('LineElem', '692')
+]"
+"java.lang.RuntimeException: Expected to get exit value of [0], exit value is: [1]
+ at jdk.test.lib.process.OutputAnalyzer.shouldHaveExitValue(OutputAnalyzer.java:490)
+ at java.base/java.lang.Thread.run(Thread.java:1595)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', 'Expected to get exit value of [0], exit value is: [1]'),
+    ('ClassElem', 'jdk.test.lib.process.OutputAnalyzer'),
+    ('MethodElem', 'shouldHaveExitValue'),
+    ('FileElem', 'OutputAnalyzer.java'),
+    ('LineElem', '490'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1595')
+]"
+"Caused by:
+ 
+
+  java.lang.AssertionError
+ at __randomizedtesting.SeedInfo.seed([F7B4CD7A5624D5EC]:0)
+ at app//org.apache.lucene.index.TestIndexWriterThreadsToSegments$2.run(TestIndexWriterThreadsToSegments.java:236)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ClassElem', '__randomizedtesting.SeedInfo'),
+    ('MethodElem', 'seed'),
+    ('FileElem', '[F7B4CD7A5624D5EC]'),
+    ('LineElem', '0'),
+    ('ClassElem', 'app//org.apache.lucene.index.TestIndexWriterThreadsToSegments$2'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'TestIndexWriterThreadsToSegments.java'),
+    ('LineElem', '236')
+]"
+"java.lang.NullPointerException: Cannot invoke ""java.security.cert.X509Certificate.getSubjectX500Principal()"" because ""this.rootCertificate"" is null
+ at ValidatePathWithURL.<init>(ValidatePathWithURL.java:64)
+ at java.base/java.lang.Thread.run(Thread.java:857)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ExceptionMessage', 'Cannot invoke ""java.security.cert.X509Certificate.getSubjectX500Principal()"" because ""this.rootCertificate"" is null'),
+    ('ClassElem', 'ValidatePathWithURL'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'ValidatePathWithURL.java'),
+    ('LineElem', '64'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '857')
+]"
+"Exception in thread ""main"" java.lang.AssertionError:
+ at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+ at ElapsedTime.main(ElapsedTime.java:32)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ClassElem', 'org.testng.AssertJUnit'),
+    ('MethodElem', 'fail'),
+    ('FileElem', 'AssertJUnit.java'),
+    ('LineElem', '59'),
+    ('ClassElem', 'ElapsedTime'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'ElapsedTime.java'),
+    ('LineElem', '32')
+]"
+"Exception in thread ""main"" BUG! UNCAUGHT EXCEPTION: java.lang.invoke.MethodHandles$Lookup.<init>(java.lang.Class,int)
+ at org.codehaus.groovy.vmplugin.v7.Java7.<clinit>(Java7.java:44)
+ Caused by: java.lang.NoSuchMethodException: java.lang.invoke.MethodHandles$Lookup.<init>(java.lang.Class,int)
+ at org.codehaus.groovy.vmplugin.v7.Java7.<clinit>(Java7.java:42)","[
+    ('ExceptionType', 'java.lang.NoSuchMethodException'),
+    ('ExceptionMessage', 'java.lang.invoke.MethodHandles$Lookup.<init>(java.lang.Class,int)'),
+    ('ClassElem', 'org.codehaus.groovy.vmplugin.v7.Java7'),
+    ('MethodElem', '<clinit>'),
+    ('FileElem', 'Java7.java'),
+    ('LineElem', '44'),
+    ('ExceptionType', 'java.lang.NoSuchMethodException'),
+    ('ExceptionMessage', 'java.lang.invoke.MethodHandles$Lookup.<init>(java.lang.Class,int)'),
+    ('ClassElem', 'org.codehaus.groovy.vmplugin.v7.Java7'),
+    ('MethodElem', '<clinit>'),
+    ('FileElem', 'Java7.java'),
+    ('LineElem', '42')
+]"
+"java.lang.ArrayIndexOutOfBoundsException
+ at java.base/java.lang.CharacterDataLatin1.getProperties(CharacterDataLatin1.java:74)
+ at CharPropTest.lambda$main$1(CharPropTest.java:55)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'java.base/java.lang.CharacterDataLatin1'),
+    ('MethodElem', 'getProperties'),
+    ('FileElem', 'CharacterDataLatin1.java'),
+    ('LineElem', '74'),
+    ('ClassElem', 'CharPropTest'),
+    ('MethodElem', 'lambda$main$1'),
+    ('FileElem', 'CharPropTest.java'),
+    ('LineElem', '55')
+]"
+"java.lang.NoClassDefFoundError: com/ibm/j9/jsr292/jdk/MHProxy1/SamePackageSingleMethodInterfaceExample/0x0000000000000000 (wrong name: jdk/MHProxy1/SamePackageSingleMethodInterfaceExample)
+ at java.base/java.lang.ClassLoader.defineClassInternal(ClassLoader.java:510)
+ at com.ibm.j9.jsr292.MethodHandleProxiesTest.test_asInterfaceInstance_InnerClass(MethodHandleProxiesTest.java:93)","[
+    ('ExceptionType', 'java.lang.NoClassDefFoundError'),
+    ('ExceptionMessage', 'com/ibm/j9/jsr292/jdk/MHProxy1/SamePackageSingleMethodInterfaceExample/0x0000000000000000 (wrong name: jdk/MHProxy1/SamePackageSingleMethodInterfaceExample)'),
+    ('ClassElem', 'java.base/java.lang.ClassLoader'),
+    ('MethodElem', 'defineClassInternal'),
+    ('FileElem', 'ClassLoader.java'),
+    ('LineElem', '510'),
+    ('ClassElem', 'com.ibm.j9.jsr292.MethodHandleProxiesTest'),
+    ('MethodElem', 'test_asInterfaceInstance_InnerClass'),
+    ('FileElem', 'MethodHandleProxiesTest.java'),
+    ('LineElem', '93')
+]"
+"java.lang.NoClassDefFoundError: java/util/function/jdk/MHProxy1/Function/0x0000000000000000 (wrong name: jdk/MHProxy1/Function)
+ at java.base/java.lang.ClassLoader.defineClassImpl1(Native Method)
+ at BasicTest.testPrimitiveConversion(BasicTest.java:219)","[
+    ('ExceptionType', 'java.lang.NoClassDefFoundError'),
+    ('ExceptionMessage', 'java/util/function/jdk/MHProxy1/Function/0x0000000000000000 (wrong name: jdk/MHProxy1/Function)'),
+    ('ClassElem', 'java.base/java.lang.ClassLoader'),
+    ('MethodElem', 'defineClassImpl1'),
+    ('FileElem', 'Native Method'),
+    ('LineElem', ''),
+    ('ClassElem', 'BasicTest'),
+    ('MethodElem', 'testPrimitiveConversion'),
+    ('FileElem', 'BasicTest.java'),
+    ('LineElem', '219')
+]"
+"java.lang.AssertionError: class jdk.MHProxy1.MHProxiesTest$Sam/0x0000000000000000 unnamed module @d340a189
+ at java.base/java.lang.invoke.MethodHandleProxies.asInterfaceInstance(MethodHandleProxies.java:211)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ExceptionMessage', 'class jdk.MHProxy1.MHProxiesTest$Sam/0x0000000000000000 unnamed module @d340a189'),
+    ('ClassElem', 'java.base/java.lang.invoke.MethodHandleProxies'),
+    ('MethodElem', 'asInterfaceInstance'),
+    ('FileElem', 'MethodHandleProxies.java'),
+    ('LineElem', '211')
+]"
+"org.opentest4j.AssertionFailedError: expected: <5> but was: <4194309>
+ at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+ at GetThreadStateTest.testRunnable(GetThreadStateTest.java:94)","[
+    ('ExceptionType', 'org.opentest4j.AssertionFailedError'),
+    ('ExceptionMessage', 'expected: <5> but was: <4194309>'),
+    ('ClassElem', 'org.junit.jupiter.api.AssertionFailureBuilder'),
+    ('MethodElem', 'build'),
+    ('FileElem', 'AssertionFailureBuilder.java'),
+    ('LineElem', '151'),
+    ('ClassElem', 'GetThreadStateTest'),
+    ('MethodElem', 'testRunnable'),
+    ('FileElem', 'GetThreadStateTest.java'),
+    ('LineElem', '94')
+]"
+"java.lang.Exception: JUnit test failure
+ at com.sun.javatest.regtest.agent.JUnitRunner.runWithJUnitPlatform(JUnitRunner.java:149)
+ at java.base/java.lang.Thread.run(Thread.java:1595)","[
+    ('ExceptionType', 'java.lang.Exception'),
+    ('ExceptionMessage', 'JUnit test failure'),
+    ('ClassElem', 'com.sun.javatest.regtest.agent.JUnitRunner'),
+    ('MethodElem', 'runWithJUnitPlatform'),
+    ('FileElem', 'JUnitRunner.java'),
+    ('LineElem', '149'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1595')
+]"
+"java.lang.RuntimeException: 'WARNING: A JVM TI agent has been loaded dynamically' found in stderr
+ at jdk.test.lib.process.OutputAnalyzer.stderrShouldNotContain(OutputAnalyzer.java:320)
+ at java.base/java.lang.Thread.run(Thread.java:1595)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', ""'WARNING: A JVM TI agent has been loaded dynamically' found in stderr""),
+    ('ClassElem', 'jdk.test.lib.process.OutputAnalyzer'),
+    ('MethodElem', 'stderrShouldNotContain'),
+    ('FileElem', 'OutputAnalyzer.java'),
+    ('LineElem', '320'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1595')
+]"
+"java.lang.AssertionError: caller class wrong expected [class org.openj9.test.stackWalker.StackWalkerTest] but found [class java.lang.StackWalker]
+ at org.testng.Assert.fail(Assert.java:96)
+ at org.openj9.test.stackWalker.StackWalkerTest.testGetCallerClass(StackWalkerTest.java:92)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ExceptionMessage', 'caller class wrong expected [class org.openj9.test.stackWalker.StackWalkerTest] but found [class java.lang.StackWalker]'),
+    ('ClassElem', 'org.testng.Assert'),
+    ('MethodElem', 'fail'),
+    ('FileElem', 'Assert.java'),
+    ('LineElem', '96'),
+    ('ClassElem', 'org.openj9.test.stackWalker.StackWalkerTest'),
+    ('MethodElem', 'testGetCallerClass'),
+    ('FileElem', 'StackWalkerTest.java'),
+    ('LineElem', '92')
+]"
+"Exception in thread ""main"" java.lang.ArrayIndexOutOfBoundsException
+ at compiler.c1.TestArrayCopy.main(TestArrayCopy.java)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ClassElem', 'compiler.c1.TestArrayCopy'),
+    ('MethodElem', 'main'),
+    ('FileElem', 'TestArrayCopy.java')
+]"
+"java.lang.UnsupportedOperationException
+at org.elasticsearch.server@8.6.2/org.elasticsearch.index.mapper.KeywordFieldMapper$KeywordFieldType$SortedSetDocValuesTerms.hasFreqs(KeywordFieldMapper.java:664)
+at java.base/java.lang.Thread.run(Thread.java:1589)","[
+    ('ExceptionType', 'java.lang.UnsupportedOperationException'),
+    ('ClassElem', 'org.elasticsearch.server@8.6.2/org.elasticsearch.index.mapper.KeywordFieldMapper$KeywordFieldType$SortedSetDocValuesTerms'),
+    ('MethodElem', 'hasFreqs'),
+    ('FileElem', 'KeywordFieldMapper.java'),
+    ('LineElem', '664'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1589')
+]"
+"java.lang.IllegalArgumentException: can not write type [class org.elasticsearch.xpack.spatial.index.fielddata.GeoShapeValues$GeoShapeValue]
+at org.elasticsearch.common.io.stream.StreamOutput.writeGenericValue(StreamOutput.java:822) ~[elasticsearch-8.8.0-SNAPSHOT.jar:?]
+at java.lang.Thread.run(Thread.java:833) ~[?:?]","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'can not write type [class org.elasticsearch.xpack.spatial.index.fielddata.GeoShapeValues$GeoShapeValue]'),
+    ('ClassElem', 'org.elasticsearch.common.io.stream.StreamOutput'),
+    ('MethodElem', 'writeGenericValue'),
+    ('FileElem', 'StreamOutput.java'),
+    ('LineElem', '822'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '833')
+]"
+"java.lang.AssertionError: java.lang.Exception: wrapped[org.elasticsearch.transport.RequestHandlerRegistry$$Lambda$6200/0x0000000801aeec80@703ffb85, org.elasticsearch.tasks.TaskManager$$Lambda$6475/0x0000000801b513a8@16603dfb]
+at org.elasticsearch.core.Releasables$4.assertFirstRun(Releasables.java:150) ~[elasticsearch-core-8.8.0-SNAPSHOT.jar:?]
+Caused by: java.lang.Exception: wrapped[org.elasticsearch.transport.RequestHandlerRegistry$$Lambda$6200/0x0000000801aeec80@703ffb85, org.elasticsearch.tasks.TaskManager$$Lambda$6475/0x0000000801b513a8@16603dfb]
+at org.elasticsearch.action.ActionListener.run(ActionListener.java:357) ~[elasticsearch-8.8.0-SNAPSHOT.jar:?]","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ExceptionMessage', 'java.lang.Exception: wrapped[org.elasticsearch.transport.RequestHandlerRegistry$$Lambda$6200/0x0000000801aeec80@703ffb85, org.elasticsearch.tasks.TaskManager$$Lambda$6475/0x0000000801b513a8@16603dfb]'),
+    ('ClassElem', 'org.elasticsearch.core.Releasables$4'),
+    ('MethodElem', 'assertFirstRun'),
+    ('FileElem', 'Releasables.java'),
+    ('LineElem', '150'),
+    ('ExceptionType', 'java.lang.Exception'),
+    ('ExceptionMessage', 'wrapped[org.elasticsearch.transport.RequestHandlerRegistry$$Lambda$6200/0x0000000801aeec80@703ffb85, org.elasticsearch.tasks.TaskManager$$Lambda$6475/0x0000000801b513a8@16603dfb]'),
+    ('ClassElem', 'org.elasticsearch.action.ActionListener'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'ActionListener.java'),
+    ('LineElem', '357')
+]"
+"java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}], [host=http://127.0.0.1:43941, bound=[http://[::1]:41921, http://127.0.0.1:43941], name=v8.7.1-2, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}]] and dead []
+at __randomizedtesting.SeedInfo.seed([DE9A2ABE4DB4F01:85BD9D714A2722F9]:0)
+at java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}], [host=http://127.0.0.1:43941, bound=[http://[::1]:41921, http://127.0.0.1:43941], name=v8.7.1-2, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}]] and dead []
+at java.lang.Thread.run(Thread.java:833)","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ExceptionMessage', 'Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}], [host=http://127.0.0.1:43941, bound=[http://[::1]:41921, http://127.0.0.1:43941], name=v8.7.1-2, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}]] and dead []'),
+    ('ClassElem', '__randomizedtesting.SeedInfo'),
+    ('MethodElem', 'seed'),
+    ('FileElem', '[DE9A2ABE4DB4F01:85BD9D714A2722F9]'),
+    ('LineElem', '0'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '833'),
+    ('ExceptionType', 'java.io.IOException'),
+    ('ExceptionMessage', 'NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}], [host=http://127.0.0.1:43941, bound=[http://[::1]:41921, http://127.0.0.1:43941], name=v8.7.1-2, version=8.7.1, roles=data,data_cold,data_content,data_frozen,data_hot,data_warm,ingest,master,ml,remote_cluster_client,transform, attributes={testattr=[test], ml.allocated_processors_double=[32.0], ml.machine_memory=[101259100160], xpack.installed=[true], ml.max_jvm_size=[536870912], ml.allocated_processors=[32]}]] and dead []'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '833')
+]"
+"java.lang.AssertionError: Index updates are expected as index settings version has changed
+at org.elasticsearch.server@8.8.0-SNAPSHOT/org.elasticsearch.index.IndexService.updateMetadata(IndexService.java:806)
+at java.base/java.lang.Thread.run(Thread.java:833)","[
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ExceptionMessage', 'Index updates are expected as index settings version has changed'),
+    ('ClassElem', 'org.elasticsearch.server@8.8.0-SNAPSHOT/org.elasticsearch.index.IndexService'),
+    ('MethodElem', 'updateMetadata'),
+    ('FileElem', 'IndexService.java'),
+    ('LineElem', '806'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '833')
+]"
+"java.lang.IllegalArgumentException: no matching index template found for data stream [behavioral_analytics-events-my-test-analytics-collection] |
+at org.elasticsearch.server@8.9.0-SNAPSHOT/org.elasticsearch.cluster.metadata.MetadataCreateDataStreamService.lookupTemplateForDataStream(MetadataCreateDataStreamService.java:307) |
+at org.elasticsearch.server@8.9.0-SNAPSHOT/org.elasticsearch.cluster.metadata.MetadataCreateDataStreamService.createDataStream(MetadataCreateDataStreamService.java:168) |","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'no matching index template found for data stream [behavioral_analytics-events-my-test-analytics-collection]'),
+    ('ClassElem', 'org.elasticsearch.server@8.9.0-SNAPSHOT/org.elasticsearch.cluster.metadata.MetadataCreateDataStreamService'),
+    ('MethodElem', 'lookupTemplateForDataStream'),
+    ('FileElem', 'MetadataCreateDataStreamService.java'),
+    ('LineElem', '307'),
+    ('ClassElem', 'org.elasticsearch.server@8.9.0-SNAPSHOT/org.elasticsearch.cluster.metadata.MetadataCreateDataStreamService'),
+    ('MethodElem', 'createDataStream'),
+    ('FileElem', 'MetadataCreateDataStreamService.java'),
+    ('LineElem', '168')
+]"
+"java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -3 is negative
+at org.elasticsearch.server@8.7.1/org.elasticsearch.common.io.stream.RecyclerBytesStreamOutput.writeBytes(RecyclerBytesStreamOutput.java:86)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -3 is negative
+at java.lang.System.arraycopy(Native Method)
+at java.lang.Thread.run(Thread.java:1623)
+at org.elasticsearch.server@8.7.1/org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:432)
+Caused by: org.elasticsearch.ElasticsearchException$1: arraycopy: length -3 is negative
+Caused by: java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -3 is negative
+at java.lang.Thread.run(Thread.java:1623)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ExceptionMessage', 'arraycopy: length -3 is negative'),
+    ('ClassElem', 'org.elasticsearch.server@8.7.1/org.elasticsearch.common.io.stream.RecyclerBytesStreamOutput'),
+    ('MethodElem', 'writeBytes'),
+    ('FileElem', 'RecyclerBytesStreamOutput.java'),
+    ('LineElem', '86'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623'),
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ExceptionMessage', 'arraycopy: length -3 is negative'),
+    ('ClassElem', 'java.lang.System'),
+    ('MethodElem', 'arraycopy'),
+    ('FileElem', 'Native Method'),
+    ('LineElem', ''),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623'),
+    ('ClassElem', 'org.elasticsearch.server@8.7.1/org.elasticsearch.action.search.AbstractSearchAsyncAction'),
+    ('MethodElem', 'executeNextPhase'),
+    ('FileElem', 'AbstractSearchAsyncAction.java'),
+    ('LineElem', '432'),
+    ('ExceptionType', 'org.elasticsearch.ElasticsearchException$1'),
+    ('ExceptionMessage', 'arraycopy: length -3 is negative'),
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ExceptionMessage', 'arraycopy: length -3 is negative'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"java.lang.IllegalArgumentException: maxThreadCount (= 4) should be <= maxMergeCount (= 2)
+at org.elasticsearch.index.MergeSchedulerConfig.setMaxThreadAndMergeCount(MergeSchedulerConfig.java:112) ~[elasticsearch-8.8.0.jar:?]
+at java.lang.Thread.run(Thread.java:1623) ~[?:?]","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'maxThreadCount (= 4) should be <= maxMergeCount (= 2)'),
+    ('ClassElem', 'org.elasticsearch.index.MergeSchedulerConfig'),
+    ('MethodElem', 'setMaxThreadAndMergeCount'),
+    ('FileElem', 'MergeSchedulerConfig.java'),
+    ('LineElem', '112'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"Caused by: java.lang.IllegalStateException: get operations not allowed on a legacy index
+at org.elasticsearch.index.shard.IndexShard.get(IndexShard.java:1219)
+at java.lang.Thread.run(Thread.java:1623)","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'get operations not allowed on a legacy index'),
+    ('ClassElem', 'org.elasticsearch.index.shard.IndexShard'),
+    ('MethodElem', 'get'),
+    ('FileElem', 'IndexShard.java'),
+    ('LineElem', '1219'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"Exception in thread ""main"" java.lang.ExceptionInInitializerError
+at org.elasticsearch.cluster.metadata.DataStreamMetadata.lambda$static$2(DataStreamMetadata.java:71)
+Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.logging.internal.spi.LoggerFactory.getLogger(java.lang.Class)"" because the return value of ""org.elasticsearch.logging.internal.spi.LoggerFactory.provider()"" is null
+at org.elasticsearch.cluster.metadata.DataStreamAlias.<clinit>(DataStreamAlias.java:50)","[
+    ('ExceptionType', 'java.lang.ExceptionInInitializerError'),
+    ('ClassElem', 'org.elasticsearch.cluster.metadata.DataStreamMetadata'),
+    ('MethodElem', 'lambda$static$2'),
+    ('FileElem', 'DataStreamMetadata.java'),
+    ('LineElem', '71'),
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ExceptionMessage', 'Cannot invoke ""org.elasticsearch.logging.internal.spi.LoggerFactory.getLogger(java.lang.Class)"" because the return value of ""org.elasticsearch.logging.internal.spi.LoggerFactory.provider()"" is null'),
+    ('ClassElem', 'org.elasticsearch.cluster.metadata.DataStreamAlias'),
+    ('MethodElem', '<clinit>'),
+    ('FileElem', 'DataStreamAlias.java'),
+    ('LineElem', '50')
+]"
+"at org.gradle.testkit.runner.internal.DefaultGradleRunner.run(DefaultGradleRunner.java:362)
+at org.elasticsearch.gradle.internal.test.NormalizeOutputGradleRunner.build(NormalizeOutputGradleRunner.java:147)","[
+    ('ClassElem', 'org.gradle.testkit.runner.internal.DefaultGradleRunner'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'DefaultGradleRunner.java'),
+    ('LineElem', '362'),
+    ('ClassElem', 'org.elasticsearch.gradle.internal.test.NormalizeOutputGradleRunner'),
+    ('MethodElem', 'build'),
+    ('FileElem', 'NormalizeOutputGradleRunner.java'),
+    ('LineElem', '147')
+]"
+"org.elasticsearch.common.io.stream.NotSerializableExceptionWrapper: unsupported_operation_exception: Query role:(value) does not implement createWeight
+at org.apache.lucene.search.Query.createWeight(Query.java:84)
+at java.lang.Thread.run(Thread.java:1623)","[
+    ('ExceptionType', 'org.elasticsearch.common.io.stream.NotSerializableExceptionWrapper'),
+    ('ExceptionMessage', 'unsupported_operation_exception: Query role:(value) does not implement createWeight'),
+    ('ClassElem', 'org.apache.lucene.search.Query'),
+    ('MethodElem', 'createWeight'),
+    ('FileElem', 'Query.java'),
+    ('LineElem', '84'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"java.lang.IllegalArgumentException: Cannot convert 8.11.0. Incompatible version
+at __randomizedtesting.SeedInfo.seed([5E38DEFC54AFD4C4:D0A0E4F42F189B50]:0)
+at java.lang.Thread.run(Thread.java:1623)","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'Cannot convert 8.11.0. Incompatible version'),
+    ('ClassElem', '__randomizedtesting.SeedInfo'),
+    ('MethodElem', 'seed'),
+    ('FileElem', '[5E38DEFC54AFD4C4:D0A0E4F42F189B50]'),
+    ('LineElem', '0'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"java.lang.IllegalStateException: Negative longs unsupported, use writeLong or writeZLong for negative numbers [-3]
+at org.elasticsearch.common.io.stream.StreamOutput.writeVLong(StreamOutput.java:250) ~[elasticsearch-8.9.1.jar:?]
+at java.lang.Thread.run(Thread.java:1623) ~[?:?]","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'Negative longs unsupported, use writeLong or writeZLong for negative numbers [-3]'),
+    ('ClassElem', 'org.elasticsearch.common.io.stream.StreamOutput'),
+    ('MethodElem', 'writeVLong'),
+    ('FileElem', 'StreamOutput.java'),
+    ('LineElem', '250'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"java.lang.IllegalArgumentException: Cannot access source from scripts in synthetic mode
+at org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext.lambda$lookup$2(SearchExecutionContext.java:400)
+at java.base/java.lang.Thread.run(Thread.java:1623)","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'Cannot access source from scripts in synthetic mode'),
+    ('ClassElem', 'org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext'),
+    ('MethodElem', 'lambda$lookup$2'),
+    ('FileElem', 'SearchExecutionContext.java'),
+    ('LineElem', '400'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"Caused by: java.lang.UnsupportedOperationException
+at org.apache.lucene.search.highlight.WeightedSpanTermExtractor$DelegatingLeafReader.getFieldInfos(WeightedSpanTermExtractor.java:463) ~[lucene-highlighter-9.6.0.jar:?]
+at org.elasticsearch.search.fetch.subphase.highlight.HighlightPhase$1.process(HighlightPhase.java:69) ~[elasticsearch-8.8.2.jar:?]","[
+    ('ExceptionType', 'java.lang.UnsupportedOperationException'),
+    ('ClassElem', 'org.apache.lucene.search.highlight.WeightedSpanTermExtractor$DelegatingLeafReader'),
+    ('MethodElem', 'getFieldInfos'),
+    ('FileElem', 'WeightedSpanTermExtractor.java'),
+    ('LineElem', '463'),
+    ('ClassElem', 'org.elasticsearch.search.fetch.subphase.highlight.HighlightPhase$1'),
+    ('MethodElem', 'process'),
+    ('FileElem', 'HighlightPhase.java'),
+    ('LineElem', '69')
+]"
+"Caused by: org.elasticsearch.search.fetch.FetchPhaseExecutionException: Fetch Failed [Error running fetch phase for doc [14]]
+at org.elasticsearch.search.fetch.FetchPhaseDocsIterator.iterate(FetchPhaseDocsIterator.java:73)
+Caused by: org.elasticsearch.common.io.stream.NotSerializableExceptionWrapper: index_out_of_bounds_exception: Index 7 out of bounds for length 7
+at org.elasticsearch.search.fetch.FetchPhaseDocsIterator.iterate(FetchPhaseDocsIterator.java:70)","[
+    ('ExceptionType', 'org.elasticsearch.search.fetch.FetchPhaseExecutionException'),
+    ('ExceptionMessage', 'Fetch Failed [Error running fetch phase for doc [14]]'),
+    ('ClassElem', 'org.elasticsearch.search.fetch.FetchPhaseDocsIterator'),
+    ('MethodElem', 'iterate'),
+    ('FileElem', 'FetchPhaseDocsIterator.java'),
+    ('LineElem', '73'),
+    ('ExceptionType', 'org.elasticsearch.common.io.stream.NotSerializableExceptionWrapper'),
+    ('ExceptionMessage', 'index_out_of_bounds_exception: Index 7 out of bounds for length 7'),
+    ('ClassElem', 'org.elasticsearch.search.fetch.FetchPhaseDocsIterator'),
+    ('MethodElem', 'iterate'),
+    ('FileElem', 'FetchPhaseDocsIterator.java'),
+    ('LineElem', '70')
+]"
+"java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.lang.AssertionError
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)","[
+    ('ExceptionType', 'java.lang.reflect.InvocationTargetException'),
+    ('ClassElem', 'java.base/jdk.internal.reflect.DirectMethodHandleAccessor'),
+    ('MethodElem', 'invoke'),
+    ('FileElem', 'DirectMethodHandleAccessor.java'),
+    ('LineElem', '118'),
+    ('ClassElem', 'java.base/jdk.internal.reflect.DirectMethodHandleAccessor'),
+    ('MethodElem', 'invoke'),
+    ('FileElem', 'DirectMethodHandleAccessor.java'),
+    ('LineElem', '103'),
+    ('ExceptionType', 'java.lang.AssertionError'),
+    ('ClassElem', 'java.base/jdk.internal.reflect.DirectMethodHandleAccessor'),
+    ('MethodElem', 'invoke'),
+    ('FileElem', 'DirectMethodHandleAccessor.java'),
+    ('LineElem', '103')
+]"
+"java.lang.IllegalArgumentException: Java 21 (65) is not supported by the current version of Byte Buddy which officially supports Java 20 (64) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96) ~[elastic-apm-agent-1.36.0.jar:1.36.0]
+at co.elastic.apm.agent.bci.ElasticApmAgent.initInstrumentation(ElasticApmAgent.java:288) [elastic-apm-agent-1.36.0.jar:1.36.0]","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', 'Java 21 (65) is not supported by the current version of Byte Buddy which officially supports Java 20 (64) - update Byte Buddy or set net.bytebuddy.experimental as a VM property'),
+    ('ClassElem', 'net.bytebuddy.utility.OpenedClassReader'),
+    ('MethodElem', 'of'),
+    ('FileElem', 'OpenedClassReader.java'),
+    ('LineElem', '96'),
+    ('ClassElem', 'co.elastic.apm.agent.bci.ElasticApmAgent'),
+    ('MethodElem', 'initInstrumentation'),
+    ('FileElem', 'ElasticApmAgent.java'),
+    ('LineElem', '288')
+]"
+"org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity]
+at org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext.toQuery(SearchExecutionContext.java:454)
+Caused by: java.lang.IllegalArgumentException: [float] supports only finite values, but got [-Infinity]
+at org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext.toQuery(SearchExecutionContext.java:446)","[
+    ('ExceptionType', 'org.elasticsearch.index.query.QueryShardException'),
+    ('ExceptionMessage', 'failed to create query: [float] supports only finite values, but got [-Infinity]'),
+    ('ClassElem', 'org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext'),
+    ('MethodElem', 'toQuery'),
+    ('FileElem', 'SearchExecutionContext.java'),
+    ('LineElem', '454'),
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', '[float] supports only finite values, but got [-Infinity]'),
+    ('ClassElem', 'org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext'),
+    ('MethodElem', 'toQuery'),
+    ('FileElem', 'SearchExecutionContext.java'),
+    ('LineElem', '446')
+]"
+"java.lang.IllegalArgumentException: [float] supports only finite values, but got [-Infinity]
+at org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.mapper.NumberFieldMapper$NumberType$2.validateParsed(NumberFieldMapper.java:580)
+at java.base/java.lang.Thread.run(Thread.java:1583)","[
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', '[float] supports only finite values, but got [-Infinity]'),
+    ('ClassElem', 'org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.mapper.NumberFieldMapper$NumberType$2'),
+    ('MethodElem', 'validateParsed'),
+    ('FileElem', 'NumberFieldMapper.java'),
+    ('LineElem', '580'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity]
+at org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext.toQuery(SearchExecutionContext.java:454)
+Caused by: java.lang.IllegalArgumentException: [float] supports only finite values, but got [-Infinity]
+at org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext.toQuery(SearchExecutionContext.java:446)","[
+    ('ExceptionType', 'org.elasticsearch.index.query.QueryShardException'),
+    ('ExceptionMessage', 'failed to create query: [float] supports only finite values, but got [-Infinity]'),
+    ('ClassElem', 'org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext'),
+    ('MethodElem', 'toQuery'),
+    ('FileElem', 'SearchExecutionContext.java'),
+    ('LineElem', '454'),
+    ('ExceptionType', 'java.lang.IllegalArgumentException'),
+    ('ExceptionMessage', '[float] supports only finite values, but got [-Infinity]'),
+    ('ClassElem', 'org.elasticsearch.server@8.11.0-SNAPSHOT/org.elasticsearch.index.query.SearchExecutionContext'),
+    ('MethodElem', 'toQuery'),
+    ('FileElem', 'SearchExecutionContext.java'),
+    ('LineElem', '446')
+]"
+"org.elasticsearch.ElasticsearchSecurityException: Failed to exchange code for Id Token using the Token Endpoint.
+at org.elasticsearch.xpack.security.authc.oidc.OpenIdConnectAuthenticator$2.failed(OpenIdConnectAuthenticator.java:586) [x-pack-security-7.17.6.jar:7.17.6]
+Caused by: java.lang.IllegalStateException: I/O session is already upgraded to TLS/SSL
+at org.apache.http.impl.nio.DefaultNHttpClientConnection.produceOutput(DefaultNHttpClientConnection.java:287) ~[?:?]","[
+    ('ExceptionType', 'org.elasticsearch.ElasticsearchSecurityException'),
+    ('ExceptionMessage', 'Failed to exchange code for Id Token using the Token Endpoint.'),
+    ('ClassElem', 'org.elasticsearch.xpack.security.authc.oidc.OpenIdConnectAuthenticator$2'),
+    ('MethodElem', 'failed'),
+    ('FileElem', 'OpenIdConnectAuthenticator.java'),
+    ('LineElem', '586'),
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'I/O session is already upgraded to TLS/SSL'),
+    ('ClassElem', 'org.apache.http.impl.nio.DefaultNHttpClientConnection'),
+    ('MethodElem', 'produceOutput'),
+    ('FileElem', 'DefaultNHttpClientConnection.java'),
+    ('LineElem', '287')
+]"
+"Caused by: java.lang.IllegalStateException: TLS already activated
+at org.apache.hc.core5.reactor.InternalDataChannel.startTls(InternalDataChannel.java:252)
+Caused by: java.lang.IllegalStateException: TLS already activated
+at org.apache.hc.core5.reactor.IOReactorWorker.run(IOReactorWorker.java:44)","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'TLS already activated'),
+    ('ClassElem', 'org.apache.hc.core5.reactor.InternalDataChannel'),
+    ('MethodElem', 'startTls'),
+    ('FileElem', 'InternalDataChannel.java'),
+    ('LineElem', '252'),
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'TLS already activated'),
+    ('ClassElem', 'org.apache.hc.core5.reactor.IOReactorWorker'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'IOReactorWorker.java'),
+    ('LineElem', '44')
+]"
+"org.elasticsearch.ResourceNotFoundException: [3] remote clusters out of [4] were skipped when performing datafeed search
+at org.elasticsearch.xpack.core.ml.datafeed.extractor.DataExtractor.checkForSkippedClusters(DataExtractor.java:61) ~[?:?]
+at java.lang.Thread.run(Thread.java:1623) ~[?:?]","[
+    ('ExceptionType', 'org.elasticsearch.ResourceNotFoundException'),
+    ('ExceptionMessage', '[3] remote clusters out of [4] were skipped when performing datafeed search'),
+    ('ClassElem', 'org.elasticsearch.xpack.core.ml.datafeed.extractor.DataExtractor'),
+    ('MethodElem', 'checkForSkippedClusters'),
+    ('FileElem', 'DataExtractor.java'),
+    ('LineElem', '61'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"org.elasticsearch.common.breaker.CircuitBreakingException: [parent] Data too large, data for [indices:admin/data_stream/modify] would be [4071282682/3.7gb], which is larger than the limit of [3900912435/3.6gb], real usage: [4071282016/3.7gb], new bytes reserved: [666/666b], usages [model_inference=0/0b, eql_sequence=0/0b, fielddata=0/0b, request=0/0b, inflight_requests=1260/1.2kb]
+at org.elasticsearch.indices.breaker.HierarchyCircuitBreakerService.checkParentLimit(HierarchyCircuitBreakerService.java:414)
+at java.lang.Thread.run(Thread.java:1583)","[
+    ('ExceptionType', 'org.elasticsearch.common.breaker.CircuitBreakingException'),
+    ('ExceptionMessage', '[parent] Data too large, data for [indices:admin/data_stream/modify] would be [4071282682/3.7gb], which is larger than the limit of [3900912435/3.6gb], real usage: [4071282016/3.7gb], new bytes reserved: [666/666b], usages [model_inference=0/0b, eql_sequence=0/0b, fielddata=0/0b, request=0/0b, inflight_requests=1260/1.2kb]'),
+    ('ClassElem', 'org.elasticsearch.indices.breaker.HierarchyCircuitBreakerService'),
+    ('MethodElem', 'checkParentLimit'),
+    ('FileElem', 'HierarchyCircuitBreakerService.java'),
+    ('LineElem', '414'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+at org.elasticsearch.server@8.9.2/org.elasticsearch.search.aggregations.bucket.range.RangeAggregator.hasOverlap(RangeAggregator.java:883)
+at org.elasticsearch.server@8.9.2/org.elasticsearch.search.aggregations.AdaptingAggregator.<init>(AdaptingAggregator.java:41)","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ExceptionMessage', 'Index 0 out of bounds for length 0'),
+    ('ClassElem', 'org.elasticsearch.server@8.9.2/org.elasticsearch.search.aggregations.bucket.range.RangeAggregator'),
+    ('MethodElem', 'hasOverlap'),
+    ('FileElem', 'RangeAggregator.java'),
+    ('LineElem', '883'),
+    ('ClassElem', 'org.elasticsearch.server@8.9.2/org.elasticsearch.search.aggregations.AdaptingAggregator'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'AdaptingAggregator.java'),
+    ('LineElem', '41')
+]"
+"org.elasticsearch.ElasticsearchException$1: Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null
+at org.elasticsearch.server@8.12.0-SNAPSHOT/org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:671)
+at org.elasticsearch.server@8.12.0-SNAPSHOT/org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:983)
+Caused by: java.lang.NullPointerException: Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null
+at org.elasticsearch.server@8.12.0-SNAPSHOT/org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:983)","[
+    ('ExceptionType', 'org.elasticsearch.ElasticsearchException$1'),
+    ('ExceptionMessage', 'Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null'),
+    ('ClassElem', 'org.elasticsearch.server@8.12.0-SNAPSHOT/org.elasticsearch.ElasticsearchException'),
+    ('MethodElem', 'guessRootCauses'),
+    ('FileElem', 'ElasticsearchException.java'),
+    ('LineElem', '671'),
+    ('ClassElem', 'org.elasticsearch.server@8.12.0-SNAPSHOT/org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable'),
+    ('MethodElem', 'doRun'),
+    ('FileElem', 'ThreadContext.java'),
+    ('LineElem', '983'),
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ExceptionMessage', 'Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null'),
+    ('ClassElem', 'org.elasticsearch.server@8.12.0-SNAPSHOT/org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable'),
+    ('MethodElem', 'doRun'),
+    ('FileElem', 'ThreadContext.java'),
+    ('LineElem', '983')
+]"
+"java.lang.NullPointerException: Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null
+at org.apache.lucene.core@9.8.0/org.apache.lucene.util.BytesRef.<init>(BytesRef.java:80)
+at java.base/java.lang.Thread.run(Thread.java:1623)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ExceptionMessage', 'Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null'),
+    ('ClassElem', 'org.apache.lucene.core@9.8.0/org.apache.lucene.util.BytesRef'),
+    ('MethodElem', '<init>'),
+    ('FileElem', 'BytesRef.java'),
+    ('LineElem', '80'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"java.lang.IllegalStateException: Channel is already closed
+at org.elasticsearch.rest.RestController$ResourceHandlingHttpChannel.close(RestController.java:772) ~[elasticsearch-8.6.1.jar:?]
+at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+Suppressed: org.elasticsearch.action.UnavailableShardsException: at least one primary shard for the index [.security-profile-8] is unavailable
+at org.elasticsearch.xpack.security.support.SecurityIndexManager.getUnavailableReason(SecurityIndexManager.java:138) ~[?:?]
+at java.lang.Thread.run(Thread.java:1589) ~[?:?]","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'Channel is already closed'),
+    ('ClassElem', 'org.elasticsearch.rest.RestController$ResourceHandlingHttpChannel'),
+    ('MethodElem', 'close'),
+    ('FileElem', 'RestController.java'),
+    ('LineElem', '772'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1589'),
+    ('ExceptionType', 'org.elasticsearch.action.UnavailableShardsException'),
+    ('ExceptionMessage', 'at least one primary shard for the index [.security-profile-8] is unavailable'),
+    ('ClassElem', 'org.elasticsearch.xpack.security.support.SecurityIndexManager'),
+    ('MethodElem', 'getUnavailableReason'),
+    ('FileElem', 'SecurityIndexManager.java'),
+    ('LineElem', '138'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1589')
+]"
+"java.util.ConcurrentModificationException: null
+at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013) ~[?:?]
+at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104) ~[?:?]
+at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104) ~[?:?","[
+    ('ExceptionType', 'java.util.ConcurrentModificationException'),
+    ('ClassElem', 'java.util.ArrayList$Itr'),
+    ('MethodElem', 'checkForComodification'),
+    ('FileElem', 'ArrayList.java'),
+    ('LineElem', '1013'),
+    ('ClassElem', 'io.netty.util.concurrent.DefaultPromise'),
+    ('MethodElem', 'trySuccess'),
+    ('FileElem', 'DefaultPromise.java'),
+    ('LineElem', '104'),
+    ('ClassElem', 'io.netty.util.concurrent.DefaultPromise'),
+    ('MethodElem', 'trySuccess'),
+    ('FileElem', 'DefaultPromise.java'),
+    ('LineElem', '104')
+]"
+"org.elasticsearch.painless.PainlessExplainError: null
+at org.elasticsearch.painless.api.Debug.explain(Debug.java:23) ~[?:?]
+at java.lang.Thread.run(Thread.java:1583) ~[?:?]","[
+    ('ExceptionType', 'org.elasticsearch.painless.PainlessExplainError'),
+    ('ClassElem', 'org.elasticsearch.painless.api.Debug'),
+    ('MethodElem', 'explain'),
+    ('FileElem', 'Debug.java'),
+    ('LineElem', '23'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"{""error"":{""root_cause"":[{""type"":""named_object_not_found_exception"",""reason"":""[5:5] unknown field [learning_to_rank]""}],""type"":""x_content_parse_exception"",""reason"":""[5:5] [trained_model_config] failed to parse field [inference_config]"",""caused_by"":{""type"":""x_content_parse_exception"",""reason"":""[5:5] [inference_config] failed to parse field [learning_to_rank]"",""caused_by"":{""type"":""named_object_not_found_exception"",""reason"":""[5:5] unknown field [learning_to_rank]""}}},""status"":400}
+at __randomizedtesting.SeedInfo.seed([19FEA41452AE7C18:8C6E0E4FB936F2AE]:0)
+at java.lang.Thread.run(Thread.java:1583)","[
+    ('ExceptionType', 'named_object_not_found_exception'),
+    ('ExceptionMessage', '[5:5] unknown field [learning_to_rank]'),
+    ('ClassElem', '__randomizedtesting.SeedInfo'),
+    ('MethodElem', 'seed'),
+    ('FileElem', '[25C2A98F7336871A:3D8A9AB5FEF50407]'),
+    ('LineElem', '0'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"java.util.concurrent.TimeoutException: null
+at java.util.concurrent.FutureTask.get(FutureTask.java:204) ~[?:?]
+at java.lang.Thread.run(Thread.java:1583) ~[?:?]","[
+    ('ExceptionType', 'java.util.concurrent.TimeoutException'),
+    ('ClassElem', 'java.util.concurrent.FutureTask'),
+    ('MethodElem', 'get'),
+    ('FileElem', 'FutureTask.java'),
+    ('LineElem', '204'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null
+at org.elasticsearch.xpack.esql.planner.LocalExecutionPlanner.planProject(LocalExecutionPlanner.java:536)
+at java.lang.Thread.run(Thread.java:1583)","[
+    ('ExceptionType', 'java.lang.NullPointerException'),
+    ('ExceptionMessage', 'Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null'),
+    ('ClassElem', 'org.elasticsearch.xpack.esql.planner.LocalExecutionPlanner'),
+    ('MethodElem', 'planProject'),
+    ('FileElem', 'LocalExecutionPlanner.java'),
+    ('LineElem', '536'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"java.util.concurrent.ExecutionException: java.io.EOFException: read past EOF: MMapIndexInput(path=""/data/nodes/0/indices/PFK_L3OGRBicJkxAcdDw1g/114/index/_x8jv.cfs"") [slice=_x8jv_Lucene80_0.dvd] [slice=docs]
+at org.elasticsearch.common.cache.Cache.computeIfAbsent(Cache.java:436) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.io.EOFException: read past EOF: MMapIndexInput(path=""/data/nodes/0/indices/PFK_L3OGRBicJkxAcdDw1g/114/index/_x8jv.cfs"") [slice=_x8jv_Lucene80_0.dvd] [slice=docs]
+at org.elasticsearch.common.cache.Cache.computeIfAbsent(Cache.java:433) ~[elasticsearch-7.10.2.jar:7.10.2]","[
+    ('ExceptionType', 'java.util.concurrent.ExecutionException'),
+    ('ExceptionMessage', 'java.io.EOFException: read past EOF: MMapIndexInput(path=""/data/nodes/0/indices/PFK_L3OGRBicJkxAcdDw1g/114/index/_x8jv.cfs"") [slice=_x8jv_Lucene80_0.dvd] [slice=docs]'),
+    ('ClassElem', 'org.elasticsearch.common.cache.Cache'),
+    ('MethodElem', 'computeIfAbsent'),
+    ('FileElem', 'Cache.java'),
+    ('LineElem', '436'),
+    ('ExceptionType', 'java.io.EOFException'),
+    ('ExceptionMessage', 'read past EOF: MMapIndexInput(path=""/data/nodes/0/indices/PFK_L3OGRBicJkxAcdDw1g/114/index/_x8jv.cfs"") [slice=_x8jv_Lucene80_0.dvd] [slice=docs]'),
+    ('ClassElem', 'org.elasticsearch.common.cache.Cache'),
+    ('MethodElem', 'computeIfAbsent'),
+    ('FileElem', 'Cache.java'),
+    ('LineElem', '433')
+]"
+"Caused by: [index0/data0][[index0][91]] ElasticsearchException[Elasticsearch exception [type=engine_exception, reason=Couldn't resolve version]]; nested: ElasticsearchException[Elasticsearch exception [type=illegal_state_exception, reason=document [0] does not have docValues for [_primary_term]]];
+at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:496)
+at org.elasticsearch.client.RestClient$1.completed(RestClient.java:370)","[
+    ('ExceptionType', 'org.elasticsearch.ElasticsearchException'),
+    ('ExceptionMessage', 'Elasticsearch exception [type=engine_exception, reason=Couldn\'t resolve version]'),
+    ('ExceptionType', 'org.elasticsearch.ElasticsearchException'),
+    ('ExceptionMessage', 'Elasticsearch exception [type=illegal_state_exception, reason=document [0] does not have docValues for [_primary_term]]'),
+    ('ClassElem', 'org.elasticsearch.ElasticsearchException'),
+    ('MethodElem', 'innerFromXContent'),
+    ('FileElem', 'ElasticsearchException.java'),
+    ('LineElem', '496'),
+    ('ClassElem', 'org.elasticsearch.client.RestClient$1'),
+    ('MethodElem', 'completed'),
+    ('FileElem', 'RestClient.java'),
+    ('LineElem', '370')
+]"
+"java.lang.IllegalStateException: Duplicate key datafeed-v3_linux_system_user_discovery (attempted merging values org.elasticsearch.xpack.core.ml.action.GetDatafeedRunningStateAction$Response$RunningState@7d2c9ddc and org.elasticsearch.xpack.core.ml.action.GetDatafeedRunningStateAction$Response$RunningState@131739)
+at java.base/java.util.stream.Collectors.duplicateKeyException(Collectors.java:135)
+at java.base/java.lang.Thread.run(Thread.java:1583)","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'Duplicate key datafeed-v3_linux_system_user_discovery (attempted merging values org.elasticsearch.xpack.core.ml.action.GetDatafeedRunningStateAction$Response$RunningState@7d2c9ddc and org.elasticsearch.xpack.core.ml.action.GetDatafeedRunningStateAction$Response$RunningState@131739)'),
+    ('ClassElem', 'java.base/java.util.stream.Collectors'),
+    ('MethodElem', 'duplicateKeyException'),
+    ('FileElem', 'Collectors.java'),
+    ('LineElem', '135'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+at org.elasticsearch.action.search.SearchScrollAsyncAction.onShardFailure(SearchScrollAsyncAction.java:290) ~[elasticsearch-8.11.0.jar:?]","[
+    ('ExceptionType', 'org.elasticsearch.action.search.SearchPhaseExecutionException'),
+    ('ExceptionMessage', 'all shards failed'),
+    ('ClassElem', 'org.elasticsearch.action.search.SearchScrollAsyncAction'),
+    ('MethodElem', 'onShardFailure'),
+    ('FileElem', 'SearchScrollAsyncAction.java'),
+    ('LineElem', '290')
+]"
+"java.lang.RuntimeException: null
+at org.elasticsearch.ingest.IngestMetric.postIngest(IngestMetric.java:69) ~[elasticsearch-8.7.1.jar:?]
+at java.lang.Thread.run(Thread.java:1623) ~[?:?]","[
+    ('ExceptionType', 'java.lang.RuntimeException'),
+    ('ClassElem', 'org.elasticsearch.ingest.IngestMetric'),
+    ('MethodElem', 'postIngest'),
+    ('FileElem', 'IngestMetric.java'),
+    ('LineElem', '69'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1623')
+]"
+"java.lang.ArrayIndexOutOfBoundsException: Index 33 out of bounds for length 32
+at org.elasticsearch.xpack.ml.inference.nlp.tokenizers.UnigramTokenizer.tokenize(UnigramTokenizer.java:283) ~[?:?]
+at java.lang.Thread.run(Thread.java:1583) ~[?:?]","[
+    ('ExceptionType', 'java.lang.ArrayIndexOutOfBoundsException'),
+    ('ExceptionMessage', 'Index 33 out of bounds for length 32'),
+    ('ClassElem', 'org.elasticsearch.xpack.ml.inference.nlp.tokenizers.UnigramTokenizer'),
+    ('MethodElem', 'tokenize'),
+    ('FileElem', 'UnigramTokenizer.java'),
+    ('LineElem', '283'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"org.elasticsearch.xpack.downsample.DownsampleShardIndexerException: Shard [.ds-metrics-foo-2024.02.02-000001][0] downsample cancelled
+at org.elasticsearch.xpack.downsample.DownsampleShardIndexer.checkCancelled(DownsampleShardIndexer.java:238) ~[main/:?]
+at org.elasticsearch.search.aggregations.support.TimeSeriesIndexSearcher.checkCancelled(TimeSeriesIndexSearcher.java:231) ~[elasticsearch-8.13.0-SNAPSHOT.jar:8.13.0-SNAPSHOT]","[
+    ('ExceptionType', 'org.elasticsearch.xpack.downsample.DownsampleShardIndexerException'),
+    ('ExceptionMessage', 'Shard [.ds-metrics-foo-2024.02.02-000001][0] downsample cancelled'),
+    ('ClassElem', 'org.elasticsearch.xpack.downsample.DownsampleShardIndexer'),
+    ('MethodElem', 'checkCancelled'),
+    ('FileElem', 'DownsampleShardIndexer.java'),
+    ('LineElem', '238'),
+    ('ClassElem', 'org.elasticsearch.search.aggregations.support.TimeSeriesIndexSearcher'),
+    ('MethodElem', 'checkCancelled'),
+    ('FileElem', 'TimeSeriesIndexSearcher.java'),
+    ('LineElem', '231')
+]"
+"Caused by: org.elasticsearch.tasks.TaskCancelledException: Shard [.ds-metrics-foo-2024.02.02-000001][0] downsample cancelled
+at org.elasticsearch.xpack.downsample.DownsampleShardIndexer.checkCancelled(DownsampleShardIndexer.java:237) ~[main/:?]","[    ('ExceptionType', 'org.elasticsearch.tasks.TaskCancelledException'),
+    ('ExceptionMessage', 'Shard [.ds-metrics-foo-2024.02.02-000001][0] downsample cancelled'),
+    ('ClassElem', 'org.elasticsearch.xpack.downsample.DownsampleShardIndexer'),
+    ('MethodElem', 'checkCancelled'),
+    ('FileElem', 'DownsampleShardIndexer.java'),
+    ('LineElem', '237')]"
+"Caused by: java.lang.IllegalStateException: FieldExistsQuery requires that the field indexes doc values, norms or vectors, but field '_primary_term' exists and indexes neither of these data structures
+
+org.elasticsearch.indices.recovery.RecoveryFailedException: [typeahead-v0][0]: Recovery failed from {instance-REDACTED}{REDACTED}{REDACTED}{instance-REDACTED}{10.47.49.43}{10.47.49.43:19005}{himrst}{8.11.1}{7000099-8500003}{data=hot, ml.config_version=11.0.0, transform.config_version=10.0.0, xpack.installed=true, server_name=instance-REDACTED.REDACTED, region=unknown-region, instance_configuration=gcp.data.highcpu.1, availability_zone=us-east1-d, logical_availability_zone=zone-2} into {instance-REDACTED}{REDACTED}{REDACTED}{instance-REDACTED}{10.47.49.36}{10.47.49.36:19182}{himrst}{8.11.1}{7000099-8500003}{data=hot, ml.config_version=11.0.0, xpack.installed=true, transform.config_version=10.0.0, server_name=instance-REDACTED.REDACTED, region=unknown-region, instance_configuration=gcp.data.highcpu.1, availability_zone=us-east1-b, logical_availability_zone=zone-0}
+at org.elasticsearch.indices.recovery.PeerRecoveryTargetService$RecoveryResponseHandler.handleException(PeerRecoveryTargetService.java:836) ~[elasticsearch-8.11.1.jar:?]
+at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.elasticsearch.transport.RemoteTransportException: [instance-REDACTED][172.17.0.40:19005][internal:index/shard/recovery/start_recovery]
+Caused by: org.elasticsearch.index.engine.RecoveryEngineException: Phase[1] sendFileStep failed
+at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalStateException: FieldExistsQuery requires that the field indexes doc values, norms or vectors, but field '_primary_term' exists and indexes neither of these data structures
+at java.lang.Thread.run(Thread.java:1583) ~[?:?]","[
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'FieldExistsQuery requires that the field indexes doc values, norms or vectors, but field \'_primary_term\' exists and indexes neither of these data structures'),
+    ('ExceptionType', 'org.elasticsearch.indices.recovery.RecoveryFailedException'),
+    ('ExceptionMessage', '[typeahead-v0][0]: Recovery failed from {instance-REDACTED}{REDACTED}{REDACTED}{instance-REDACTED}{10.47.49.43}{10.47.49.43:19005}{himrst}{8.11.1}{7000099-8500003}{data=hot, ml.config_version=11.0.0, transform.config_version=10.0.0, xpack.installed=true, server_name=instance-REDACTED.REDACTED, region=unknown-region, instance_configuration=gcp.data.highcpu.1, availability_zone=us-east1-d, logical_availability_zone=zone-2} into {instance-REDACTED}{REDACTED}{REDACTED}{instance-REDACTED}{10.47.49.36}{10.47.49.36:19182}{himrst}{8.11.1}{7000099-8500003}{data=hot, ml.config_version=11.0.0, xpack.installed=true, transform.config_version=10.0.0, server_name=instance-REDACTED.REDACTED, region=unknown-region, instance_configuration=gcp.data.highcpu.1, availability_zone=us-east1-b, logical_availability_zone=zone-0}'),
+    ('ClassElem', 'org.elasticsearch.indices.recovery.PeerRecoveryTargetService$RecoveryResponseHandler'),
+    ('MethodElem', 'handleException'),
+    ('FileElem', 'PeerRecoveryTargetService.java'),
+    ('LineElem', '836'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583'),
+    ('ExceptionType', 'org.elasticsearch.transport.RemoteTransportException'),
+    ('ExceptionType', 'org.elasticsearch.index.engine.RecoveryEngineException'),
+    ('ExceptionMessage', 'Phase[1] sendFileStep failed'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583'),
+    ('ExceptionType', 'java.lang.IllegalStateException'),
+    ('ExceptionMessage', 'FieldExistsQuery requires that the field indexes doc values, norms or vectors, but field \'_primary_term\' exists and indexes neither of these data structures'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+at java.base/java.lang.Thread.run(Thread.java:1583)","[
+    ('ClassElem', 'org.hamcrest.MatcherAssert'),
+    ('MethodElem', 'assertThat'),
+    ('FileElem', 'MatcherAssert.java'),
+    ('LineElem', '18'),
+    ('ClassElem', 'java.base/java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
+"java.sql.SQLException: Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]. [org.elasticsearch.xcontent.XContentParseException: [-1:187] [sql/query] failed to parse field [time_zone]
+at org.elasticsearch.xcontent.ObjectParser.throwFailedToParse(ObjectParser.java:609)
+Caused by: java.time.zone.ZoneRulesException: Unknown time-zone ID: America/Ciudad_Juarez
+at org.elasticsearch.xcontent.ObjectParser.parseValue(ObjectParser.java:602)
+at shadow.org.elasticsearch.xpack.sql.client.JreHttpUrlConnection.parserError(JreHttpUrlConnection.java:205)
+at java.lang.Thread.run(Thread.java:1583)","[
+    ('ExceptionType', 'java.sql.SQLException'),
+    ('ExceptionMessage', 'Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]'),
+    ('ExceptionType', 'org.elasticsearch.xcontent.XContentParseException'),
+    ('ExceptionMessage', '[-1:187] [sql/query] failed to parse field [time_zone]'),
+    ('ClassElem', 'org.elasticsearch.xcontent.ObjectParser'),
+    ('MethodElem', 'throwFailedToParse'),
+    ('FileElem', 'ObjectParser.java'),
+    ('LineElem', '609'),
+    ('ExceptionType', 'java.time.zone.ZoneRulesException'),
+    ('ExceptionMessage', 'Unknown time-zone ID: America/Ciudad_Juarez'),
+    ('ClassElem', 'org.elasticsearch.xcontent.ObjectParser'),
+    ('MethodElem', 'parseValue'),
+    ('FileElem', 'ObjectParser.java'),
+    ('LineElem', '602'),
+    ('ClassElem', 'shadow.org.elasticsearch.xpack.sql.client.JreHttpUrlConnection'),
+    ('MethodElem', 'parserError'),
+    ('FileElem', 'JreHttpUrlConnection.java'),
+    ('LineElem', '205'),
+    ('ClassElem', 'java.lang.Thread'),
+    ('MethodElem', 'run'),
+    ('FileElem', 'Thread.java'),
+    ('LineElem', '1583')
+]"
