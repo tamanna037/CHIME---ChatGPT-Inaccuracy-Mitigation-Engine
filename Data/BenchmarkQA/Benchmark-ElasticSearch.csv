@@ -1,4 +1,4 @@
-Question,Answer,T#,Query Type
+Question,Answer,T#,Type
 What Elasticsearch Version is used in issue 100264?,8.*,T1 (S),Fact
 which java version used in issue 97350?,bundled,T1 (S),Fact
 which os version used in issue 96078?,docker.elastic.co/elasticsearch/elasticsearch:8.7.1,T1 (S),Fact
