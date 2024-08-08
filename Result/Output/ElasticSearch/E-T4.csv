@@ -1,0 +1,156 @@
+T4-SQ,T4-SA,T4-SA_LLM,T4-S_LLM_R,T4-SA_CIMBUR,T4-S_CIMBUR_R,T4-SA_CFG,T4-S_CFG_R,T4-SA_Query,T4-S_Query_R,T4-SA_MT,T4-S_MT_R,T4-SA_COVE,T4-S_COVE_R,T4-SA_COVE_MT,T4-S_COVE_MT_R,T4-YNQ,T4-YNA,T4-YNA_LLM,T4-YN_LLM_R,T4-YNA_CIMBUR,T4-YN_CIMBUR_R,T4-YNA_CFG,T4-YN_CFG_R,T4-YNA_Query,T4-YN_Query_R,T4-YNA_MT,T4-YN_MT_R,T4-YNA_COVE,T4-YN_COVE_R,T4-YNA_COVE_MT,T4-YN_COVE_MT_R,T4-FQ,T4-FA,T4-FA_LLM,T4-FA_LLM_R,T4-FA_CIMBUR,T4-FA_CIMBUR_R,T4-FA_CFG,T4-FA_CFG_R,T4-FA_Query,T4-FA_Query_R,T4-FA_MT,T4-FA_MT_R,T4-FA_COVE,T4-FA_COVE_R,T4-FA_COVE_MT,T4-FA_COVE_MT_R
+Summarize how to label a issue with team name,"labels will be begin with 'Team:' , followed by team name","To label an issue with a team name, you can search for the issues where the ""labels"" column contains the keyword ""Team"".
+
+This query will retrieve the issue number, title, and labels for all the issues that are labeled with a team name:
+
+Answer: The issues labeled with a team name are:
+1. Issue number 94673 - Title: Exception in `_terms_enum` on docvalue-only keywords fields, Labels: >bug, :Search/Search, Team:Search, v8.7.0, v8.8.0
+2. Issue number 94839 - Title: Serialization exceptions should be handled in OutboundHandler, Labels: >bug, :Distributed/Network, Team:Distributed
+3. Issue number 95013 - Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing, Labels: :Analytics/Aggregations, >test-failure, Team:Analytics",0,"To label an issue with a team name, you can add a label containing the team name in the ""labels"" field of the issue. The team name is typically included in the label text. This process helps in organizing and categorizing the issues based on the teams responsible for handling them.",1,"To label an issue with a team name, you can use the labels that contain the keyword ""Team"".",1,"To label an issue with a team name, you need to include the team name in the labels field of the issue. The team name should be preceded by ""Team:"" in the labels field.",1,"To label an issue with a team name, you can use labels that include the keyword ""Team"" followed by the specific team name. This helps categorize the issue based on the team responsible for it. Some examples of team labels are Team:Search, Team:Distributed, and Team:Analytics.",1,"To label an issue with a team name, use the 'labels' column and search for labels containing the keyword 'Team'.",1,"To label an issue with a team name, the labels column in the issues table is used. The labels contain information about the team associated with the issue and are structured in a specific format that includes the team name. Specific labels such as 'Team:Search', 'Team:Distributed', and 'Team:Analytics' can be used to categorize the issue properly.",0,Is there an existing label specifically for user raised issues?,No,"Yes, there is a label specifically for issues raised by users. The label is "">bug"".",0,"Yes, there is a label specifically for user-raised issues. The label is '>bug'.",0,"Yes, there is an existing label specifically for user raised issues.",0,"Yes, there is a label specifically designated for user-reported issues.",0,"Yes, there are specific labels for issues raised by users. Some of the labels include '>bug', ':Search/Search', 'Team:Search', 'v8.7.0', 'v8.8.0', ':Distributed/Network', 'Team:Distributed', ':Analytics/Aggregations', '>test-failure', 'Team:Analytics', 'blocker', 'Team:Core/Infra', 'v8.7.0', 'v8.7.1', 'v8.8.0', 'v8.7.2', 'v8.8.1', 'v8.9.0', 'v8.8.2', 'v8.8.3', ':Core/Infra/Core', 'test-windows', 'Team:ML', 'Team:Data Management', 'Team:QL (Deprecated)', 'v8.10.0', ':Analytics/ES|QL', 'Team:Security', 'v8.11.0', 'v8.11.3', 'v8.13.0', 'Team:StorageEngine', 'Team:ML', 'Team:Distributed', 'Team:Data Management', 'Team:Security', 'Team:Core/Infra', 'low-risk', 'needs:triage'.",0,"Yes, a search can be conducted to confirm that there is no label specifically for user raised issues in the database. The query results show that there are no labels containing the word 'user'.",0,"Yes, there are specific labels for issues raised by users, including ':Distributed/Network'.",0,An issue is reported in StorageEngine. What label shoul i assign?,StorageEngine,"The suitable label for an issue reported in the StorageEngine component is "">StorageEngine"".",1,"Suitable label for an issue reported in the StorageEngine component is "">StorageEngine"".",1,bug,0,"Suggest a suitable label for an issue reported in the StorageEngine.
+Answer: None",0,"The label that should be assigned to an issue reported in StorageEngine is bug, Team:Distributed.",1,">bug, :Distributed/Network, Team:Distributed",0,"When reporting an issue in StorageEngine, the label ""bug"" should be assigned.",1
+Summarize all the team labels of this project,"Team: Security
+Team: Core/Infra
+Team: Distributed
+Team: Data Management
+Team: ML
+Team: Enterprise Search
+Team: Analytics
+Team: Search
+Team: Core/Infra (Deprecated)
+Team: QL (Deprecated)
+Team: StorageEngine
+","Team labels of this project are: 
+- Team:Search
+- Team:Distributed
+- Team:Analytics
+- Team:Core/Infra
+- Team:Enterprise Search
+- Team:ML
+- Team:Data Management
+- Team:QL (Deprecated)
+- Team:Security
+- Team:StorageEngine",1,"The team labels used in this project, including their meanings and purposes, are as follows:
+1. Team: Search/Search
+   - Purpose: Search team related issues
+2. Team: Distributed/Network
+   - Purpose: Handle issues related to distributed systems and networks
+3. Team: Analytics/Aggregations
+   - Purpose: Deal with analytics and aggregation related problems
+4. Team: Core/Infra/Settings
+   - Purpose: Manage core infrastructure settings
+5. Team: Enterprise Search/Application
+   - Purpose: Focus on enterprise search application issues",1,"The team labels of this project are: 
+- Search/Search Team
+- Distributed/Network Team
+- Analytics/Aggregations Team
+- Core/Infra/Settings Team
+- Enterprise Search Team
+- Core/Infra Team
+- ML Team
+- Data Management Team
+- QL (Deprecated) Team
+- Security Team
+- Security/TLS Team
+- Circuit Breakers Team
+- Scripting Team
+- Reindex Team
+- Ingest Node Team
+- StorageEngine Team
+- Snapshot/Restore Team
+- SQL Team",1,"The team labels used in this project are as follows:
+
+1. Team:Search - Related to the Search team
+2. Team:Distributed - Related to the Distributed team
+3. Team:Analytics - Related to the Analytics team
+4. Team:Core/Infra - Related to the Core Infrastructure team
+5. Team:Enterprise Search - Related to the Enterprise Search team
+6. Team:ML - Related to the Machine Learning team
+7. Team:Data Management - Related to the Data Management team
+8. Team:QL (Deprecated) - Related to the Deprecated Query Language team
+9. Team:Security - Related to the Security team
+10. Team:StorageEngine - Related to the Storage Engine team",1,"Team labels of this project are: 
+- Team:Search
+- Team:Distributed
+- Team:Analytics",0,Team labels of this project are: - Team:Search - Team:Distributed - Team:Analytics - Team:Core/Infra - Team:Enterprise Search - Team:ML - Team:QL (Deprecated) - Team:Security - Team:StorageEngine,1,Team labels of this project are: - Team:Search - Team:Distributed - Team:Analytics - Team:Core/Infra - Team:Enterprise Search - Team:ML - Team:Security - Team:StorageEngine,1,"In this project, is there label for team?",Yes,"Yes, there are labels specifically for teams in this project. Some examples of team-specific labels include:
+- Team:Search
+- Team:Distributed
+- Team:Analytics
+- Team:Core/Infra
+- Team:Enterprise Search
+- Team:ML
+- Team:Data Management
+- Team:Security
+- Team:StorageEngine",1,"Yes, there is a label specifically for the team in this project.",1,"Yes, there are labels for teams in this project.",1,"Yes, there are labels specifically for teams in this project.",1,"Yes, there are labels assigned to the team in this project.",1,"Yes, the labels for teams in this project are managed and assigned using a combination of tags and team names. Each label includes information about the type of issue, the team responsible, and sometimes specific versions or features related to the task.",1,"Yes, there are designated labels for teams in this project, including ""Team:Search"", ""Team:Distributed"", and ""Team:Analytics"" among others.",1,What existing label is recommended for issues that needs immediate triaging?,needs:triage,"Recommended labels for issues requiring immediate triaging are "">bug :Search/Search Team:Search v8.7.0 v8.8.0"", "">bug :Distributed/Network Team:Distributed"", and "":Analytics/Aggregations >test-failure Team:Analytics"".",0,"Recommended labels for issues requiring immediate triaging are:
+- bug
+- critical",0,Answer: None,0,"Recommended labels for issues requiring immediate triaging are:
+- >bug, :Data Management/Ingest Node, Team:Data Management
+- >enhancement, :Distributed/Reindex, Team:Distributed
+- >bug, :ml, Team:ML
+- >bug, :Search/Search, Team:Search
+- blocker, >test-failure, :ml, Team:ML
+- >bug, :Analytics/Aggregations, Team:Analytics
+- >bug, :Core/Infra/Circuit Breakers, Team:Core/Infra
+- >bug, :Security/TLS, Team:Security
+- >bug, :Data Management/Indices APIs, Team:Data Management
+- :Search/Search, >test-failure, Team:Search, low-risk
+- >bug, :Core/Infra/Settings, Team:Core/Infra
+- >bug, :Distributed/Network, Team:Distributed",0,"The recommended existing label for issues that require immediate triaging is "">bug"".",0,"The existing label recommended for issues that need immediate triaging is "">bug"".",0,"The recommended existing label for issues that need immediate triaging is "">bug"".",0
+Summarize how to label a issue of ML,"To label an issue of ML, you can use the following labels: '>ml', ':ml', 'Team:ML'.","To label an issue of ML, you can use the following labels:
+- ML Config Version logic failing on new node version
+- [ML] Anomaly detection job throws errors when not all remote clusters have source data
+- [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+- [CI] LearningToRankRescorerIT testLearningToRankRescoreSmallWindow failing
+- [ML] Gracefully stopping a deployment times out while closing the pytorch process
+- [ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist
+- [ML] _infer using XML-RoBERTa model failed when input contains emojis",0,"To label an issue of ML, you can use the following labels: '>ml', ':ml', 'Team:ML'.",1,"To label an issue of ML, you can use the following labels:
+1. ML Config Version logic failing on new node version
+2. [ML] Anomaly detection job throws errors when not all remote clusters have source data
+3. [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+4. [CI] LearningToRankRescorerIT testLearningToRankRescoreSmallWindow failing
+5. [ML] Gracefully stopping a deployment times out while closing the pytorch process
+6. [ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist
+7. [ML] _infer using XML-RoBERTa model failed when input contains emojis",0,"To label a machine learning issue, relevant steps and considerations include:
+1. Identifying the issue related to machine learning by searching for keywords like ""machine learning"" in the title or body of the issue.
+2. Reviewing the problem description and understanding the specific issue related to machine learning.
+3. Assigning appropriate labels to the issue, such as specifying it as a machine learning related problem by using labels like "":ml"".
+4. Considering the impact of the issue on the machine learning process and ensuring that the issue is appropriately categorized for tracking and resolution.",0,"To label an issue of ML, you can use the following labels: '>ml', ':ml', 'Team:ML'.",1,"To label an issue of ML, you can use the following labels: '>ml', ':ml', 'Team:ML'.",1,"To label an issue in ML, you would follow these steps:
+1. Identify the ML-related or labeling-related issue.
+2. Assign appropriate labels to the issue based on the nature of the problem.
+3. Ensure the issue is categorized under the correct team (e.g., Team:ML).
+4. Address any test failures or bugs related to the ML problem.
+5. Provide detailed information about the ML issue in the title and description.",1,Is there an existing label for ML issue?,Yes,"Yes, there is a label designated for addressing machine learning (ML) related issues. The label is '>test-failure :ml Team:ML'.",1,"Yes, there are labels specifically for addressing machine learning (ML) related issues.",1,"Yes, there are existing labels for ML issue.",1,"Yes, there is a label specifically for machine learning (ML) related issues.",1,"Yes, there are preexisting labels for ML issues such as '>test-failure, :ml, Team:ML', '>bug, :ml, Team:ML', and 'blocker, >test-failure, :ml, Team:ML'.",1,"Yes, the existing labels for ML issue can be customized.",1,"Yes, there are preexisting labels for ML issues such as '>test-failure, :ml, Team:ML', '>bug, :ml, Team:ML', and 'blocker, >test-failure, :ml, Team:ML'.",1,What should i label a issue of low risk?,low-risk,"Some suitable labels for low-risk issues are "":Search/Search >test-failure Team:Search low-risk"" and "":Core/Infra/Core >test-failure Team:Core/Infra low-risk"".",1,Possible labels for low-risk issues could be: ':Search/Search >test-failure Team:Search low-risk' and ':Core/Infra/Core >test-failure Team:Core/Infra low-risk'.,1,"Question: What should I label an issue of low risk?
+SQLQuery: SELECT title, labels
+FROM issues
+WHERE labels LIKE '%low risk%'
+LIMIT 40;",0,There are no results in the database for issues categorized as low risk.,0,There are no issues in the database that are categorized as posing low risk.,0,"Based on the verified source, you should label an issue of low risk with the label 'bug'.",0,"Question: What should i label a issue of low risk?
+SQLQuery: SELECT ""number"", ""title"", ""labels""
+FROM issues
+WHERE labels LIKE '%low risk%'
+LIMIT 40;",0
+Summarize how to label a issue of priority,"TTo label an issue of priority, you can use the label containing 'priority:high' in the labels column.","To assign a priority label to an issue, the process involves adding a label that includes 'p0' in its name.",0,"Based on the verified source, the process of assigning a priority label to an issue based on its urgency and impact involves looking for issues that already have a label containing the word ""priority"". This query will return the number, title, labels, and body of all the issues that already have a priority label assigned to them.",0,"To label an issue of priority, you can use the labels associated with the issue. Some examples of labels used for issue priority include:
+- '>bug :Search/Search Team:Search v8.7.0 v8.8.0'
+- '>bug :Distributed/Network Team:Distributed'
+- ':Analytics/Aggregations >test-failure Team:Analytics'
+- '>bug :Core/Infra/Settings Team:Core/Infra'
+- '>bug >test-failure :EnterpriseSearch/Application Team:Enterprise Search'",0,"To assign a priority label to an issue, the process involves adding a label that includes 'p0' in its name.",0,"To label an issue of priority, you can look for labels that contain 'p0' in them.",0,"To label an issue of priority, you can use various labels such as 'bug', 'Distributed/Network', 'Analytics/Aggregations', and 'test-failure'. The label 'p0' is not the only label used to prioritize issues.",0,"To label an issue of priority, you can look for labels that contain 'p0' in them.",0,Is there an existing label specifically for blocker issues?,No,"Yes, there are existing labels specifically for blocker issues.",0,"Blocker issues are differentiated from other types of issues by having the label ""blocker"" assigned to them.",1,"Yes, there are existing labels specifically for blocker issues.",0,"Yes, there are labels designated for blocker issues.",0,"Yes, there are designated labels for blocker issues such as '>bug, blocker, Team:Core/Infra', 'blocker, >test-failure, :ml', 'blocker, >test-failure, :Analytics/SQL', 'blocker, >test-failure, needs:triage', and 'blocker, :Core/Infra/Core, >test-failure'.",0,"Yes, the existing labels for blocker issues have specific colors or icons associated with them.",0,"Yes, there are designated labels for blocker issues. Some of the labels found in the database related to blocker issues are '>bug, blocker, Team:Core/Infra', 'blocker, >test-failure, :ml', 'blocker, >test-failure, :Analytics/SQL', 'blocker, >test-failure, needs:triage', and 'blocker, :Core/Infra/Core, >test-failure'.",0,Suggest labels for security related issue,":Security/Security, Team:Security","Appropriate labels for security-related issues are "">bug :Security/TLS Team:Security"" and "">bug :Security/Security Team:Security"".",0,"- >bug :Security/TLS Team:Security
+- >bug :Security/Security Team:Security",1,Labels for security related issues are '>bug :Security/TLS Team:Security' and '>bug :Security/Security Team:Security'.,0,"Appropriate labels for security-related issues are '>bug, :Security/TLS, Team:Security' and '>bug, :Security/Security, Team:Security'.",0,">bug, :Security/TLS, :Security/Security, Team:Security",1,,0,"Labels for security related issues are '>bug, :Security/TLS, Team:Security' and '>bug, :Security/Security, Team:Security'.",0
+,,,,,,,,,,,,,,,,"In in this project, is there label for priority?",Yes,"Yes, there are labels for priority in this project.",1,"Yes, there are labels for priority in this project.",1,"Yes, there are labels for priority in this project.",1,"Yes, there are labels for priority in this project.",1,"Yes, there is a label for priority in this project. The labels include priorities such as 'blocker' and 'p0'.",1,"Yes, there are labels for priority in this project, including labels such as '>bug', ':Search/Search', 'Team:Search', 'v8.7.0', 'v8.8.0', ':Distributed/Network', 'Team:Distributed', ':Analytics/Aggregations', '>test-failure', 'Team:Analytics', 'blocker', 'Team:Core/Infra', 'v8.7.1', 'v8.7.2', 'v8.8.1', 'v8.8.2', 'v8.8.3', 'low-risk', 'Team:Enterprise Search', 'Team:Core/Infra', 'v8.10.0', 'v8.11.0', 'v8.11.3', 'Team:Security', 'Team:ML', 'Team:Data Management', 'v8.13.0', 'Team:StorageEngine', 'needs:triage', 'Team:QL (Deprecated)', 'v8.9.0', 'v8.11.0', 'v8.11.3', 'v8.13.0', 'v8.7.0', 'v8.7.1', 'v8.7.2', 'v8.8.1', 'v8.8.2', 'v8.8.3'.",1,"No, there is no label specifically for priority in this project. Some of the labels related to priority include '>bug', 'blocker', and 'low-risk'.",0,Suggest labels for search related issue,"Search/Search, Team:Search","The labels that can be used for search-related issues are:
+- >bug 
+- :Search/Search 
+- Team:Search",0,"Some suitable labels for the search-related issue are '>bug', '>test-failure', ':EnterpriseSearch/Application Team:Enterprise Search', 'blocker', 'Team:Core/Infra', ':Core/Infra/CLI', 'v8.7.0', 'v8.7.1', 'v8.8.0', 'v8.7.2', 'v8.8.1', 'v8.9.0', 'v8.8.2', 'v8.8.3'.",0,"Labels for search related issues are '>bug', '>test-failure', ':EnterpriseSearch/Application Team:Enterprise Search', 'blocker', 'Team:Core/Infra', ':Core/Infra/CLI', 'v8.7.0', 'v8.7.1', 'v8.8.0', 'v8.7.2', 'v8.8.1', 'v8.9.0', 'v8.8.2', 'v8.8.3'.",0,"Suitable labels for the search-related issue are '>bug, >test-failure, :EnterpriseSearch/Application, Team:Enterprise Search' and '>bug, blocker, Team:Core/Infra, :Core/Infra/CLI, v8.7.0, v8.7.1, v8.8.0, v8.7.2, v8.8.1, v8.9.0, v8.8.2, v8.8.3'.",0,"Labels for search related issues are '>bug, >test-failure, :EnterpriseSearch/Application, Team:Enterprise Search' and '>bug, blocker, Team:Core/Infra, :Core/Infra/CLI, v8.7.0, v8.7.1, v8.8.0, v8.7.2, v8.8.1, v8.9.0, v8.8.2, v8.8.3'.",0,"Labels for search related issues are: 1. >bug, :Search/Search, Team:Search, v8.7.0, v8.8.0",,"Labels for search related issues are:
+1. >bug, >test-failure, :EnterpriseSearch/Application, Team:Enterprise Search
+2. >bug, blocker, Team:Core/Infra, :Core/Infra/CLI, v8.7.0, v8.7.1, v8.8.0, v8.7.2, v8.8.1, v8.9.0, v8.8.2, v8.8.3",0
+,,,,,,,,,,,,,,,,"In in this project, is there label to indicate risk?",Yes,"Yes, there are labels that indicate risk in this project. The labels found are ':Search/Search, >test-failure, Team:Search, low-risk' and ':Core/Infra/Core, >test-failure, Team:Core/Infra, low-risk'.",1,"Yes, there are labels in this project that specifically denote risk, including ""low-risk"".",1,"Yes, there are labels indicating risk in this project.",1,"Yes, there are labels in this project specifically indicating risk.",1,"Yes, there are labels in this project that indicate risk. The labels found are ':Search/Search, >test-failure, Team:Search, low-risk' and ':Core/Infra/Core, >test-failure, Team:Core/Infra, low-risk'.",1,,,"Yes, there are labels in this project that indicate risk. The labels found are ':Search/Search, >test-failure, Team:Search, low-risk' and ':Core/Infra/Core, >test-failure, Team:Core/Infra, low-risk'.",1,An issue is reported in as high priority. What label should i assign?,priority:high,"The label that should be assigned to the high priority issue is "">bug, :Core/Infra/Settings, Team:Core/Infra"".",0,"The ""high priority"" label was successfully assigned to the reported issue with number 94673.",0,"The label that should be assigned to the highest priority open issue is "">bug :Core/Infra/Settings Team:Core/Infra"".",0,"Suggest a label that indicates high priority for the reported issue: '>bug, :Core/Infra/Settings, Team:Core/Infra'",0,"The label that should be assigned when an issue is reported as high priority is "":Analytics/Aggregations"".",0," Suggest a label that indicates high priority for the reported issue: '>bug, :Core/Infra/Settings, Team:Core/Infra' ",0,"The label that should be assigned when an issue is reported as high priority is ""p0"".",0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,What existing label is recommended for that needs to be labelled as low risk?,low-risk,"The existing label recommended for issues that need to be labelled as risk are ""low-risk"".",1,"Recommended labels for marking issues as ""risk"" are "":Search/Search >test-failure Team:Search low-risk"" and "":Core/Infra/Core >test-failure Team:Core/Infra low-risk"".",1,"The existing label recommended for issues that need to be labelled as risk is ""low-risk"".",1,"Recommended labels for issues that need to be marked as ""risk"" are "":Search/Search, >test-failure, Team:Search, low-risk"" and "":Core/Infra/Core, >test-failure, Team:Core/Infra, low-risk"".",1,The existing label recommended for issues that need to be labelled as risk is 'low-risk'.,1,The existing label recommended for issues that need to be labelled as risk is 'low-risk'.,1,"The existing label recommended for issues that need to be labelled as risk include labels such as '>bug', ':Search/Search', ':Distributed/Network', ':Analytics/Aggregations', ':Core/Infra/Settings', and ':EnterpriseSearch/Application'.",0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"for search related issue, which label can indicate the team?",Team:Search,"The label that can indicate the team for search-related issues is ""Team:Search"".",1,"The label that indicates the team responsible for search-related issues is ""Team:Search"".",1,"Team label that can indicate the team for search-related issues is ""Team:Search"".",1,"The label that indicates the team responsible for search-related issues is ""Team:Search"".",1,"The label that can indicate the team for search-related issues is ""Team:Search"".",1,The label 'Team:Search' can be used to indicate the team for search-related issues.,1,"The label that can indicate the team for search related issues is ""Team:Search"".",1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Suggest labels for security related issue,"Labels suggested for security related issues are :Security/Security, Team:Security","Labels suggested for security related issues are "">bug, :Security/TLS, Team:Security"" and "">bug, :Security/Security, Team:Security"".",1,"Appropriate labels for a security-related issue are "">bug :Security/TLS Team:Security"" and "">bug :Security/Security Team:Security"".",1,"Labels suggested for security related issues are "">bug :Security/TLS Team:Security"" and "">bug :Security/Security Team:Security"".",1,"Appropriate labels for security-related issues are '>bug, :Security/TLS, Team:Security' and '>bug, :Security/Security, Team:Security'.",1,"Labels that could be suggested for security related issues are '>bug, :Security/TLS, Team:Security' and '>bug, :Security/Security, Team:Security'.",1," Appropriate labels for security-related issues are '>bug, :Security/TLS, Team:Security' and '>bug, :Security/Security, Team:Security'. ",1,"Labels for security related issues are '>bug, :Security/TLS, Team:Security' and '>bug, :Security/Security, Team:Security'.",1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Suggest labels for ML related issue,"Labels suggested for ML related issue are: :ml, Team:ML","Appropriate labels for machine learning-related issues include "">machine learning"" and "">machine learning team""",0," Labels suggested for ML related issue are: '>test-failure, :ml, Team:ML', '>bug, :ml, Team:ML', 'blocker, >test-failure, :ml, Team:ML' ",1,"Labels suggested for ML related issues are: '>test-failure \n :ml \n Team:ML', '>bug \n :ml \n Team:ML', 'blocker \n >test-failure \n :ml \n Team:ML'",1,Suitable labels for machine learning-related issues are not available in the provided data.,0,"Labels for ML related issue could be: '>test-failure, :ml, Team:ML', '>bug, :ml, Team:ML', 'blocker, >test-failure, :ml, Team:ML'",1," Labels suggested for ML related issues are: '>test-failure 
+ :ml 
+ Team:ML', '>bug 
+ :ml 
+ Team:ML', 'blocker 
+ >test-failure 
+ :ml 
+ Team:ML' ",1,"Based on the information from the verified source, suggested labels for an ML-related issue could be:
+- :ml
+- Team:ML",1

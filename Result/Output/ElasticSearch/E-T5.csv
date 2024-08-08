@@ -1,0 +1,164 @@
+T5-SQ,T5-SA,T5-SA_LLM,T5-S_LLM_R,T5-SA_CIMBUR,T5-S_CIMBUR_R,T5-SA_CFG,T5-S_CFG_R,T5-SA_Query,T5-S_Query_R,T5-SA_MT,T5-S_MT_R,T5-SA_COVE,T5-S_COVE_R,T5-SA_COVE_MT,T5-S_COVE_MT_R,T5-YNQ,T5-YNA,T5-YNA_LLM,T5-YN_LLM_R,T5-YNA_CIMBUR,T5-YN_CIMBUR_R,T5-YNA_CFG,T5-YN_CFG_R,T5-YNA_Query,T5-YN_Query_R,T5-YNA_MT,T5-YN_MT_R,T5-YNA_COVE,T5-YN_COVE_R,T5-YNA_COVE_MT,T5-YN_COVE_MT_R,T5-FQ,T5-FA,T5-FA_LLM,T5-FA_LLM_R,T5-FA_CIMBUR,T5-FA_CIMBUR_R,T5-FA_CFG,T5-FA_CFG_R,T5-FA_Query,T5-FA_Query_R,T5-FA_MT,T5-FA_MT_R,T5-FA_COVE,T5-FA_COVE_R,T5-FA_COVE_MT,T5-FA_COVE_MT_R
+Give me a summary of backlog issues  over 10 months,"Issue number 94839: It involves putting index settings in twice, which causes Elasticsearch to crash due to an java.lang.AssertionError. Issue number 95347: This issue relates to serialization exceptions that occur when attempting to serialize outbound messages. It results in  java.lang.IllegalArgumentException error",There are currently 2 backlog issues that have been open for over 10 months.,0,"The backlog includes the following two older than 10 months open issues:
+1. Issue number 94839 - Serialization exceptions should be handled in OutboundHandler
+- Created on: 2023-03-28
+- Description: While trying to get X-Pack yaml tests running in a 3 node cluster (usually they run in a single node cluster) I noticed a problem with serialization between nodes for geo shapes. The problem is that the search hit serialization code expects to be able to serialize the hit contents as generic...
+- Exception: java.lang.IllegalArgumentException: can not write type [class org.elasticsearch.xpack.spatial.index.fielddata.GeoShapeValues$GeoShapeValue]
+- Labels: >bug, :Distributed/Network Team:Distributed
+
+2. Issue number 95347 - Putting index settings in twice causes ES to crash from assertion error
+- Created on: 2023-04-18
+- Description: It's possible to cause an assert failure by putting the same index settings into an index twice.
+- Exception: java.lang.AssertionError: Index updates are expected as index settings version has changed
+- Labels: >bug, :Core/Infra/Settings Team:Core/Infra",1,"There are currently 2 open backlog issues that were created over 10 months ago. The titles are ""Putting index settings in twice causes ES to crash from assertion error"" and ""Serialization exceptions should be handled in OutboundHandler"".",0,"There are 2 backlog issues older than 10 months. The first one is ""Serialization exceptions should be handled in OutboundHandler"" created on 2023-03-28, with the description ""While trying to get X-Pack yaml tests running in a 3 node cluster (usually they run in a single node cluster) I noticed a problem with serialization between nodes for geo shapes. The problem is that the search hit serialization code expects to be able to serialize the hit contents as generic..."". It has labels '>bug, :Distributed/Network, Team:Distributed'. The second one is ""Putting index settings in twice causes ES to crash from assertion error"" created on 2023-04-18, with the description ""It's possible to cause an assert failure by putting the same index settings into an index twice."" It has labels '>bug, :Core/Infra/Settings, Team:Core/Infra'.",0,There are 2 backlog open issues that have accumulated over a period of 10 months on average with an average of 4 comments.,0,There are 2 backlog issues currently open for over 10 months.,0,There have been 40 backlog issues recorded over a span of 10 months.,0,Are there any blocker that remain unresolved over 1 month,Yes,There are no unresolved blocker issues older than 1 month.,0,"Yes, there is one unresolved blocker issue that was reported over a month ago.",1,"Yes, there is one blocker that remains unresolved over 1 month. The issue number is 103072 with the title '[CI] LearningToRankRescorerIT testLearningToRankRescore failing'.",1,There are no unresolved blocker issues older than 1 month.,0,"Yes, there is an unresolved blocker that has exceeded a month in duration. The issue number is 103072 with the title '[CI] LearningToRankRescorerIT testLearningToRankRescore failing'.",1,SQLResult: number 94839 Serialization exceptions should be handled in OutboundHandler open 2023-03-28,1,"Yes, there is one unresolved blocker that has been open for more than 1 month, which is the issue with the number 104931 titled ""Tighten up exception handling around markItemAsDropped/markItemAsFailed"".",1,List all the pending issues,"94839, 95347, 96594, 96639, 98652, 100264, 100887, 100964, 103072, 104278, 104160, 103840, 104931",There are currently 13 pending issues.,0,"Issue numbers of all pending issues are 96639, 100887, 103840, and 104931.",1,There are currently 13 pending issues in the database.,0,"Issue numbers of all pending issues are 94839, 95347, 96594, 96639, 98652, 100264, 100887, 100964, 103072, 103840, 104160, 104278, 104931.",1,There are currently 13 pending issues.,0,"There are currently 5 pending issues. 
+
+1. Issue Number: 94839
+   Title: Serialization exceptions should be handled in OutboundHandler
+   State: Open
+   Comments: 1
+   Created At: 2023-03-28
+   Issue Creator: droberts195
+   Labels: >bug, :Distributed/Network, Team:Distributed
+   Milestone: None
+
+2. Issue Number: 95347
+   Title: Putting index settings in twice causes ES to crash from assertion error
+   State: Open
+   Comments: 7
+   Created At: 2023-04-18
+   Issue Creator: dakrone
+   Labels: >bug, :Core/Infra/Settings, Team:Core/Infra
+   Milestone: None
+
+3. Issue Number: 96594
+   Title: Bad merge config prevents cluster state application
+   State: Open
+   Comments: 3
+   Created At: 2023-06-06
+   Issue Creator: DaveCTurner
+   Labels: >bug, :Search/Search, Team:Search
+   Milestone: None
+
+4. Issue Number: 96639
+   Title: [CI] Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20'
+   State: Open
+   Comments: 1
+   Created At: 2023-06-07
+   Issue Creator: ywangd
+   Labels: :Search/Search, >test-failure, Team:Search, low-risk
+   Milestone: None
+
+5. Issue Number: 98652
+   Title: Node is unable to join the cluster due to negative `version` in composable index template
+   State: Open
+   Comments: 3
+   Created At: 2023-08-21
+   Issue Creator: romain-chanu
+   Labels: >bug, :Data Management/Indices APIs, Team:Data Management
+   Milestone: None",0,There are 13 pending issues.,0
+Give me a summary of backlog issues of high priority,"Issue number 96594: A bad merge configuration in Elasticsearch can prevent nodes from joining a cluster due to an invalid maxThreadCount and maxMergeCount setting, causing failures during cluster state application. The issue suggests improving validation and handling of index settings to avoid such failures.",There are currently no backlog issues of high priority.,0,"High-priority backlog issues include: 
+1. Issue: Serialization exceptions should be handled in OutboundHandler 
+Description: While trying to get X-Pack yaml tests running in a 3 node cluster (usually they run in a single node cluster) I noticed a problem with serialization between nodes for geo shapes. The problem is that the search hit serialization code expects to be able to serialize the hit contents as “generic...
+Exception: java.lang.IllegalArgumentException: can not write type [class org.elasticsearch.xpack.spatial.index.fielddata.GeoShapeValues$GeoShapeValue]
+Labels: >bug, :Distributed/Network, Team:Distributed
+
+2. Issue: Putting index settings in twice causes ES to crash from assertion error
+Description: It's possible to cause an assert failure by putting the same index settings into an index twice.
+Exception: java.lang.AssertionError: Index updates are expected as index settings version has changed
+Labels: >bug, :Core/Infra/Settings, Team:Core/Infra
+
+3. Issue: Bad merge config prevents cluster state application
+Description: Seen blocking nodes from joining a cluster.
+Exception: java.lang.IllegalArgumentException: maxThreadCount (= 4) should be <= maxMergeCount (= 2)
+Labels: >bug, :Search/Search, Team:Search
+
+4. Issue: Node is unable to join the cluster due to negative `version` in composable index template
+Description: Users may...
+Exception: java.lang.IllegalStateException: Negative longs unsupported, use writeLong or writeZLong for negative numbers [-3]
+Labels: >bug, :Data Management/Indices APIs, Team:Data Management",0,"Here is a summary of backlog issues of high priority:
+
+1. Issue number 104931 titled 'Tighten up exception handling around markItemAsDropped/markItemAsFailed' was created by joegallo on 2024-01-30 and has 1 comment.
+2. Issue number 104160 titled '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' was created by droberts195 on 2024-01-09 and has 1 comment.
+3. Issue number 103840 titled 'It lasted for several days to throw the exception: failed to load bitset' was created by kkewwei on 2024-01-03 and has 1 comment.
+4. Issue number 100964 titled 'Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)' was created by zitounh on 2023-10-17 and has 1 comment.
+5. Issue number 100887 titled 'Circuit breaking exceptions thrown by transport layer are hard to follow' was created by javanna on 2023-10-16 and has 2 comments.
+6. Issue number 100264 titled 'HTTPS over HTTPS CONNECT tunnel (proxy) does not work' was created by albertzaharovits on 2023-10-04 and has 1 comment.
+7. Issue number 98652 titled 'Node is unable to join the cluster due to negative `version` in composable index template' was created by romain-chanu on 2023-08-21 and has 3 comments.
+8. Issue number 96594 titled 'Bad merge config prevents cluster state application' was created by DaveCTurner on 2023-06-06 and has 3 comments.
+9. Issue number 95347 titled 'Putting index settings in twice causes ES to crash from assertion error' was created by dakrone on 2023-04-18 and has 7 comments.
+10. Issue number 94839 titled 'Serialization exceptions should be handled in OutboundHandler' was created by droberts195 on 2023-03-28 and has 1 comment.",0,"Title: Serialization exceptions should be handled in OutboundHandler
+Description: While trying to get X-Pack yaml tests running in a 3 node cluster (usually they run in a single node)
+Labels: >bug, :Distributed/Network, Team:Distributed",0,"The response remains the same:
+There are currently 10 open backlog issues of high priority.",0,"There is one backlog issue currently marked as high priority, with the title [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing.",0,There are no high priority backlog issues currently open.,0,"('Are there backlog issues over 10 months?',)",Yes,"Yes, there are backlog issues that are more than 10 months old. The issues are number 94839 titled ""Serialization exceptions should be handled in OutboundHandler"" created on 2023-03-28 and number 95347 titled ""Putting index settings in twice causes ES to crash from assertion error"" created on 2023-04-18.",1,"Yes, there are 2 backlog issues that are more than 10 months old. The issues are with numbers 94839 and 95347.",1,"Yes, there are backlog issues over 10 months. The issues with numbers 94839 and 95347 are open and were created over 10 months ago.",1,"Yes, there are backlog issues older than 10 months.",1,"Yes, there are backlog issues that have been ongoing for more than 10 months. The issues with numbers 94839 and 95347 have been open for more than 10 months.",1,"Yes, there are backlog issues over 10 months. Two open issues were found that were created over 10 months ago. The titles of these issues are ""Serialization exceptions should be handled in OutboundHandler"" and ""Putting index settings in twice causes ES to crash from assertion error"".",1,"Yes, there are backlog issues that have been ongoing for more than 10 months. Two of them are issue number 94839 titled ""Serialization exceptions should be handled in OutboundHandler"" created on 2023-03-28 and issue number 95347 titled ""Putting index settings in twice causes ES to crash from assertion error"" created on 2023-04-18.",1,Find open blocker issues older than 2 months,103072,There is 1 open blocker issue older than 2 months.,0,Issue numbers of open blocker issues created more than 2 months ago: 103072.,1,There is 1 open blocker issue older than 2 months.,0,Issue numbers of open blocker issues created more than 2 months ago are 103072.,1,"There is an unresolved blocker issue that is more than 2 months old. The issue number is 103072, the title is '[CI] LearningToRankRescorerIT testLearningToRankRescore failing', and it was created on 2023-12-06.",1,"The oldest open blocker issue in the database is titled '[CI] LearningToRankRescorerIT testLearningToRankRescore failing' and was created on December 6, 2023.",0,"There is an unresolved blocker issue that is more than 2 months old. The issue number is 103072, the title is '[CI] LearningToRankRescorerIT testLearningToRankRescore failing', it is in the 'open' state, and it was created on 2023-12-06.",1
+,,,,,,,,,,,,,,,,Is there any pending issue for team analytics?,Yes,"Yes, there is an unresolved issue that has been assigned to the Analytics team.",1,"Number: 94839
+Title: Serialization exceptions should be handled in OutboundHandler
+State: open
+Created Date: 2023-03-28
+Assigned Team: Analytics Team",1,"Yes, there is a pending issue for team Analytics.",1,There are no unresolved issues assigned to the analytics team.,0,"Yes, team analytics has one outstanding issue with the title 'Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)'.",1,"Yes, there is a pending issue for team analytics.",1,"Yes, there is an unresolved matter for team analytics.",1,Find pending issues with milestone,,There are no pending issues with a milestone currently.,0,Issue number 94839 has a pending status and an assigned milestone.,0,"Number: 94839
+Title: Serialization exceptions should be handled in OutboundHandler
+State: open
+Milestone: Distributed",0,"Issue numbers with pending status and assigned milestone are:
+94839",0,"The unresolved issue related to the milestone is ""Serialization exceptions should be handled in OutboundHandler.""",0,There is one pending issue with a milestone currently.,0,"There is a pending issue related to a milestone, which is ""Team:Distributed"".",0
+,,,,,,,,,,,,,,,,Are there any high priority pending issue?,Yes,"Yes, there is a high priority pending issue.",1,"Yes, there are pending high priority issues that require immediate attention.",1,"Yes, there are high priority pending issues. Some of them are:
+1. Serialization exceptions should be handled in OutboundHandler
+2. Putting index settings in twice causes ES to crash from assertion error
+3. Bad merge config prevents cluster state application
+4. Node is unable to join the cluster due to negative `version` in composable index template
+5. HTTPS over HTTPS CONNECT tunnel (proxy) does not work
+6. Circuit breaking exceptions thrown by transport layer are hard to follow
+7. Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)
+8. It lasted for several days to throw the exception: failed to load bitset
+9. [ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist
+10. Tighten up exception handling around markItemAsDropped/markItemAsFailed",1,No. Answer: There are no pending high priority issues.,0,"Yes, there are unresolved matters that require immediate attention. Some of the open issues that need to be addressed include ""Serialization exceptions should be handled in OutboundHandler"", ""Putting index settings in twice causes ES to crash from assertion error"", ""Bad merge config prevents cluster state application"", and others.",1,"Yes, droberts195 is responsible for resolving the high priority pending issue.",1,There are no pending matters of high priority that need to be resolved.,0,Give me a list of low risk pending issues,96639,"There are currently 3 low risk pending issues:
+1. Issue number 96639 titled ""[CI] Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20'"" was created on 2023-06-07 by ywangd.
+2. Issue number 103072 titled ""[CI] LearningToRankRescorerIT testLearningToRankRescore failing"" was created on 2023-12-06 by thecoop.
+3. Issue number 104278 titled ""Reindex task failure log does not help understand the type of task action"" was created on 2024-01-11 by naj-h.",1,The issue numbers of pending issues categorized as low risk are not available.,0,"The list of low risk pending issues are:
+1. Issue number 96639 - [CI] Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20' created by ywangd on 2023-06-07 with 1 comment.
+2. Issue number 103072 - [CI] LearningToRankRescorerIT testLearningToRankRescore failing created by thecoop on 2023-12-06 with 5 comments.
+3. Issue number 104278 - Reindex task failure log does not help understand the type of task action created by naj-h on 2024-01-11 with 4 comments.",1,94839,0,There are no pending issues that are considered low risk.,0,"[(96639, ""[CI] Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20'"", 'open', '2023-06-07', 'ywangd', ':Search/Search, >test-failure, Team:Search, low-risk', None), (103072, '[CI] LearningToRankRescorerIT testLearningToRankRescore failing', 'open', '2023-12-06', 'afoucret', 'blocker, >test-failure, :ml, Team:ML', None)]",1,There are no pending issues that are considered low risk.,0
+,,,,,,,,,,,,,,,,Are there backlog issues related to issues over 11 months?,Yes,"Yes, there are backlog issues related to issues over 11 months. The open backlog issues related to issues over 11 months are:
+1. Node is unable to join the cluster due to negative `version` in composable index template, created on 2023-08-21
+2. Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20', created on 2023-06-07
+3. Bad merge config prevents cluster state application, created on 2023-06-06
+4. Putting index settings in twice causes ES to crash from assertion error, created on 2023-04-18
+5. Serialization exceptions should be handled in OutboundHandler, created on 2023-03-28",1,"Yes. Yes. There are 5 backlog issues related to issues older than 11 months. These backlog issues were identified by looking for labels containing '>bug'. Specific examples of these backlog issues include:
+1. Snapshot restore fails to allocate replicas due to FieldExistsQuery error
+2. Downsample task doesn't clear the `STARTED` status when failed/cancelled
+3. [ML] _infer using XML-RoBERTa model failed when input contains emojis
+4. Tighten up exception handling around markItemAsDropped/markItemAsFailed
+5. [ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist
+
+The backlog issues currently being addressed are the ones with 'open' state, such as 'Tighten up exception handling around markItemAsDropped/markItemAsFailed' and '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist'.
+
+The timeframe for when these backlog issues were first reported ranges from January 9, 2024, to February 6, 2024.",1,"Yes, there are backlog issues related to issues over 11 months. The open backlog issues related to issues over 11 months are with numbers 94839, 95347, 96594, 96639, and 98652.",1,"Yes, there are backlog issues related to issues over 11 months",1,"Yes, there are unresolved issues in the backlog that have been open for more than 11 months. Some of these issues are:
+1. Serialization exceptions should be handled in OutboundHandler
+2. Putting index settings in twice causes ES to crash from assertion error
+3. Bad merge config prevents cluster state application
+4. [CI] Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20'
+5. Node is unable to join the cluster due to negative `version` in composable index template",1,"Yes, there is a backlog issue related to ""Serialization exceptions should be handled in OutboundHandler"" that was created on 2023-03-28.",1,"Yes, there are backlog issues related to issues over 11 months. Some of the open backlog issues that have been ongoing for over 11 months are:
+1. Serialization exceptions should be handled in OutboundHandler - Created on 2023-03-28",1,Find out test failure issues that have been open for more than 8 months?,96639,There are no test failure issues that have been open for more than 8 months.,0,Issue numbers of test failure issues open for over 8 months: 96639.,1,There are no test failure issues that have been open for more than 8 months in the database.,0,Issue numbers of test failure issues open for over 8 months: 96639,1,There are currently 4 test failure issues that have been open for more than 8 months.,0,"There are issues that have been open for more than 8 months. The issues with numbers 94839, 95347, 96594, and 96639 have been open for more than 8 months.",1,"There are currently 4 test failure issues that have been open for more than 8 months. The issues are numbered 96639, 96594, 95347, and 94839.",1
+,,,,,,,,,,,,,,,,Is there any pending issue for team analytics?,Yes,"Yes, there is a pending issue for team analytics.",1,"Yes, there is one unresolved issue assigned to the analytics team. The issue number is 94839 with the title ""Serialization exceptions should be handled in OutboundHandler"".",1,"Yes, there is a pending issue for team Analytics.",1,No. There are no pending issues assigned to the analytics team.,0,"Yes, team analytics has one outstanding issue with the title ""Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website).""",1,"Yes, the current status of the pending issue for team analytics is open.",1,"Yes, there is an unresolved matter for team analytics.",1,Which is the long most pending issue?,94839,"The longest pending open issue is number 94839 - ""Serialization exceptions should be handled in OutboundHandler"" which was created on 2023-03-28 and has not been closed yet.",1,"The issue with the longest pending status is number 94839 titled ""Serialization exceptions should be handled in OutboundHandler"" which is still open since it was created on 2023-03-28.",1,"The longest pending open issue is number 94839 titled ""Serialization exceptions should be handled in OutboundHandler"" which was created on 2023-03-28.",1,The issue with the longest pending status is number 94839 - Serialization exceptions should be handled in OutboundHandler.,1,"The longest pending open issue is number 94839 titled ""Serialization exceptions should be handled in OutboundHandler"" which is still open and was created on 2023-03-28.",1,The longest pending open issue is number 94839 titled 'Serialization exceptions should be handled in OutboundHandler' which was created on 2023-03-28 and has not been closed yet.,1,"The longest pending open issue is number 94839 titled ""Serialization exceptions should be handled in OutboundHandler"" which is still open and was created on 2023-03-28.",1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,List all the pending issues related to security,100264,"There is 1 pending issue related to security:
+- Issue number 100264 titled ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" was created on 2023-10-04 by albertzaharovits. It is labeled as a security issue.",1,Issue numbers of pending security-related issues are: 100264.,1,"There is 1 pending issue related to security:
+- Issue number 100264 titled ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" was created on 2023-10-04 by albertzaharovits.",1,Issue numbers of pending security-related issues are 100264.,1,"There is one security-related concern that is still pending:
+- Issue number 100264 titled ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" was created on 2023-10-04 by albertzaharovits. It is labeled as a bug related to Security/TLS with no milestone assigned.",1,There is 1 pending issue related to security: - Issue number 100264 titled 'HTTPS over HTTPS CONNECT tunnel (proxy) does not work' was created by albertzaharovits. It is labeled as a bug related to Security/TLS.,1,"There is one pending security-related issue:
+- Issue number 100264 titled ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" is currently open.",1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Find open high priority issue,96594,There are no open high priority issues in the database.,0,Issue number 96594 is the only open issue marked as high priority.,1,"Number: 94839
+Title: Serialization exceptions should be handled in OutboundHandler
+State: open
+Issue Creator: droberts195
+Labels: >bug",0,Issue numbers of open issues marked as high priority are 94839.,0,There are no open issues with high priority (label 'p0') in the database.,0,"There is an open high priority issue in the database. The issue number is 94839 with the title ""Serialization exceptions should be handled in OutboundHandler"" and it belongs to the Team:Distributed.",0,There are no open high priority issues in the database.,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Find pending issues related to analytics,100964,There is 1 pending issue related to analytics.,0,Issue numbers for pending issues related to analytics are: 100964.,1,There is 1 pending issue related to analytics.,0,Issue numbers related to pending analytics issues are 100964.,1,There is 1 pending issue related to analytics.,0,There is 1 pending issue related to analytics.,0,There is 1 pending issue related to analytics.,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Find pendind issue assigned to Team:Search Foundations,96594,There are no pending issues assigned to Team:Search Foundations.,0,Issue number 94839 is assigned to Team: Search Foundations.,0,There are no pending issues assigned to Team:Search Foundations.,0,There are no pending issues assigned to Team: Search Foundations.,0,There are no pending issues assigned to Team:Search Foundations.,0,"Yes, it is true that there are no pending issues assigned to Team:Search Foundations.",0,There are no pending issues assigned to Team:Search Foundations.,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,List all distributed related issues that has been pending,"94839, 96639, 104278, 103840",There are currently 2 pending distributed related issues.,0,Issue numbers 94839 and 104278 are related to distribution.,1,There are 2 distributed related open issues.,0,Issue numbers of all pending distributed-related issues are 94839 and 104278.,1,"There is one pending distributed related issue that needs to be addressed. The issue is titled ""Serialization exceptions should be handled in OutboundHandler"" and was created by droberts195 on 2023-03-28. The issue has 1 comment and the body describes a problem with serialization between nodes for geo shapes in a 3 node cluster.",0,There are currently 2 distributed related open issues pending.,0,"There is one pending distributed related issue titled ""Serialization exceptions should be handled in OutboundHandler"" that needs to be addressed.",0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,List all pending ML related issues,"104160, 103072","There are currently 2 pending ML related issues:
+1. Issue number 103072 titled '[CI] LearningToRankRescorerIT testLearningToRankRescore failing' with 5 comments, created on 2023-12-06 by the issue creator 'thecoop'.
+2. Issue number 104160 titled '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' with 1 comment, created on 2024-01-09 by the issue creator 'droberts195'.",0,There are no issue numbers that are pending and related to machine learning.,0,"There are currently 2 pending ML related issues:
+1. Issue number 103072 titled '[CI] LearningToRankRescorerIT testLearningToRankRescore failing' created on 2023-12-06 with 5 comments by the issue creator 'thecoop'.
+2. Issue number 104160 titled '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' created on 2024-01-09 with 1 comment by the issue creator 'droberts195'.",0,There are no machine learning-related issues in the database.,0,"There are currently 2 pending ML related issues:
+1. Issue number 103072: [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+2. Issue number 104160: [ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist",1,"There are currently 2 pending ML related issues:
+1. Issue number 103072 titled '[CI] LearningToRankRescorerIT testLearningToRankRescore failing' created by thecoop on 2023-12-06.
+2. Issue number 104160 titled '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' created on 2024-01-09.",0,"There are 2 pending ML related issues:
+1. Issue number 103072 titled '[CI] LearningToRankRescorerIT testLearningToRankRescore failing' created by thecoop on 2023-12-06.
+2. Issue number 104160 titled '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' created on 2024-01-09.",0

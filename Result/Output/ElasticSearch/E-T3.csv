@@ -1,0 +1,508 @@
+T3-SQ,T3-SA,T3-SA_LLM,T3-S_LLM_R,T3-SA_CIMBUR,T3-S_CIMBUR_R,T3-SA_CFG,T3-S_CFG_R,T3-SA_Query,T3-S_Query_R,T3-SA_MT,T3-S_MT_R,T3-SA_COVE,T3-S_COVE_R,T3-SA_COVE_MT,T3-S_COVE_MT_R,T3-FQ,T3-FA,T3-FA_LLM,T3-FA_LLM_R,T3-FA_CIMBUR,T3-FA_CIMBUR_R,T3-FA_CFG,T3-FA_CFG_R,T3-FA_Query,T3-FA_Query_R,T3-FA_MT,T3-FA_MT_R,T3-FA_COVE,T3-FA_COVE_R,T3-FA_COVE_MT,T3-FA_COVE_MT_R
+Summarize the issues related to Data Management,"Issue 104931: Tighten up exception handling around markItemAsDropped/markItemAsFailed. A java.lang.RuntimeException occurs due to serialization issues with IngestStats, potentially leading to negative counts in IngestStats.Stats.
+Issue 98652: Node is unable to join the cluster due to negative version in composable index template due to An java.lang.IllegalStateException.","There are currently 2 open issues related to Data Management:
+1. Issue number 98652 titled ""Node is unable to join the cluster due to negative `version` in composable index template"" created by romain-chanu on 2023-08-21 with 3 comments.
+2. Issue number 104931 titled ""Tighten up exception handling around markItemAsDropped/markItemAsFailed"" created by joegallo on 2024-01-30 with 1 comment.",1,"Issue 1:
+Title: Node is unable to join the cluster due to negative `version` in composable index template
+Exception: java.lang.IllegalStateException: Negative longs unsupported, use writeLong or writeZLong for negative numbers [-3]
+Labels: >bug, :Data Management/Indices APIs, Team:Data Management
+
+Issue 2:
+Title: Tighten up exception handling around markItemAsDropped/markItemAsFailed
+Body: Serialization issues with `IngestStats` causing negative stats counts.
+Labels: >bug, :Data Management/Ingest Node, Team:Data Management",1,"The issues related to Data Management are:
+1. Issue number 98652 - Node is unable to join the cluster due to negative `version` in composable index template
+2. Issue number 104931 - Tighten up exception handling around markItemAsDropped/markItemAsFailed",1,"The issues related to Data Management are:
+1. Title: Node is unable to join the cluster due to negative `version` in composable index template
+   Body: ### Elasticsearch Version
+
+8.9.1 
+
+Note: problem was observed also in version 8.7.0. It is likely that older versions are affected by this problem.
+
+### Installed Plugins
+
+_No response_
+
+### Java Version
+
+_bundled_
+
+### OS Version
+
+N.A
+
+### Problem Description
+
+Users may...
+   Labels: >bug, :Data Management/Indices APIs, Team:Data Management
+
+2. Title: Tighten up exception handling around markItemAsDropped/markItemAsFailed
+   Body: There's been a lot of issues with serialization of `IngestStats`, and having the stats themselves sometimes go negative (due to a bad code path double decrementing the 'ingestCurrent' count of the `IngestStats.Stats`).
+
+See https://github.com/elastic/elasticsearch/issues/52339,...
+   Labels: >bug, :Data Management/Ingest Node, Team:Data Management",0,There are no results in the database related to the main concerns surrounding Data Management.,0,The issues related to Data Management are as follows: 1. Issue number 98652 titled 'Node is unable to join the cluster due to negative `version` in composable index template' is open. 2. Issue number 104931 titled 'Tighten up exception handling around markItemAsDropped/markItemAsFailed' is open with 1 comment. It was created by Joe Gallo and is related to Data Management/Ingest Node.,1,There are no problems related to Data Management in the provided issues data.,0,Find all test failure issues assigned to analytics team,"95013 , 105840",There are no test failure issues assigned to the analytics team in the database.,0,95013,1,"Number: 95013
+Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failin
+State: closed
+Comments: 3
+Created_at: 2023-04-04
+Closed_at: 2023-04-04
+Issue_creator: craigtaverner
+Labels: :Analytics/Aggregations >test-failure
+Issue_assignees: None
+Milestone: None
+Body: Three tests failed with the same error:
+
+* [test {p0=aggregations/filter/Terms lookup gets cached} java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.",0,94839,0,There are no test failure issues that have been assigned to the analytics team.,0,"Number: 95013
+Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing
+State: closed
+Comments: 3
+Created At: 2023-04-04
+Closed At: 2023-04-04
+Issue Creator: craigtaverner
+Labels: :Analytics/Aggregations, >test-failure, Team:Analytics
+Issue Assignees: None
+Milestone: None
+Body: Three tests failed with the same error:
+- [test {p0=aggregations/filter/Terms lookup gets cached}",0,"The titles of the test failure issues assigned to the analytics team are:
+1. [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing",0
+Compile a summary of unresolved issues that have been created within 2 months,"Issue 104931: Tighten up exception handling around markItemAsDropped/markItemAsFailed. A java.lang.RuntimeException occurs due to serialization issues with IngestStats, potentially leading to negative counts in IngestStats.Stats.",There is 1 unresolved issue that has been created within the last 2 months.,0,"There is one open issue created in the last 2 months. The title is ""Tighten up exception handling around markItemAsDropped/markItemAsFailed"", the exception is ""java.lang.RuntimeException: null"", the body contains information about serialization issues with `IngestStats`, and the labels are '>bug :Data Management/Ingest Node Team:Data Management'.",1,There is 1 unresolved issue that has been created within the last 2 months.,0,"Title: Tighten up exception handling around markItemAsDropped/markItemAsFailed
+Body: There's been a lot of issues with serialization of `IngestStats`, and having the stats themselves sometimes go negative (due to a bad code path double decrementing the 'ingestCurrent' count of the `IngestStats.Stats`).
+
+See https://github.com/elastic/elasticsearch/issues/52339,...
+Labels: >bug, :Data Management/Ingest Node, Team:Data Management",0,"There is 1 unresolved issue that has been created within a 2-month period:
+- Issue number 104931 titled ""Tighten up exception handling around markItemAsDropped/markItemAsFailed"" was created on 2024-01-30 by joegallo.",1,"There is 1 unresolved issue, number 104931, that has been created within the last 2 months. The issue involves serialization issues with `IngestStats` leading to negative stats due to a code path double decrementing the 'ingestCurrent' count of the `IngestStats.Stats`. It is related to projects or modules such as Distributed/Network, Core/Infra/Settings, Search/Search, and Data Management. The issue was created on March 28, 2023.",0,"There is 1 unresolved issue that has been created within the last 2 months. The details of the unresolved issue are as follows:
+- Issue Number: 104931
+- Title: Tighten up exception handling around markItemAsDropped/markItemAsFailed
+- State: Open
+- Number of Comments: 1
+- Created Date: 2024-01-30
+- Issue Creator: joegallo
+- Labels: >bug, :Data Management/Ingest Node, Team:Data Management
+- Body: There's been a lot of issues with serialization of `IngestStats`, and having the stats themselves sometimes go negative (due to a bad code path double decrementing the 'ingestCurrent' count of the `IngestStats.Stats`). See https://github.com/elastic/elasticsearch/issues/52339",0,summarize all team:ml issue number and their current status,"Issue number 104160 open
+Issue number 103414 closed
+Issue number 98552 closed
+Issue number 100311 closed
+Issue number 104981 closed
+Issue number 103072 open
+Issue number 103344 closed","Issue number 98552 and 100311 are closed. Issue number 103072, 103344, 103414, and 104981 are closed. Issue number 104160 is open.",1,"Issue numbers and their statuses for all Team:ML related issues are: Issue number 98552 - closed, Issue number 100311 - closed, Issue number 103072 - open, Issue number 103344 - closed, Issue number 103414 - closed, Issue number 104160 - open, 1Issue number 04981 - closed",1,"Issue number 98552 is closed, issue number 100311 is closed, issue number 103072 is open, issue number 103344 is closed, issue number 103414 is closed, issue number 104160 is open, and issue number 104981 is closed.",1,"Issue numbers and their current statuses for all issues related to the team:ml are as follows:
+- Issue number 98552 is closed
+- Issue number 100311 is closed
+- Issue number 103072 is open
+- Issue number 103344 is closed
+- Issue number 103414 is closed
+- Issue number 104160 is open
+- Issue number 104981 is closed",1,"Issue number 98552 is closed, issue number 100311 is closed, issue number 103072 is open, issue number 103344 is closed, issue number 103414 is closed, issue number 104160 is open, and issue number 104981 is closed.",1,Issue number 98552 is closed. Issue number 100311 is closed. Issue number 103072 is open. Issue number 103344 is closed. Issue number 103414 is closed. Issue number 104981 is closed.,1,Issue number 103072 is open and issue number 104160 is open.,1
+Summarize the issue 104981,"Issue 104981: In Elasticsearch version 8.12.0 on Linux x86, running inference using the XML-RoBERTa model fails when the input contains mixed emojis and strings. The error message indicates an ArrayIndexOutOfBoundsException, specifically stating ""Index 33 out of bounds for length 32"". Reproducing the issue involves importing the model and testing it with specific emoji-containing text.","The issue 104981 titled '[ML] _infer using XML-RoBERTa model failed when input contains emojis' was created by wwang500 on 2024-01-31, closed on 2024-02-06, had 2 comments, falls under the >bug, :ml, Team:ML labels, and the body contains information about the Elasticsearch Version being 8.12.0 and the OS Version being Linux x86. The problem description mentions issues with running inference using the XML-RoBERTa model when input contains certain mixed emojis and strings.",1,"Title: [ML] _infer using XML-RoBERTa model failed when input contains emojis
+Body: ### Elasticsearch Version
+
+8.12.0
+
+### OS Version
+
+Linux x86
+
+### Problem Description
+
+While running inference using XML-RoBERTa model: **02shanky/finetuned-twitter-xlm-roberta-base-emotion**, if input contains certain mixed emojis and strings , such as: `😱😱😱😱😱😱this is weird`,
+Labels: >bug 
+ :ml 
+ Team:ML
+Exceptions: java.lang.ArrayIndexOutOfBoundsException: Index 33 out of bounds for length 32",1,"The issue 104981 titled '[ML] _infer using XML-RoBERTa model failed when input contains emojis' was created by wwang500 on 2024-01-31, had 2 comments, and was closed on 2024-02-06. It belonged to the >bug, :ml, and Team:ML labels. The problem description involved running inference using the XML-RoBERTa model and encountering issues with input containing emojis.",1,"Title: [ML] _infer using XML-RoBERTa model failed when input contains emojis
+Body: ### Elasticsearch Version
+
+8.12.0
+
+### OS Version
+
+Linux x86
+
+### Problem Description
+
+While running inference using XML-RoBERTa model: **02shanky/finetuned-twitter-xlm-roberta-base-emotion**, if input contains certain mixed emojis and strings , such as: `😱😱😱😱😱😱this is weird`,...
+Labels: >bug, :ml, Team:ML",1,"The issue 104981 titled '[ML] _infer using XML-RoBERTa model failed when input contains emojis' was closed with 2 comments. It was created on 2024-01-31 and closed on 2024-02-06 by wwang500. The labels associated with this issue were '>bug, :ml, Team:ML'. The problem description mentioned issues with running inference using the XML-RoBERTa model when input contains certain mixed emojis and strings. The Elasticsearch version used was 8.12.0.",1,"The issue 104981 titled '[ML] _infer using XML-RoBERTa model failed when input contains emojis' was created by wwang500 on January 31, 2024, closed on February 6, 2024, had 2 comments, falls under the Bug, ML, Team:ML labels, and had the following problem description: ""While running inference using XML-RoBERTa model: **02shanky/finetuned-twitter-xlm-roberta-base-emotion**, if input contains certain mixed emojis and strings, such as: `😱😱😱😱😱😱this is weird`"".",1,"The issue 104981 titled '[ML] _infer using XML-RoBERTa model failed when input contains emojis' was created on January 31, 2024 by wwang500. It is a closed issue with 2 comments and was closed on February 6, 2024. The problem described in the body of the issue is related to running inference using the XML-RoBERTa model and encountering issues when input contains certain mixed emojis and strings. The Elasticsearch version mentioned in the description is 8.12.0.",1,Provide number of open issues of distributed team,2,There are 2 open issues of the distributed team.,1,Total number of open issues assigned to the distributed team is 2.,1,There are 2 open issues of the distributed team.,1,Issue numbers of open issues related to the distributed team are 94839 and 104278.,0,There are 2 open issues for the distributed team.,1,There are currently 2 open issues for the distributed team.,1,There are 2 open issues for the distributed team.,1
+Short Summary of the issue 98076,"Issue 98076: In Elasticsearch versions 8.8.2 to 8.9.0, using a global aggregation against a filtered alias with a terms filter causes all search requests to fail with an unsupported_operation_exception. This error occurs because the query for the global aggregation does not implement createWeight. A workaround is to replace the terms filter with a terms_set filter or a verbose bool / should filter without a minimum should match","Short Summary of the issue 98076: The issue titled '`global` aggregation breaks with `terms` filter in filtered alias' was created by pickypg in the Analytics/Aggregations team. It was closed with 2 comments on August 1, 2023. The problem description mentions that the issue occurs in Elasticsearch versions 8.8.2 and 8.9.0.",1,"Issue 98076 is titled ""`global` aggregation breaks with `terms` filter in filtered alias"". The body of the issue describes a problem with Elasticsearch versions 8.8.2 and 8.9.0 where a specific aggregation breaks when using a `terms` filter in a filtered alias. The exception stack trace mentions an `unsupported_operation_exception` related to a query role not implementing `createWeight`. The labels associated with this issue are '>bug', ':Analytics/Aggregations', and 'Team:Analytics'.",1,"Short Summary of the issue 98076: The issue titled '`global` aggregation breaks with `terms` filter in filtered alias' was closed on 2023-07-31. The problem description mentions that this issue occurs in Elasticsearch versions 8.8.2 and 8.9.0, but not in version 8.5.x.",1,"Title: `global` aggregation breaks with `terms` filter in filtered alias
+Body: ### Elasticsearch Version
+
+8.8.2 - 8.9.0
+
+### Installed Plugins
+
+None
+
+### Java Version
+
+_bundled_
+
+### OS Version
+
+ESS
+
+### Problem Description
+
+Note: This is broken in at least both 8.8.2 and 8.9.0. However, I have an instance running with 8.5.x and it does not fail there.
+
+While using a...
+Labels: >bug, :Analytics/Aggregations, Team:Analytics",1,Short Summary of the issue 98076: The problem with code 98076 is that the '`global` aggregation breaks with `terms` filter in filtered alias'.,0,"Short Summary of the issue 98076: The issue titled '`global` aggregation breaks with `terms` filter in filtered alias' was created by pickypg on 2023-07-31, had 2 comments, and was closed on 2023-08-01. It falls under the categories of bug, Analytics/Aggregations, and Analytics team.",0,"Short Summary of the issue 98076: The problem with code 98076 was titled '`global` aggregation breaks with `terms` filter in filtered alias'. It was reported by pickypg, had 2 comments, was created on 2023-07-31, closed on 2023-08-01, and belonged to the Analytics/Aggregations team.",0,summarize all pending issue number and their current status,"Issue numbers and their respective statuses for pending issues are as follows: 94839 - open, 95347 - open, 96594 - open, 96639 - open, 98652 - open, 100264 - open, 100887 - open, 100964 - open, 103072 - open, 103840 - open, 104160 - open, 104278 - open, 104931 - open","There are currently 13 pending issues with the following numbers and statuses:
+- Issue number 94839 is open
+- Issue number 95347 is open
+- Issue number 96594 is open
+- Issue number 96639 is open
+- Issue number 98652 is open
+- Issue number 100264 is open
+- Issue number 100887 is open
+- Issue number 100964 is open
+- Issue number 103072 is open
+- Issue number 103840 is open
+- Issue number 104160 is open
+- Issue number 104278 is open
+- Issue number 104931 is open",1,"Issue numbers and their respective statuses for pending issues are as follows: 94839 - open, 95347 - open, 96594 - open, 96639 - open, 98652 - open, 100264 - open, 100887 - open, 100964 - open, 103072 - open, 103840 - open, 104160 - open, 104278 - open, 104931 - open",1,"There are currently 13 pending open issues with the following numbers: 94839, 95347, 96594, 96639, 98652, 100264, 100887, 100964, 103072, 103840, 104160, 104278, 104931.",1,"Issue numbers and their respective statuses for pending issues are as follows:
+94839 - open
+95347 - open
+96594 - open
+96639 - open
+98652 - open
+100264 - open
+100887 - open
+100964 - open
+103072 - open
+103840 - open
+104160 - open
+104278 - open
+104931 - open",1,"There are currently 13 pending issues with the following numbers and statuses:
+- Issue number 94839 is open
+- Issue number 95347 is open
+- Issue number 96594 is open
+- Issue number 96639 is open
+- Issue number 98652 is open
+- Issue number 100264 is open
+- Issue number 100887 is open
+- Issue number 100964 is open
+- Issue number 103072 is open
+- Issue number 103840 is open
+- Issue number 104160 is open
+- Issue number 104278 is open
+- Issue number 104931 is open",1,"There are currently 13 pending issues with the following numbers and statuses: 
+- Issue number 94839 is open 
+- Issue number 96639 is open 
+- Issue number 98652 is open 
+- Issue number 100887 is open",1,"There are currently 5 pending issues with the following numbers and statuses: 
+- Issue number 94839 is open 
+- Issue number 95347 is open 
+- Issue number 96594 is open 
+- Issue number 96639 is open 
+- Issue number 100887 is open",1
+Compile a summary of open blocker issues,"Issue 103072: involves the LearningToRankRescorerIT test failing. The failure occurs due to a named_object_not_found_exception when parsing the inference_config. 
+ Issue 99183: involves an error occurring when loading text fields from indexes with synthetic source. The error message was ""Cannot access source from scripts in synthetic mode. Querying for the text field resulted in an IllegalArgumentException.","There is currently 1 open blocker issue:
+- Issue number: 103072
+- Title: [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+- State: open
+- Number of comments: 5
+- Created at: 2023-12-06
+- Issue creator: thecoop
+- Labels: blocker, >test-failure, :ml, Team:ML
+- Milestone: None",0,"There is currently one open issue with the number 103072 labeled as a blocker. The title of the issue is ""[CI] LearningToRankRescorerIT testLearningToRankRescore failing"". The state of the issue is open, with 5 comments. It was created on December 6, 2023, by the creator ""thecoop"". The labels associated with the issue are 'blocker', 'test-failure', and 'ML'.",0,"There is currently one open blocker issue with the following details:
+- Issue Number: 103072
+- Title: [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+- State: open
+- Number of Comments: 5
+- Created At: 2023-12-06
+- Issue Creator: thecoop
+- Labels: blocker, test-failure, ML",0,"There is 1 open issue labeled as a blocker. The details are as follows:
+- Number: 103072
+- Title: [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+- State: open
+- Comments: 5
+- Created At: 2023-12-06
+- Issue Creator: thecoop
+- Labels: blocker, >test-failure, :ml, Team:ML
+- Milestone: None",0,"There is currently 1 open blocker issue. The issue number is 103072, titled '[CI] LearningToRankRescorerIT testLearningToRankRescore failing', with 5 comments, created on 2023-12-06 by the issue creator 'thecoop'. It is labeled as 'blocker' and belongs to the 'ML' team.",0,There are currently no open blocker issues.,0,"There is currently one open blocker issue with the following details:
+- Issue Number: 103072
+- Title: [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+- State: open
+- Number of Comments: 5
+- Created Date: 2023-12-06
+- Issue Creator: thecoop",0,,,,,,,,,,,,,,,,
+Can you generate a summary of all issues tagged as 'team:ql'?,"There are 2 issues tagged as team:ql. 
+Issue 101455: involved benchmarking queries failing after a new way of loading values PR in multi-index queries.The stack trace indicated a NullPointerException caused by attempting to invoke java.lang.CharSequence.length() on a null value. 
+Issue 99183: encountered an error when loading text fields from indexes with synthetic sources. The error message indicates that the system cannot access the source from scripts in synthetic mode, leading to an IllegalArgumentException.","
+There are 2 closed issues tagged as Team:QL.
+",0,The content of all issues labeled as 'team:ql' includes errors related to loading text fields from indexes with synthetic sources and benchmarking query failures after a new way of loading values in multi-index queries.,1,"There are 2 summary issues tagged as 'team:ql':
+1. Issue number 99183 titled 'ESQL: Error when loading `text` fields from indexes with synthetic source' was closed with 6 comments. It was created on 2023-09-04 and closed on 2023-09-27 by issue creator csoulios. It was tagged under labels '>bug, Team:QL (Deprecated), v8.10.0, :Analytics/ES|QL' and had issue assignee luigidellaquila.
+2. Issue number 101455 titled 'ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries' was closed with 2 comments. It was created on 2023-10-27 and closed on 2023-10-29 by issue creator craigtaverner. It was tagged under labels '>bug, Team:QL (Deprecated), :Analytics/ES|QL' and had issue assignee nik9000.",1,"There are 2 issues labeled as 'Team:QL':
+
+1. Title: ESQL: Error when loading `text` fields from indexes with synthetic source
+   Body: ESQL loads `text` fields that are either stored in the index (having `""store"": true` in the mapping) or by parsing the `_source` and extracting the text value. Text fields support [synthetic...
+   Labels: >bug, Team:QL (Deprecated), v8.10.0, :Analytics/ES|QL
+
+2. Title: ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries
+   Body: Since merging https://github.com/elastic/elasticsearch/commit/4ca793ec1abeb986f8d1302884b8d64fd8dcdcbb
+
+Two queries in the `elastic/logs` benchmarks are now failing with `Cannot invoke ""java.lang.CharSequence.length()"" because ""text"" is null`:
+
+*...
+   Labels: >bug, Team:QL (Deprecated), :Analytics/ES|QL",0,"There are 2 closed issues labeled as 'Team:QL':
+
+1. Issue number 99183 titled 'ESQL: Error when loading `text` fields from indexes with synthetic source' created by csoulios on 2023-09-04 and closed on 2023-09-27 with 6 comments.
+2. Issue number 101455 titled 'ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries' created by craigtaverner on 2023-10-27 and closed on 2023-10-29 with 2 comments.",1,"There is 1 summary issue tagged as 'team:ql':
+1. Issue number 101455 titled 'ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries' was closed on 2023-10-29 with 2 comments.",1,"There are 2 summary issues with the 'Team:QL' tag:
+
+1. Issue number 99183 titled 'ESQL: Error when loading `text` fields from indexes with synthetic source' was closed on 2023-09-27 with 6 comments. It was created on 2023-09-04 by csoulios and assigned to luigidellaquila.
+2. Issue number 101455 titled 'ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries' was closed on 2023-10-29 with 2 comments. It was created on 2023-10-27 by craigtaverner and assigned to nik9000.",1,,,,,,,,,,,,,,,,
+Generate summary of low risk issues,"The issue 96639  involves a test failure in the javaRestTestAfterRestart#6_8_20 task The failure occurred with the error message ""process was found dead while waiting for ports files.""The java.lang.IllegalStateException exception specifically indicates this problem.","Summary of low risk issues:
+1. Snapshot restore fails to allocate replicas due to FieldExistsQuery error
+2. Downsample task doesn't clear the `STARTED` status when failed/cancelled
+3. _infer using XML-RoBERTa model failed when input contains emojis
+4. Tighten up exception handling around markItemAsDropped/markItemAsFailed
+5. GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist
+6. It lasted for several days to throw the exception: failed to load bitset
+7. ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+
+8. Gracefully stopping a deployment times out while closing the pytorch process
+9. Using `Debug.explain` kills data nodes.
+10. SecurityUsageTransportAction can leak memory by double invoking REST transport listener
+11. ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries
+12. Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)
+13. Circuit breaking exceptions thrown by transport layer are hard to follow
+14. Anomaly detection job throws errors when not all remote clusters have source data
+15. HTTPS over HTTPS CONNECT tunnel (proxy) does not work
+16. ESQL: Comparing float/half_float to number fails if out of range
+17. `index_out_of_bounds_exception` when highlighting ""match_only_text"" fields
+18. APM agent fails to start with JDK21
+19. Plain highlighter throws UOE when using a script_score query wrapping an exists query
+20. ESQL: Error when loading `text` fields from indexes with synthetic source
+21. Node is unable to join the cluster due to negative `version` in composable index template
+22. `global` aggregation breaks with `terms` filter in filtered alias
+23. ES CLI elasticsearch-shard throws exception on startup
+24. Bad merge config prevents cluster state application
+25. reindex causes java.lang.ArrayIndexOutOfBoundsException after upgrade to 8.7.1
+26. `EnterpriseSearchRestIT` failure
+27. Putting index settings in twice causes ES to crash from assertion error
+28. Serialization exceptions should be handled in OutboundHandler
+29. Exception in `_terms_enum` on docvalue-only keywords fields",0,"Based on the query results, the summarized low-risk issue is:
+
+1. Issue Number: 104278
+Title: Reindex task failure log does not help understand the type of task action",0,"Summary of low risk issues:
+1. Issue number 94673 titled 'Exception in `_terms_enum` on docvalue-only keywords fields' is closed with 2 comments, created on 2023-03-23 by cbuescher.
+2. Issue number 94839 titled 'Serialization exceptions should be handled in OutboundHandler' is open with 1 comment, created on 2023-03-28 by droberts195.
+3. Issue number 95347 titled 'Putting index settings in twice causes ES to crash from assertion error' is open with 7 comments, created on 2023-04-18 by dakrone.",0,"Based on the provided data, the low-risk issues based on their titles, descriptions, exceptions, and labels are as follows:
+
+1. Issue Number: 96639
+   Title: [CI] Failed for task ':x-pack:qa:repository-old-versions:javaRestTestAfterRestart#6_8_20'
+   Description: The error on the surface is ""process was found dead while waiting for ports...""
+   Labels: :Search/Search, >test-failure, Team:Search, low-risk
+
+2. Issue Number: 103072
+   Title: [CI] LearningToRankRescorerIT testLearningToRankRescore failing
+   Description: Also other test failures in this class
+   Labels: blocker, >test-failure, :ml, Team:ML
+
+3. Issue Number: 104278
+   Title: Reindex task failure log does not help understand the type of task action
+   Description: When a task in Elasticsearch fails to complete, the following log exception is thrown in the logs
+   Labels: >enhancement, :Distributed/Reindex, Team:Distributed",0,"Summary of low risk issues:
+1. Snapshot restore fails to allocate replicas due to FieldExistsQuery error
+2. Downsample task doesn't clear the `STARTED` status when failed/cancelled
+3. _infer using XML-RoBERTa model failed when input contains emojis
+4. Tighten up exception handling around markItemAsDropped/markItemAsFailed
+5. GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist
+6. It lasted for several days to throw the exception: failed to load bitset
+7. ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+
+8. Gracefully stopping a deployment times out while closing the pytorch process
+9. Using `Debug.explain` kills data nodes.
+10. SecurityUsageTransportAction can leak memory by double invoking REST transport listener",0,"Final answer: The summary of low-risk issues includes issues related to test failures and dependencies on locale information in the ""labels"" column.",0,There are 2 low risk issues in the database.,0,,,,,,,,,,,,,,,,
+Generate a report detailing the age of open issues by month,"the age of open issues by month is:
+January 2024: 4 issues
+October 2023: 3 issues
+June 2023: 2 issues
+April 2023: 1 issue
+March 2023: 1 issue
+August 2023: 1 issue
+December 2023: 1 issue","
+2023-12: 1 open issue
+2023-10: 3 open issues
+2023-08: 1 open issue
+2023-06: 2 open issues
+2023-04: 1 open issue
+2023-03: 1 open issue
+",1,"The age of open issues by month can be summarized in a report as follows:
+- In March 2023, there is 1 open issue.
+- In April 2023, there is 1 open issue.
+- In June 2023, there are 2 open issues.
+- In August 2023, there is 1 open issue.
+- In October 2023, there are 3 open issues.
+- In December 2023, there is 1 open issue.
+- In January 2024, there are 4 open issues.",1,"2024-01: 4 open issues
+2023-12: 1 open issue
+2023-10: 3 open issues
+2023-08: 1 open issue
+2023-06: 2 open issues
+2023-04: 1 open issue
+2023-03: 1 open issue",1,"2023-03: 1 open issue
+2023-04: 1 open issue
+2023-06: 2 open issues
+2023-08: 1 open issue
+2023-10: 3 open issues
+2023-12: 1 open issue
+2024-01: 4 open issues",1,"2023-03: 1 open issue
+2023-04: 1 open issue
+2023-06: 2 open issues
+2023-08: 1 open issue
+2023-10: 3 open issues
+2023-12: 1 open issue
+2024-01: 4 open issues",1,"2024-01: 4 open issues
+2023-12: 1 open issue
+2023-10: 3 open issues
+2023-08: 1 open issue
+2023-06: 2 open issues
+2023-04: 1 open issue
+2023-03: 1 open issue",1,"The report detailing the age of open issues by month is as follows:
+- January 2024: 4 open issues
+- December 2023: 1 open issue
+- October 2023: 3 open issues
+- August 2023: 1 open issue
+- June 2023: 2 open issues
+- April 2023: 1 open issue
+- March 2023: 1 open issue",1,,,,,,,,,,,,,,,,
+Summarize the issues related to Analytics,"
+The issues related to Analytics are as follows: 1. Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing Labels: :Analytics/Aggregations >test-failure Team:Analytics Body: Three tests failed with the same error: Exception: java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1,... 2. Title: `global` aggregation breaks with `terms` filter in filtered alias Labels: >bug :Analytics/Aggregations Team:Analytics 4. Title: ESQL: Comparing float/half_float to number fails if out of range Exception: ¿eerror¿jroot_cause[rest-esql-test/5_LldMDxQ6OeNFCjiIBidg] org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity] 5. Title: Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website) Body: On the ES official demo the following query leads to an error: Labels: >bug :Analytics/Aggregations Team:Analytics 7. Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+ Exception: Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+. 8. Title: [CI] JdbcResultSetIT testGettingTimeWithCalendar failing Exception: java.sql.SQLException: Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]. [org.elasticsearch.xcontent.XContentParseException: [-1:187] [sql/query] failed to parse field [time_zone] Body: And when looking at test failure issue, it seems to be a 100% failure of 110 test run over the last week, starting on the 22nd February. Labels: blocker >test-failure :Analytics/SQL Team:Analytics
+
+",There are 8 closed issues related to Analytics in the database.,0,"The issues related to Analytics are as follows:
+
+1. Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing
+   Labels: :Analytics/Aggregations >test-failure Team:Analytics
+   Body: Three tests failed with the same error:
+   Exception: java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1,...
+
+2. Title: `global` aggregation breaks with `terms` filter in filtered alias
+   Labels: >bug :Analytics/Aggregations Team:Analytics
+
+4. Title: ESQL: Comparing float/half_float to number fails if out of range
+   Exception: ¿eerror¿jroot_cause[rest-esql-test/5_LldMDxQ6OeNFCjiIBidg] org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity]
+
+5. Title: Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)
+   Body: On the ES official demo the following query leads to an error:
+   Labels: >bug :Analytics/Aggregations Team:Analytics
+
+7. Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+
+   Exception: Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null
+   Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+.
+
+8. Title: [CI] JdbcResultSetIT testGettingTimeWithCalendar failing
+   Exception: java.sql.SQLException: Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]. [org.elasticsearch.xcontent.XContentParseException: [-1:187] [sql/query] failed to parse field [time_zone]
+   Body: And when looking at test failure issue, it seems to be a 100% failure of 110 test run over the last week, starting on the 22nd February.
+   Labels: blocker >test-failure :Analytics/SQL Team:Analytics",1,"The issues related to Analytics are as follows:
+1. Issue number 95013 titled '[CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing' was closed with 3 comments on 2023-04-04 by craigtaverner.
+2. Issue number 98076 titled '`global` aggregation breaks with `terms` filter in filtered alias' was closed with 2 comments on 2023-08-01 by pickypg.
+3. Issue number 99183 titled 'ESQL: Error when loading `text` fields from indexes with synthetic source' was closed with 6 comments on 2023-09-27 by csoulios.
+4. Issue number 100130 titled 'ESQL: Comparing float/half_float to number fails if out of range' was closed with 11 comments on 2024-02-02 by alex-spies.
+5. Issue number 100964 titled 'Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)' is currently open since 2023-10-17 by zitounh.
+6. Issue number 101455 titled 'ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries' was closed with 2 comments on 2023-10-29 by craigtaverner.
+7. Issue number 103765 titled 'ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+' was closed with 4 comments on 2024-01-03 by dnhatn.
+8. Issue number 105840 titled '[CI] JdbcResultSetIT testGettingTimeWithCalendar failing' was closed with 2 comments on 2024-03-06 by craigtaverner.",1,"The issues related to Analytics are as follows:
+1. Issue number 95013: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing
+2. Issue number 98076: `global` aggregation breaks with `terms` filter in filtered alias
+3. Issue number 99183: ESQL: Error when loading `text` fields from indexes with synthetic source
+4. Issue number 100130: ESQL: Comparing float/half_float to number fails if out of range
+5. Issue number 100964: Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website)
+6. Issue number 101455: ESQL: Benchmarking query failing after new way of loading values PR in multi-index queries
+7. Issue number 103765: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+
+8. Issue number 105840: [CI] JdbcResultSetIT testGettingTimeWithCalendar failing",1,"
+The issues related to Analytics are as follows: 1. Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing Labels: :Analytics/Aggregations >test-failure Team:Analytics Body: Three tests failed with the same error: Exception: java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1,... 2. Title: `global` aggregation breaks with `terms` filter in filtered alias Labels: >bug :Analytics/Aggregations Team:Analytics 4. Title: ESQL: Comparing float/half_float to number fails if out of range Exception: ¿eerror¿jroot_cause[rest-esql-test/5_LldMDxQ6OeNFCjiIBidg] org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity] 5. Title: Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website) Body: On the ES official demo the following query leads to an error: Labels: >bug :Analytics/Aggregations Team:Analytics 7. Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+ Exception: Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+. 8. Title: [CI] JdbcResultSetIT testGettingTimeWithCalendar failing Exception: java.sql.SQLException: Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]. [org.elasticsearch.xcontent.XContentParseException: [-1:187] [sql/query] failed to parse field [time_zone] Body: And when looking at test failure issue, it seems to be a 100% failure of 110 test run over the last week, starting on the 22nd February. Labels: blocker >test-failure :Analytics/SQL Team:Analytics
+
+",1,"
+The issues related to Analytics are as follows: 1. Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing Labels: :Analytics/Aggregations >test-failure Team:Analytics Body: Three tests failed with the same error: Exception: java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1,... 2. Title: `global` aggregation breaks with `terms` filter in filtered alias Labels: >bug :Analytics/Aggregations Team:Analytics 4. Title: ESQL: Comparing float/half_float to number fails if out of range Exception: ¿eerror¿jroot_cause[rest-esql-test/5_LldMDxQ6OeNFCjiIBidg] org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity] 5. Title: Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website) Body: On the ES official demo the following query leads to an error: Labels: >bug :Analytics/Aggregations Team:Analytics 7. Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+ Exception: Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+. 8. Title: [CI] JdbcResultSetIT testGettingTimeWithCalendar failing Exception: java.sql.SQLException: Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]. [org.elasticsearch.xcontent.XContentParseException: [-1:187] [sql/query] failed to parse field [time_zone] Body: And when looking at test failure issue, it seems to be a 100% failure of 110 test run over the last week, starting on the 22nd February. Labels: blocker >test-failure :Analytics/SQL Team:Analytics
+
+",1,"
+The issues related to Analytics are as follows: 1. Title: [CI] MixedClusterClientYamlTestSuiteIT test {p0=aggregations/filter/Terms lookup gets cached} failing Labels: :Analytics/Aggregations >test-failure Team:Analytics Body: Three tests failed with the same error: Exception: java.lang.RuntimeException: Failure at [aggregations/filter:31]: NodeSelector [version ranges [[8.8.0 - 8.8.0]]] rejected all nodes, living [[host=http://127.0.0.1:33951, bound=[http://127.0.0.1:33951, http://[::1]:33401], name=v8.7.1-3, version=8.7.1,... 2. Title: `global` aggregation breaks with `terms` filter in filtered alias Labels: >bug :Analytics/Aggregations Team:Analytics 4. Title: ESQL: Comparing float/half_float to number fails if out of range Exception: ¿eerror¿jroot_cause[rest-esql-test/5_LldMDxQ6OeNFCjiIBidg] org.elasticsearch.index.query.QueryShardException: failed to create query: [float] supports only finite values, but got [-Infinity] 5. Title: Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website) Body: On the ES official demo the following query leads to an error: Labels: >bug :Analytics/Aggregations Team:Analytics 7. Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+ Exception: Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+. 8. Title: [CI] JdbcResultSetIT testGettingTimeWithCalendar failing Exception: java.sql.SQLException: Server sent bad type [x_content_parse_exception]. Original type was [[-1:187] [sql/query] failed to parse field [time_zone]]. [org.elasticsearch.xcontent.XContentParseException: [-1:187] [sql/query] failed to parse field [time_zone] Body: And when looking at test failure issue, it seems to be a 100% failure of 110 test run over the last week, starting on the 22nd February. Labels: blocker >test-failure :Analytics/SQL Team:Analytics
+
+",1,,,,,,,,,,,,,,,,
+Summarize the issues related to security,security-related issues are: 1. HTTPS over HTTPS CONNECT tunnel (proxy) does not work 2. SecurityUsageTransportAction can leak memory by double invoking REST transport listener,There are two issues related to security,0,"Based on the security-related titles, descriptions, exceptions, and labels, some of the security-related issues are:
+1. HTTPS over HTTPS CONNECT tunnel (proxy) does not work
+2. SecurityUsageTransportAction can leak memory by double invoking REST transport listener",1,"There are two issues related to security:
+1. Issue number 100264 titled ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" is currently open and was created on 2023-10-04 by albertzaharovits. It belongs to the Security/TLS team and is labeled as a bug related to security.
+2. Issue number 102111 titled ""SecurityUsageTransportAction can leak memory by double invoking REST transport listener"" was closed on 2023-11-14. It was created on 2023-11-13 by original-brownbear and assigned to DaveCTurner. This issue is also related to security and was labeled as a bug by the Security/Security team.",1,"Based on the titles, exceptions, bodies, and labels of the security-related issues, we have the following summarized information:
+
+1. Issue number: 100264
+   Title: HTTPS over HTTPS CONNECT tunnel (proxy) does not work
+   Body: It's possible to configure a proxy in ES in at least 2 places: `xpack.http.proxy.{host,port,scheme}` and...
+   Labels: >bug, :Security/TLS, Team:Security
+
+2. Issue number: 102111
+   Title: SecurityUsageTransportAction can leak memory by double invoking REST transport listener
+   Body: `org.elasticsearch.xpack.security.SecurityUsageTransportAction#masterOperation` can leak memory on the REST layer by trying to send a failure response twice.
+   Labels: >bug, :Security/Security, Team:Security",1,"There are 2 security-related issues: 
+1. Issue number 100264 titled ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" 
+2. Issue number 102111 titled ""SecurityUsageTransportAction can leak memory by double invoking REST transport listener""",1,There are 2 security-related issues in total. The issue related to HTTPS over HTTPS CONNECT tunnel not working was created by droberts195. The issue related to SecurityUsageTransportAction memory leak was also created by droberts195.,1,"There are two security-related issues in the database. The first one is ""HTTPS over HTTPS CONNECT tunnel (proxy) does not work"" which is still open and has 1 comment. The second one is ""SecurityUsageTransportAction can leak memory by double invoking REST transport listener"" which has been closed with 1 comment.",1,,,,,,,,,,,,,,,,
+Summarize the issue 103765,"Issue 103765: The ReplaceDuplicateAggWithEval feature caused backward compatibility issues between Elasticsearch versions 8.11 and 8.12+, leading to query failures in mixed clusters. The fix involves disabling this rule in versions 8.12 and 8.13 and reintroducing it later.","The issue 103765 is titled ""ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+"", it is closed with 4 comments. It was created on 2023-12-30 and closed on 2024-01-03 by dnhatn. The labels associated with this issue are '>bug, Team:Analytics, :Analytics/ES|QL'. The issue description is about queries with duplicated aggregations not working in a mixed cluster between versions 8.11 and 8.12+.",0,"Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+
+Exceptions: Caused by: java.lang.NullPointerException: Cannot invoke ""org.elasticsearch.xpack.esql.planner.Layout$ChannelAndType.channel()"" because ""input"" is null
+Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+. This can be reproduced as follows:
+1. Set up a mixed cluster with two nodes: one 8.11.x node and one 8.12+ node
+2. Index data into the new node only
+3. Run this query against the old node
+Labels: >bug, Team:Analytics, :Analytics/ES|QL",1,"The issue 103765 is titled ""ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+"", it is closed with 4 comments. It was created on 2023-12-30 and closed on 2024-01-03 by issue creator dnhatn. It belongs to the bug category in the Analytics team. The issue is related to queries with duplicated aggregations not working in a mixed cluster between versions 8.11 and 8.12+.",0,"Title: ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+
+Body: Queries with duplicated aggregations don't work in a mixed cluster between 8.11 and 8.12+. This is can be reproduced as follows:
+1. Set up a mixed cluster with two nodes: one 8.11.x node and one 8.12+ node
+2. Index data into the new node only
+3. Run this query against the old node
+```
+from...
+Labels: >bug, Team:Analytics, :Analytics/ES|QL",0,"The issue 103765 is titled ""ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+"". It is a closed issue with 4 comments. It was created on 2023-12-30 and closed on 2024-01-03 by dnhatn. The labels associated with this issue are '>bug, Team:Analytics, :Analytics/ES|QL'. The issue description is about queries with duplicated aggregations not working in a mixed cluster between versions 8.11 and 8.12+.",0,"The issue 103765 is titled 'ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+'. It was created on December 30, 2023, and closed on January 3, 2024, by dnhatn. There were 4 comments made on this issue. The labels associated with this issue are '>bug, Team:Analytics, :Analytics/ES|QL'. The description of the issue is about queries with duplicated aggregations not working in a mixed cluster between versions 8.11 and 8.12+.",0,"Issue 103765 is titled ""ReplaceDuplicateAggWithEval break BWC between 8.11 and 8.12+"". It is a closed issue with 4 comments. It was created on December 30, 2023, and closed on January 3, 2024, by the user dnhatn. The labels associated with this issue are '>bug, Team:Analytics, :Analytics/ES|QL'. The issue describes the issue related to duplicated aggregations not working in a mixed cluster between versions 8.11 and 8.12+.",0,,,,,,,,,,,,,,,,
+Short Summary of the issue 103414,"Issue 103414: In Elasticsearch version 8.11.3 and above, gracefully stopping a machine learning deployment times out while closing the PyTorch process when changing the size of ML nodes. The issue has been fixed as of #103591.",Short Summary of the issue 103414: The issue number 103414 titled '[ML] Gracefully stopping a deployment times out while closing the pytorch process' was created on 2023-12-13 by jonathan-buttner. It is a bug related to ML and was closed on 2023-12-22 with 1 comment. It belongs to the ML team.,1,"Issue 103414 is titled ""[ML] Gracefully stopping a deployment times out while closing the pytorch process"". The exception encountered is a java.util.concurrent.TimeoutException. The body of the issue describes a problem related to changing the size of ML nodes in a cloud deployment. The labels associated with this issue are "">bug"", "":ml"", and ""Team:ML"".",1,Short Summary of the issue 103414: [ML] Gracefully stopping a deployment times out while closing the pytorch process,1,"Title: [ML] Gracefully stopping a deployment times out while closing the pytorch process
+Body: When changing the size of a ML nodes in a cloud deployment, the...
+Labels: >bug, :ml, Team:ML",1,"The short summary of issue 103414 is that it is titled '[ML] Gracefully stopping a deployment times out while closing the pytorch process', it was closed with 1 comment on December 13, 2023, by the issue creator jonathan-buttner. The labels associated with this issue are '>bug, :ml, Team:ML'. The body of the issue describes a problem related to changing the size of ML nodes in a cloud deployment.",1,"The short summary of issue 103414 is that it is titled '[ML] Gracefully stopping a deployment times out while closing the pytorch process', it was closed on December 22, 2023, with 1 comment. It was created by Jonathan Buttner and labeled as a bug related to ML.",0,Short Summary of the issue 103414: The issue number 103414 titled '[ML] Gracefully stopping a deployment times out while closing the pytorch process' was created on 2023-12-13 by jonathan-buttner. It is a bug related to ML and was closed on 2023-12-22. It belongs to the ML team.,1,,,,,,,,,,,,,,,,
+Compile a summary of risky issues,"Based on the query results, high-risk issues based on their titles, exceptions, bodies, and labels include: 1. Issue number 105867: '[CI] JdbcPreparedStatementIT testCommentsHandling failing' 2. Issue number 105866: '[CI] JdbcResultSetIT testUnsupportedGetMethods failing' 3. Issue number 105840: '[CI] JdbcResultSetIT testGettingTimeWithCalendar failing' 4. Issue number 105822: 'Test cases depends on the locale info' 5. Issue number 105206: 'Snapshot restore fails to allocate replicas due to FieldExistsQuery error' 6. Issue number 105068: ""Downsample task doesn't clear the `STARTED` status when failed/cancelled"" 7. Issue number 104981: '[ML] _infer using XML-RoBERTa model failed when input contains emojis' 8. Issue number 104931: 'Tighten up exception handling around markItemAsDropped/markItemAsFailed' 9. Issue number 104278: 'Reindex task failure log does not help understand the type of task action' 10. Issue number 104160: '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' ",There are currently 13 risky open issues with comments greater than 0.,0,"Based on the provided data, there are no high-risk issues in the database.",0,"Here is a summary of risky open issues:
+
+1. Issue number 94839 - Serialization exceptions should be handled in OutboundHandler, created on 2023-03-28 by droberts195.
+2. Issue number 95347 - Putting index settings in twice causes ES to crash from assertion error, created on 2023-04-18 by dakrone.
+3. Issue number 96594 - Bad merge config prevents cluster state application, created on 2023-06-06 by DaveCTurner.
+4. Issue number 98652 - Node is unable to join the cluster due to negative `version` in composable index template, created on 2023-08-21 by romain-chanu.
+5. Issue number 100264 - HTTPS over HTTPS CONNECT tunnel (proxy) does not work, created on 2023-10-04 by albertzaharovits.
+6. Issue number 100887 - Circuit breaking exceptions thrown by transport layer are hard to follow, created on 2023-10-16 by javanna.
+7. Issue number 100964 - Date histogram leads to array_index_out_of_bounds_exception (tried on ES demo website), created on 2023-10-17 by zitounh.
+8. Issue number 103840 - It lasted for several days to throw the exception: failed to load bitset, created on 2024-01-03 by kkewwei.
+9. Issue number 104160 - [ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist, created on 2024-01-09 by droberts195.
+10. Issue number 104931 - Tighten up exception handling around markItemAsDropped/markItemAsFailed, created on 2024-01-30 by joegallo.",0,"Based on the query results, high-risk issues based on their titles, exceptions, bodies, and labels include:
+
+1. Issue number 105867: '[CI] JdbcPreparedStatementIT testCommentsHandling failing'
+2. Issue number 105866: '[CI] JdbcResultSetIT testUnsupportedGetMethods failing'
+3. Issue number 105840: '[CI] JdbcResultSetIT testGettingTimeWithCalendar failing'
+4. Issue number 105822: 'Test cases depends on the locale info'
+5. Issue number 105206: 'Snapshot restore fails to allocate replicas due to FieldExistsQuery error'
+6. Issue number 105068: ""Downsample task doesn't clear the `STARTED` status when failed/cancelled""
+7. Issue number 104981: '[ML] _infer using XML-RoBERTa model failed when input contains emojis'
+8. Issue number 104931: 'Tighten up exception handling around markItemAsDropped/markItemAsFailed'
+9. Issue number 104278: 'Reindex task failure log does not help understand the type of task action'
+10. Issue number 104160: '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist'",1,"Based on the query results, high-risk issues based on their titles, exceptions, bodies, and labels include: 1. Issue number 105867: '[CI] JdbcPreparedStatementIT testCommentsHandling failing' 2. Issue number 105866: '[CI] JdbcResultSetIT testUnsupportedGetMethods failing' 3. Issue number 105840: '[CI] JdbcResultSetIT testGettingTimeWithCalendar failing' 4. Issue number 105822: 'Test cases depends on the locale info' 5. Issue number 105206: 'Snapshot restore fails to allocate replicas due to FieldExistsQuery error' 6. Issue number 105068: ""Downsample task doesn't clear the `STARTED` status when failed/cancelled"" 7. Issue number 104981: '[ML] _infer using XML-RoBERTa model failed when input contains emojis' 8. Issue number 104931: 'Tighten up exception handling around markItemAsDropped/markItemAsFailed' 9. Issue number 104278: 'Reindex task failure log does not help understand the type of task action' 10. Issue number 104160: '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' ",1,There are currently 5 risky open issues reported with more than 2 comments.,0,"Based on the query results, high-risk issues based on their titles, exceptions, bodies, and labels include: 1. Issue number 105867: '[CI] JdbcPreparedStatementIT testCommentsHandling failing' 2. Issue number 105866: '[CI] JdbcResultSetIT testUnsupportedGetMethods failing' 3. Issue number 105840: '[CI] JdbcResultSetIT testGettingTimeWithCalendar failing' 4. Issue number 105822: 'Test cases depends on the locale info' 5. Issue number 105206: 'Snapshot restore fails to allocate replicas due to FieldExistsQuery error' 6. Issue number 105068: ""Downsample task doesn't clear the `STARTED` status when failed/cancelled"" 7. Issue number 104981: '[ML] _infer using XML-RoBERTa model failed when input contains emojis' 8. Issue number 104931: 'Tighten up exception handling around markItemAsDropped/markItemAsFailed' 9. Issue number 104278: 'Reindex task failure log does not help understand the type of task action' 10. Issue number 104160: '[ML] GetDatafeedRunningStateAction can fail if multiple local datafeed tasks exist' ",1,,,,,,,,,,,,,,,,
+Can you generate a summary of all issues tagged as Team:Search Foundations?,"Issue #96594 reports a problem where invalid merge configuration (maxThreadCount > maxMergeCount) prevents nodes from joining a cluster. To resolve this, the cluster should be prevented from entering an invalid state, or handle such situations more gracefully during cluster state application.",There are no issues tagged as Team:Search Foundations.,0,There are no issues labeled as Team:Search Foundations in the dataset.,0,There are no issues tagged as Team:Search Foundations in the provided data.,0,There are no issues labeled as Team:Search Foundations.,0,There are no issues that have been tagged as Team:Search Foundations.,0,There are no issues tagged as Team:Search Foundations in the data provided.,0,There are no issues tagged as Team:Search Foundations in the dataset.,0,,,,,,,,,,,,,,,,
+Generate summary of enhancement issues,"There is 1 enhancement issue in the database: - Issue number 104278 titled ""Reindex task failure log does not help understand the type of task action"" is open with 4 comments, created on 2024-01-11 by naj-h, labeled with "">enhancement, :Distributed/Reindex, Team:Distributed"" and has no milestone. ","There is 1 enhancement issue in the database:
+- Issue number 104278 titled ""Reindex task failure log does not help understand the type of task action"" is open with 4 comments, created on 2024-01-11 by naj-h, labeled with "">enhancement, :Distributed/Reindex, Team:Distributed"" and has no milestone.",1,"There is one enhancement issue based on the title, description, exceptions, and labels:
+
+Issue Number: 104278
+Title: Reindex task failure log does not help understand the type of task action
+Description: When a task in Elasticsearch fails to complete, the following log exception is thrown in the logs:
+Exception: org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+Labels: enhancement, Distributed/Reindex, Team:Distributed",1,"There is 1 enhancement issue in the database:
+- Issue number 104278 titled ""Reindex task failure log does not help understand the type of task action"" is open with 4 comments, created on 2024-01-11 by naj-h. It is labeled as enhancement and belongs to the Distributed/Reindex team.",1,"Based on the query results, there is one enhancement issue with the title ""Reindex task failure log does not help understand the type of task action"". The description includes a problem description related to Elasticsearch task failures and log exceptions. The labels associated with this enhancement issue are "">enhancement"", "":Distributed/Reindex"", and ""Team:Distributed"".",1,"There is 1 enhancement issue in the database:
+- Issue number: 104278
+- Title: Reindex task failure log does not help understand the type of task action
+- State: Open
+- Number of comments: 4
+- Created at: 2024-01-11
+- Issue creator: naj-h",1,"There are currently 0 enhancement issues in the database. The issue with number 104278 was created by ""naj-h"" on January 11, 2024. The labels associated with this issue are '>enhancement, :Distributed/Reindex, Team:Distributed'. No milestone is assigned to this issue.",0,"There is currently one enhancement issue in the database with the following details:
+- Number: 104278
+- Title: Reindex task failure log does not help understand the type of task action
+- State: open
+- Comments: 4
+- Created at: 2024-01-11
+- Issue creator: naj-h
+- Labels: >enhancement, :Distributed/Reindex, Team:Distributed
+- Milestone: None",1,,,,,,,,,,,,,,,,
+Generate a report detailing the age of open issues of distributed team by month,"In the report, there is 1 open issue for the distributed team in March 2023 and 1 open issue in January 2024.","In the month of March 2023, there is 1 open issue for the distributed team. In the month of January 2024, there is also 1 open issue for the distributed team.",1,"In the report, there is 1 open issue for the distributed team in March 2023 and 1 open issue in January 2024.",1,"In the month of March 2023, there is 1 open issue for the distributed team. In the month of January 2024, there is also 1 open issue for the distributed team.",1,"In the report, there is 1 open issue for the distributed team in March 2023 and 1 open issue in January 2024.",1,"In March 2023, there is 1 open issue for the distributed team. In January 2024, there is also 1 open issue for the distributed team.",1,"In January 2024, there is 1 open issue for the distributed team. The details of the open issue are as follows:
+- Issue Number: 104278
+- Title: Reindex task failure log does not help understand the type of task action
+- State: Open
+- Number of Comments: 4
+- Created Date: 2024-01-11
+- Issue Creator: naj-h
+- Labels: >enhancement, :Distributed/Reindex, Team:Distributed
+- Body: Description of the issue with log exception details.",0,"In the report, there is 1 open issue for the distributed team in March 2023 and 1 open issue in January 2024.",1,,,,,,,,,,,,,,,,
